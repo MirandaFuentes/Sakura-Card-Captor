@@ -1,0 +1,29 @@
+// Breakpoints para Mobile, tablets y PC
+$breakpoint-mobile: 576px;   // Para Mobile
+$breakpoint-tablet: 768px;  // Para tablets
+$breakpoint-pc: 992px; // Para PC
+
+// Mixin para los Breakpoints
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) { @content; }
+  } @else if $breakpoint == pc {
+    @media (min-width: $breakpoint-tablet) { @content; }
+  }
+}
+
+// Aplicar los breakpoints 
+.breakpoints {
+  width: 100%;
+  @include breakpoint($breakpoint-mobile) {
+    width: 50%; 
+  }
+  @include breakpoint($breakpoint-tablet) {
+    width: 75%; 
+  }
+  @include breakpoint($breakpoint-pc) {
+    width: 33.33%; 
+  }
+}
