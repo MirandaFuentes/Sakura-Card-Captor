@@ -2,6 +2,7 @@
 @use 'clases_utilitarias/colores';
 @use 'clases_utilitarias/breakpoints';
 @use 'clases_utilitarias/fuentes';
+@use 'clases_utilitarias/redondear';
 
 // Importar archivos desde la carpeta componentes
 @use 'componentes/alertas';

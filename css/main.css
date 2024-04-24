@@ -64,6 +64,18 @@
   font-style: normal;
 }
 
+.rounded-small {
+  border-radius: 4%;
+}
+
+.rounded-medium {
+  border-radius: 8%;
+}
+
+.rounded-large {
+  border-radius: 12%;
+}
+
 @font-face {
   font-family: Noto Sans;
   src: url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
