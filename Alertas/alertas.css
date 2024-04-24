@@ -1,0 +1,54 @@
+@font-face {
+  font-family: Noto Sans;
+  src: url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+}
+.alert-simple {
+  background-color: white;
+  border: 1px solid #F2AEC7;
+  color: #e76c99;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.25rem;
+}
+.alert-creative {
+  background-color: white;
+  border: 1px solid #F2BA52;
+  color: #e69c11;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, #f9e0b1, #fdf3e0);
+  box-shadow: 0 4px 8px rgba(242, 186, 82, 0.2);
+}
+.alert-icon {
+  background-color: #fcf5d4;
+  border: 1px solid #D9B811;
+  color: #927c0b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.25rem;
+  position: relative;
+  padding-left: 40px;
+}
+.alert-icon::before {
+  content: "\f071";
+  font-family: "Noto Sans 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #927c0b;
+}
+.alert-formal {
+  background-color: #faf6f8;
+  border: 1px solid #A66589;
+  color: #794662;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.25rem;
+  border-left: 5px solid #A66589;
+  padding-left: 20px;
+  font-family: Noto Sans;
+  font-style: italic;
+}/*# sourceMappingURL=alertas.css.map */
