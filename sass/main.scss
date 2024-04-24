@@ -1,0 +1,8 @@
+// Importar archivos desde la carpeta clases_utilitarias
+@use 'clases_utilitarias/colores';
+@use 'clases_utilitarias/breakpoints';
+@use 'clases_utilitarias/fuentes';
+
+// Importar archivos desde la carpeta componentes
+@use 'componentes/alertas';
+@use 'componentes/botones';
