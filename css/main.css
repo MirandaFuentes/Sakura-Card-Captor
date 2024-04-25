@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .container-Sakura {
   width: 100%;
   margin: 0 auto;
@@ -74,6 +75,72 @@
 
 .rounded-large {
   border-radius: 12%;
+}
+
+.contenedor-texto {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding: 2px;
+  color: #333;
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.contenedor-texto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.margen-general {
+  margin: 10px;
+  padding: 15px;
+  background-color: #009572;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.margen-superior {
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: #F2BA52;
+  border-radius: 10px;
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.margen-inferior {
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  background-color: #F28A2E;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.margen-izquierdo {
+  margin-left: 90px;
+  padding-left: 30px;
+  background-color: #F2AEC7;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.margen-derecho {
+  margin-right: 90px;
+  padding-right: 35px;
+  background-color: #F2CEA2;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
 
 @font-face {
