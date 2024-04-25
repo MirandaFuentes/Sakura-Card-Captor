@@ -1,10 +1,14 @@
 // Importar archivos desde la carpeta clases_utilitarias
+
 @use 'clases_utilitarias/colores';
 @use 'clases_utilitarias/breakpoints';
 @use 'clases_utilitarias/fuentes';
 @use 'clases_utilitarias/redondear';
 @use 'clases_utilitarias/margens-Paddings';
 
+
 // Importar archivos desde la carpeta componentes
 @use 'componentes/alertas';
 @use 'componentes/botones';
+
+
