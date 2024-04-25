@@ -1,0 +1,72 @@
+@use '/Sakura-Card-Captor/sass/clases_utilitarias/colores' as *;
+@use '/Sakura-Card-Captor/sass/clases_utilitarias/fuentes' as *;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$border-radius-contenedor: 30px;
+.contenedor-texto {
+  border: 2px solid #ccc;
+  border-radius: $border-radius-contenedor;
+  padding: 2px;
+  color: #333;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.margen-general {
+  margin: 10px;
+  padding: 15px;
+  background-color:$color_Sakura-ayes;
+  border-radius: 10px; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 16px; 
+  text-align: center;
+}
+
+.margen-superior {
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: $color-libro-Sakura3;
+  border-radius: 10px;
+  font-family:'Monserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.margen-inferior {
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  background-color:$color-Carta-Clow4;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; 
+  text-align: center;
+}
+
+.margen-izquierdo {
+  margin-left: 90px;
+  padding-left: 30px;
+  background-color: $color_Sakura-dress1;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.margen-derecho {
+  margin-right: 90px;
+  padding-right: 35px;
+  background-color:$color-Carta-Clow3;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; 
+  text-align: center;
+}
+
