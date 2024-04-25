@@ -1,29 +1,22 @@
-// sombra a la izquierda
-.shadow-left {
-    box-shadow: -5px 0 5px rgba(0,0,0,0.2); //ajusta los valores según sea necesario
+// Importamos el archivo de colores
+@import '_colores';
+
+// Clase para sombra tipo 1
+.shadow-type1 {
+  box-shadow: 2px 2px 4px $color_Sakura-dress1;
 }
 
-// sombra arriba
-.shadow-top {
-    box-shadow: 0 -5px 5px rgba(0,0,0,0.2); //ajusta los valores según sea necesario
+// Clase para sombra tipo 2
+.shadow-type2 {
+  box-shadow: 4px 4px 8px $color_Sakura-ayes;
 }
 
-// Bottom shadow (sombra abajo)
-.shadow-bottom {
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2); // ajusta los valores según sea necesario
+// Clase para sombra tipo 3
+.shadow-type3 {
+  box-shadow: 6px 6px 12px $color_Sakura-dress2;
 }
 
-// Right shadow (sombra a la derecha)
-.shadow-right {
-    box-shadow: 5px 0 5px rgba(0,0,0,0.2); // (ajusta los valores según sea necesario
-}
-
-// sombra en forma de L (derecha-abajo)
-.shadow-right-down {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.2); //ajusta los valores según sea necesario
-}
-
-//sombra en forma de L (abajo-izquierda)
-.shadow-down-left {
-        box-shadow: -5px 5px 5px rgba(0,0,0,0.2); //ajusta los valores según sea necesario
+// Clase para sombra tipo 4
+.shadow-type4 {
+  box-shadow: 8px 8px 16px $color_Sakura-hair;
 }
