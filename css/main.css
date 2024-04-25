@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 .container-Sakura {
   width: 100%;
   margin: 0 auto;
@@ -143,6 +145,287 @@
   text-align: center;
 }
 
+.m-Sakura {
+  margin: 0 !important;
+}
+
+.m-Keroberos {
+  margin: 0.25rem !important;
+}
+
+.m-Tomoyo {
+  margin: 0.5rem !important;
+}
+
+.m-Shaoran {
+  margin: 1rem !important;
+}
+
+.m-Yue {
+  margin: 1.5rem !important;
+}
+
+.m-Clow {
+  margin: 3rem !important;
+}
+
+.mt-Sakura {
+  margin-top: 0 !important;
+}
+
+.mt-Keroberos {
+  margin-top: 0.25rem !important;
+}
+
+.mt-Tomoyo {
+  margin-top: 0.5rem !important;
+}
+
+.mt-Shaoran {
+  margin-top: 1rem !important;
+}
+
+.mt-Yue {
+  margin-top: 1.5rem !important;
+}
+
+.mt-Clow {
+  margin-top: 3rem !important;
+}
+
+.mr-Sakura {
+  margin-right: 0 !important;
+}
+
+.mr-Keroberos {
+  margin-right: 0.25rem !important;
+}
+
+.mr-Tomoyo {
+  margin-right: 0.5rem !important;
+}
+
+.mr-Shaoran {
+  margin-right: 1rem !important;
+}
+
+.mr-Yue {
+  margin-right: 1.5rem !important;
+}
+
+.mr-Clow {
+  margin-right: 3rem !important;
+}
+
+.mb-Sakura {
+  margin-bottom: 0 !important;
+}
+
+.mb-Keroberos {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-Tomoyo {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-Shaoran {
+  margin-bottom: 1rem !important;
+}
+
+.mb-Yue {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-Clow {
+  margin-bottom: 3rem !important;
+}
+
+.ml-Sakura {
+  margin-left: 0 !important;
+}
+
+.ml-Keroberos {
+  margin-left: 0.25rem !important;
+}
+
+.ml-Tomoyo {
+  margin-left: 0.5rem !important;
+}
+
+.ml-Shaoran {
+  margin-left: 1rem !important;
+}
+
+.ml-Yue {
+  margin-left: 1.5rem !important;
+}
+
+.ml-Clow {
+  margin-left: 3rem !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.p-Sakura {
+  padding: 0 !important;
+}
+
+.p-Keroberos {
+  padding: 0.25rem !important;
+}
+
+.p-Tomoyo {
+  padding: 0.5rem !important;
+}
+
+.p-Shaoran {
+  padding: 1rem !important;
+}
+
+.p-Yue {
+  padding: 1.5rem !important;
+}
+
+.p-Clow {
+  padding: 3rem !important;
+}
+
+.pt-Sakura {
+  padding-top: 0 !important;
+}
+
+.pt-Keroberos {
+  padding-top: 0.25rem !important;
+}
+
+.pt-Tomoyo {
+  padding-top: 0.5rem !important;
+}
+
+.pt-Shaoran {
+  padding-top: 1rem !important;
+}
+
+.pt-Yue {
+  padding-top: 1.5rem !important;
+}
+
+.pt-Clow {
+  padding-top: 3rem !important;
+}
+
+.pr-Sakura {
+  padding-right: 0 !important;
+}
+
+.pr-Keroberos {
+  padding-right: 0.25rem !important;
+}
+
+.pr-Tomoyo {
+  padding-right: 0.5rem !important;
+}
+
+.pr-Shaoran {
+  padding-right: 1rem !important;
+}
+
+.pr-Yue {
+  padding-right: 1.5rem !important;
+}
+
+.pr-Clow {
+  padding-right: 3rem !important;
+}
+
+.pb-Sakura {
+  padding-bottom: 0 !important;
+}
+
+.pb-Keroberos {
+  padding-bottom: 0.25rem !important;
+}
+
+.pb-Tomoyo {
+  padding-bottom: 0.5rem !important;
+}
+
+.pb-Shaoran {
+  padding-bottom: 1rem !important;
+}
+
+.pb-Yue {
+  padding-bottom: 1.5rem !important;
+}
+
+.pb-Clow {
+  padding-bottom: 3rem !important;
+}
+
+.pl-Sakura {
+  padding-left: 0 !important;
+}
+
+.pl-Keroberos {
+  padding-left: 0.25rem !important;
+}
+
+.pl-Tomoyo {
+  padding-left: 0.5rem !important;
+}
+
+.pl-Shaoran {
+  padding-left: 1rem !important;
+}
+
+.pl-Yue {
+  padding-left: 1.5rem !important;
+}
+
+.pl-Clow {
+  padding-left: 3rem !important;
+}
+
+.position-wind {
+  position: static !important;
+}
+
+.position-jump {
+  position: relative !important;
+}
+
+.position-fly {
+  position: absolute !important;
+}
+
+.position-earthy {
+  position: fixed !important;
+}
+
+.position-sticky {
+  position: sticky !important;
+}
+
+.shadow-type1 {
+  box-shadow: 2px 2px 4px #F2AEC7;
+}
+
+.shadow-type2 {
+  box-shadow: 4px 4px 8px #009572;
+}
+
+.shadow-type3 {
+  box-shadow: 6px 6px 12px #D17C9B;
+}
+
+.shadow-type4 {
+  box-shadow: 8px 8px 16px #A1774F;
+}
+
 @font-face {
   font-family: Noto Sans;
   src: url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -238,6 +521,149 @@
 
 .btn-Sakura:active:focus {
   box-shadow: #A1774F;
+}
+
+.title-font {
+  font-family: "Times New Vespasian";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.subtitle-font {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.body-font {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Times New Vespasian";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-Sakura {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #D17C9B;
+  border: 2px solid #F21B7F;
+  box-shadow: 0 0 10px rgba(209, 124, 155, 0.5);
+  position: relative;
+}
+.container-Sakura::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("/Sakura-Card-Captor/Imagenes Sakura/flor de sakura.ico") no-repeat center center;
+  background-size: contain;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .container-Sakura {
+    max-width: 720px;
+  }
+}
+@media (min-width: 768px) {
+  .container-Sakura {
+    max-width: 960px;
+  }
+}
+
+.container-Clow {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #D9B811;
+  border: 2px solid #BF1B1B;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(217, 184, 17, 0.5);
+}
+.container-Clow::before {
+  content: "";
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("/Sakura-Card-Captor/Imagenes Sakura/carta 1.ico") no-repeat center center;
+  background-size: contain;
+}
+
+.container-kinomoto {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #D90404;
+  border: 2px solid #D17C9B;
+  box-shadow: 0 0 10px rgba(217, 4, 4, 0.5);
+}
+@media (min-width: 768px) {
+  .container-kinomoto {
+    max-width: 960px;
+  }
+}
+.container-kinomoto::before {
+  content: "";
+  position: absolute;
+  top: 215px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("/Sakura-Card-Captor/Imagenes Sakura/Sakura.ico") no-repeat center center;
+  background-size: contain;
+}
+
+.container-kero {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #F0F2AC;
+  border: 2px solid #F2B705;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(240, 242, 172, 0.5);
+}
+@media (max-width: 576px) {
+  .container-kero {
+    max-width: 540px;
+  }
+}
+.container-kero::before {
+  content: "";
+  position: absolute;
+  top: 325px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("/Sakura-Card-Captor/Imagenes Sakura/Kero.ico") no-repeat center center;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
