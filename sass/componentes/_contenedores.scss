@@ -1,0 +1,141 @@
+@use '/Sakura-Card-Captor/sass/clases_utilitarias/breakpoints' as *;
+@use '/Sakura-Card-Captor/sass/clases_utilitarias/colores' as *;
+@use '/Sakura-Card-Captor/sass/clases_utilitarias/fuentes' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+
+
+@mixin font-style($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+.title-font {
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
+}
+
+.subtitle-font {
+  @include font-style('Montserrat', 20px, 1.5, normal, italic);
+}
+
+.body-font {
+  @include font-style('Noto Sans', 16px, 1.3, normal);
+}
+
+h2 {
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
+}
+
+p {
+  @include font-style('Noto Sans', 16px, 1.3, normal);
+}
+
+
+.container-Sakura {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: $color-Sakura-dress2; 
+  border: 2px solid $color-libro-Sakura1;
+  box-shadow: 0 0 10px rgba($color-Sakura-dress2, 0.5); 
+  position: relative; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/flor de sakura.ico') no-repeat center center;
+    background-size: contain;
+  }
+
+  @include breakpoint(tablet) {
+    max-width: 720px;
+  }
+
+  @include breakpoint(pc) {
+    max-width: 960px;
+  }
+}
+
+.container-Clow {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; 
+  background-color: $color-Libro-clow1; 
+  border: 2px solid $color-Libro-clow5; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba($color-Libro-clow1, 0.5); 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/carta 1.ico') no-repeat center center;
+    background-size: contain;
+  }
+}
+
+.container-kinomoto {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: $color-libro-Sakura5; 
+  border: 2px solid $color_Sakura-dress2; 
+  box-shadow: 0 0 10px rgba($color-libro-Sakura5, 0.5); 
+
+  @include breakpoint(pc) {
+    max-width: 960px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/Sakura.ico') no-repeat center center;
+    background-size: contain;
+  }
+}
+
+.container-kero {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; 
+  background-color: $Color-Carta-Sakura-3-hex; 
+  border: 2px solid $color-Carta-Clow2; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba($Color-Carta-Sakura-3-hex, 0.5); 
+
+  @include breakpoint(mobile) {
+    max-width: 540px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/Kero.ico') no-repeat center center;
+    background-size: contain;
+  }
+}
+
