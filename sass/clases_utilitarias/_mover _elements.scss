@@ -19,7 +19,7 @@ $Card-sizes: (
   }
 }
 
-// Crear utilidades de margen
+
 @include create-utilities('margin', 'm', $Card-sizes);
 @include create-utilities('margin-top', 'mt', $Card-sizes);
 @include create-utilities('margin-right', 'mr', $Card-sizes);
