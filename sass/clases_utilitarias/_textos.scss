@@ -15,3 +15,29 @@
     @include modificartexto($color_Sakura-ayes, $big, $font-family1, $font-weight1);
     padding: 5px;
 }
+
+.titulo2{
+    @include modificartexto($color_Sakura-dress1,$medium, $font-family1, $font-weight1);
+    padding: 5px;
+}
+.titulo3{
+    @include modificartexto($color-Libro-clow5, $small, $font-family3, $font-weight3);
+    padding: 5px;
+    
+}
+.p1{
+    @include modificartexto($color-Libro-clow3, $small, $font-family1, none);
+    text-align: justify;
+    padding: 5px;
+}
+
+.p2{
+    @include modificartexto($color-Libro-clow3, $smaller, $font-family2, $font-weight2);
+    text-align: justify;
+    padding: 5px;
+}
+.p3{
+    @include modificartexto($color-Libro-clow3, $small, $font-family3, none);
+    text-align: justify;
+    padding: 5px;
+}
