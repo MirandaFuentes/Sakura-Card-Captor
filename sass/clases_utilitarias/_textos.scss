@@ -3,11 +3,12 @@
 @import 'colores';
 
 // Mixin para modificar el texto
-@mixin modificartexto ($color, $size, $font-family, $font-weight) {
+@mixin modificartexto ($color, $size, $font-family, $font-weight, $text-align:left) {
     color: $color;
     font-size: $size;
     font-family: $font-family;
     font-weight: $font-weight;
+    text-align: $text-align;
 }
 
 // Clase para título 1
@@ -26,18 +27,18 @@
     
 }
 .p1{
-    @include modificartexto($color-Libro-clow3, $small, $font-family1, none);
+    @include modificartexto($color-Libro-clow3, $small, $font-family1, none,$text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
 }
 
 .p2{
-    @include modificartexto($color-Libro-clow3, $smaller, $font-family2, $font-weight2);
+    @include modificartexto($color-Libro-clow3, $smaller, $font-family2, $font-weight2, $text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
 }
 .p3{
-    @include modificartexto($color-Libro-clow3, $small, $font-family3, none);
+    @include modificartexto($color-Libro-clow3, $small, $font-family3, none, $text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
 }
