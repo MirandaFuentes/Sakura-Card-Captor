@@ -1,6 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 .container-Sakura {
@@ -43,30 +46,31 @@
   }
 }
 
+/*
+// Mixin para definir estilos de tipografía
+@mixin font-style($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+// Fuente para el titulo
 .title-font {
-  font-family: "Times New Vespasian";
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: normal;
-  font-style: normal;
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
 }
 
+// Fuente para el subtitulo
 .subtitle-font {
-  font-family: "Montserrat";
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: normal;
-  font-style: italic;
+  @include font-style('Montserrat', 20px, 1.5, normal, italic);
 }
 
+// Fuente para el cuerpo
 .body-font {
-  font-family: "Noto Sans";
-  font-size: 16px;
-  line-height: 1.3;
-  font-weight: normal;
-  font-style: normal;
+  @include font-style('Noto Sans', 16px, 1.3, normal);
 }
-
+*/
 .rounded-small {
   border-radius: 4%;
 }
@@ -424,6 +428,82 @@
 
 .shadow-type4 {
   box-shadow: 8px 8px 16px #A1774F;
+}
+
+/*
+// Mixin para definir estilos de tipografía
+@mixin font-style($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+// Fuente para el titulo
+.title-font {
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
+}
+
+// Fuente para el subtitulo
+.subtitle-font {
+  @include font-style('Montserrat', 20px, 1.5, normal, italic);
+}
+
+// Fuente para el cuerpo
+.body-font {
+  @include font-style('Noto Sans', 16px, 1.3, normal);
+}
+*/
+.titulo1 {
+  color: #009572;
+  font-size: 60px;
+  font-family: "Times New Vespasian";
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.titulo2 {
+  color: #F2AEC7;
+  font-size: 35px;
+  font-family: "Times New Vespasian";
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.titulo3 {
+  color: #BF1B1B;
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.p1 {
+  color: #734B02;
+  font-size: 20px;
+  font-family: "Times New Vespasian";
+  font-weight: none;
+  text-align: justify;
+  padding: 5px;
+}
+
+.p2 {
+  color: #734B02;
+  font-size: 10px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: justify;
+  padding: 5px;
+}
+
+.p3 {
+  color: #734B02;
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: none;
+  text-align: justify;
+  padding: 5px;
 }
 
 @font-face {
