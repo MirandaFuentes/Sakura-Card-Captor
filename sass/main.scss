@@ -5,9 +5,13 @@
 @use 'clases_utilitarias/fuentes';
 @use 'clases_utilitarias/redondear';
 @use 'clases_utilitarias/margens-Paddings';
-
-
+@use 'clases_utilitarias/_mover-elements';
+@use 'clases_utilitarias/sombras';
+@use 'clases_utilitarias/textos';
 
 // Importar archivos desde la carpeta componentes
+
 @use 'componentes/alertas';
 @use 'componentes/botones';
+@use 'componentes/contenedores';
+

@@ -1,147 +1,43 @@
-// Tamaños de texto
-.text-1 {
-    font-size: smaller;
+// Importamos fuentes y colores
+@import 'fuentes';
+@import 'colores';
+
+// Mixin para modificar el texto
+@mixin modificartexto ($color, $size, $font-family, $font-weight) {
+    color: $color;
+    font-size: $size;
+    font-family: $font-family;
+    font-weight: $font-weight;
 }
 
-.text-2 {
-    font-size: small;
+// Clase para título 1
+.titulo1 {
+    @include modificartexto($color_Sakura-ayes, $big, $font-family1, $font-weight1);
+    padding: 5px;
 }
 
-.text-3 {
-    font-size: medium;
+.titulo2{
+    @include modificartexto($color_Sakura-dress1,$medium, $font-family1, $font-weight1);
+    padding: 5px;
+}
+.titulo3{
+    @include modificartexto($color-Libro-clow5, $small, $font-family3, $font-weight3);
+    padding: 5px;
+    
+}
+.p1{
+    @include modificartexto($color-Libro-clow3, $small, $font-family1, none);
+    text-align: justify;
+    padding: 5px;
 }
 
-.text-4 {
-    font-size: large;
+.p2{
+    @include modificartexto($color-Libro-clow3, $smaller, $font-family2, $font-weight2);
+    text-align: justify;
+    padding: 5px;
 }
-
-.text-5 {
-    font-size: larger;
-}
-
-// Grosor de texto
-.text-w-1 {
-    font-weight: 100;
-}
-
-.text-w-2 {
-    font-weight: 200;
-}
-
-.text-w-3 {
-    font-weight: 300;
-}
-
-.text-w-4 {
-    font-weight: 400;
-}
-
-.text-w-5 {
-    font-weight: 500;
-}
-
-.text-w-6 {
-    font-weight: 600;
-}
-
-.text-w-7 {
-    font-weight: 700;
-}
-
-.text-w-8 {
-    font-weight: 800;
-}
-
-
-// Colores de texto
-.text-dark {
-    color: #333;
-}
-
-.text-grey {
-    color: #666;
-}
-
-.text-red {
-    color: #ff0000;
-}
-
-.text-blue {
-    color: #007bff;
-}
-
-.text-white {
-    color: #ffffff;
-}
-
-// Tipos de fuente
-.text-calibri {
-    font-family: Calibri;
-}
-
-.text-arial {
-    font-family: Arial;
-}
-
-.text-timesnr {
-    font-family: 'Times New Roman';
-}
-
-.text-veranda {
-    font-family: Verdana;
-}
-
-.text-thanoma {
-    font-family: Tahoma;
-}
-
-// Estilos de texto
-.text-style-italic {
-    font-style: italic;
-}
-
-.text-style-oblique {
-    font-style: oblique;
-}
-
-.text-style-normal {
-    font-style: normal;
-}
-
-//Textos Alineados
-.text-start
-{
-    text-align: start;
-    align-items: start;
-}
-
-.text-center
-{
-    text-align: center;
-    align-items: center;
-}
-
-.text-end
-{
-    text-align: end;
-    align-items: end;
-}
-//Texto formato
-.text-lowercase
-{
-    text-transform: lowercase;
-}
-
-.text-uppercase
-{
-    text-transform: uppercase;
-}
-
-.text-capitalize
-{
-    text-transform: capitalize;
-}
-.font-spacing 
-{
-    letter-spacing: 0.06em;
+.p3{
+    @include modificartexto($color-Libro-clow3, $small, $font-family3, none);
+    text-align: justify;
+    padding: 5px;
 }
