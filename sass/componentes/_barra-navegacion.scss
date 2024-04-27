@@ -1,5 +1,6 @@
 // Importamos los archivos necesarios
-@use '../clases_utilitarias/margens-Paddings' as *;
+@use '../clases_utilitarias/paddings' as *;
+@use '../clases_utilitarias/margens' as *;
 @use '../clases_utilitarias/sombras' as *;
 @import '../clases_utilitarias/breakpoints';
 @import '../clases_utilitarias/colores';
