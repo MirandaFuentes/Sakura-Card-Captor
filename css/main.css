@@ -77,11 +77,11 @@
   border-radius: 4%;
 }
 
-.rounded-medium {
+.rounded-medium, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .badge-style3, .badge-style3-1, .badge-style3-2, .badge-style3-3, .badge-style3-4 {
   border-radius: 8%;
 }
 
-.rounded-large {
+.rounded-large, .badge-style4, .badge-style4-1, .badge-style4-2, .badge-style4-3, .badge-style4-4 {
   border-radius: 12%;
 }
 
@@ -416,19 +416,19 @@
   position: sticky !important;
 }
 
-.shadow-type1 {
+.shadow-type1, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4 {
   box-shadow: 2px 2px 4px #F2AEC7;
 }
 
-.shadow-type2 {
-  box-shadow: 4px 4px 8px #009572;
+.shadow-type2, .badge-style3, .badge-style3-1, .badge-style3-2, .badge-style3-3, .badge-style3-4 {
+  box-shadow: 4px 4px 8px #F28A2E;
 }
 
-.shadow-type3, .navbar {
+.shadow-type3, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .navbar {
   box-shadow: 6px 6px 12px #D17C9B;
 }
 
-.shadow-type4 {
+.shadow-type4, .badge-style4, .badge-style4-1, .badge-style4-2, .badge-style4-3, .badge-style4-4 {
   box-shadow: 8px 8px 16px #A1774F;
 }
 
@@ -879,6 +879,131 @@ p {
     justify-content: center;
     margin-top: 10px;
   }
+}
+.badge-style1 {
+  background-color: #F2AEC7;
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style1-1 {
+  background-color: #009572;
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style1-2 {
+  background-color: #D17C9B;
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style1-3 {
+  background-color: #A1774F;
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style1-4 {
+  background-color: #FFC366;
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style2 {
+  border: 2px solid #F21B7F;
+  color: #734B02;
+  padding: 5px 10px;
+}
+
+.badge-style2-1 {
+  border: 2px solid #F280BF;
+  color: #734B02;
+  padding: 5px 10px;
+}
+
+.badge-style2-2 {
+  border: 2px solid #F2BA52;
+  color: #734B02;
+  padding: 5px 10px;
+}
+
+.badge-style2-3 {
+  border: 2px solid #F2AF5C;
+  color: #734B02;
+  padding: 5px 10px;
+}
+
+.badge-style2-4 {
+  border: 2px solid #D90404;
+  color: #734B02;
+  padding: 5px 10px;
+}
+
+.badge-style3 {
+  background: linear-gradient(45deg, #D9B811, #A66589);
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style3 {
+  background: linear-gradient(45deg, #F2A0CD, #A66589);
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style3-1 {
+  background: linear-gradient(45deg, #F2C9E0, #F2B705);
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style3-2 {
+  background: linear-gradient(45deg, #F0F2AC, #F2CEA2);
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style3-3 {
+  background: linear-gradient(45deg, #F2CF63, #F28A2E);
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style3-4 {
+  background: linear-gradient(45deg, #F2B28D, #F2F2F2);
+  color: white;
+  padding: 5px 10px;
+}
+
+.badge-style4 {
+  background-color: #A66589;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.badge-style4-1 {
+  background-color: #F2B705;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.badge-style4-2 {
+  background-color: #F2CEA2;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.badge-style4-3 {
+  background-color: #F28A2E;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.badge-style4-4 {
+  background-color: #F2F2F2;
+  color: #333;
+  padding: 5px 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
