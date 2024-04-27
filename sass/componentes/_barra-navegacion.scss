@@ -1,0 +1,69 @@
+// Importamos los archivos necesarios
+@use '../clases_utilitarias/margens-Paddings' as *;
+@use '../clases_utilitarias/sombras' as *;
+@import '../clases_utilitarias/breakpoints';
+@import '../clases_utilitarias/colores';
+@import '../clases_utilitarias/fuentes';
+@import '../clases_utilitarias/redondear';
+
+
+// Estilos para la barra de navegacion
+.navbar {
+  background-color: $color-Carta-Clow1;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend .shadow-type3;
+  margin-bottom: 10px;
+
+  .navbar-logo {
+    width: 70px;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+  }
+  
+  .navbar-brand {
+    color: $color_Sakura-hair;
+    font-family: $font-family2;
+    font-size: $medium;
+    font-weight: $font-weight2;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    
+    .nav-item {
+      .nav-link {
+        color: $color-Carta-Clow2;
+        font-family: $font-family1;
+        font-size: $medium;
+        text-decoration: none;
+        font-weight: $font-weight2;
+        padding: 10px;
+        &:hover {
+          color: $color_Sakura-ayes;
+        }
+      }
+    }
+  }
+  
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .navbar-nav {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  
+  @include breakpoint(tablet) {
+  }
+}
