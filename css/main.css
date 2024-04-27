@@ -460,6 +460,7 @@
   font-size: 60px;
   font-family: "Times New Vespasian";
   font-weight: bolder;
+  text-align: left;
   padding: 5px;
 }
 
@@ -468,6 +469,7 @@
   font-size: 35px;
   font-family: "Times New Vespasian";
   font-weight: bolder;
+  text-align: left;
   padding: 5px;
 }
 
@@ -476,6 +478,7 @@
   font-size: 20px;
   font-family: "Noto Sans";
   font-weight: lighter;
+  text-align: left;
   padding: 5px;
 }
 
@@ -484,6 +487,7 @@
   font-size: 20px;
   font-family: "Times New Vespasian";
   font-weight: none;
+  text-align: justify;
   text-align: justify;
   padding: 5px;
 }
@@ -494,6 +498,7 @@
   font-family: "Montserrat";
   font-weight: bold;
   text-align: justify;
+  text-align: justify;
   padding: 5px;
 }
 
@@ -502,6 +507,7 @@
   font-size: 20px;
   font-family: "Noto Sans";
   font-weight: none;
+  text-align: justify;
   text-align: justify;
   padding: 5px;
 }
