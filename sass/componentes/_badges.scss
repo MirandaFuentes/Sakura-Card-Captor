@@ -1,0 +1,177 @@
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/sombras';
+@use '../clases_utilitarias/redondear';
+@use '../clases_utilitarias/textos';
+
+// Estilo 1: Badge con fondo de color Sakura y texto blanco
+.badge-style1 {
+    background-color: colores.$color_Sakura-dress1;
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type1;
+}
+
+.badge-style1-1 {
+    background-color: colores.$color_Sakura-ayes;
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium;
+    @extend .shadow-type1;
+}
+
+.badge-style1-2 {
+    background-color: colores.$color_Sakura-dress2;
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium;
+    @extend .shadow-type1;
+}
+
+.badge-style1-3 {
+    background-color: colores.$color_Sakura-hair;
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium;
+    @extend .shadow-type1;
+}
+
+.badge-style1-4 {
+    background-color: colores.$color_Sakura-Wand;
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium;
+    @extend .shadow-type1;
+}
+
+// Estilo 2: Badge con borde y texto de color Clow
+.badge-style2 {
+    border: 2px solid colores.$color-libro-Sakura1;
+    color: colores.$color-Libro-clow3;
+    padding: 5px 10px;
+    @extend .rounded-medium;
+    @extend .shadow-type3;
+}
+
+.badge-style2-1 {
+    border: 2px solid colores.$color-libro-Sakura2;
+    color: colores.$color-Libro-clow3;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type3;
+}
+
+.badge-style2-2 {
+    border: 2px solid colores.$color-libro-Sakura3;
+    color: colores.$color-Libro-clow3;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type3;
+}
+
+.badge-style2-3 {
+    border: 2px solid colores.$color-libro-Sakura4;
+    color: colores.$color-Libro-clow3;
+    padding: 5px 10px;
+    @extend .rounded-medium;
+    @extend .shadow-type3;
+}
+
+.badge-style2-4 {
+    border: 2px solid colores.$color-libro-Sakura5;
+    color: colores.$color-Libro-clow3;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type3;
+}
+
+
+// Estilo 3: Badge con fondo degradado y texto blanco
+.badge-style3 {
+    background: linear-gradient(45deg, colores.$color-Libro-clow1, colores.$color-Carta-Clow1);
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type2;
+}
+
+.badge-style3 {
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-1-hex, colores.$color-Carta-Clow1);
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type2;
+}
+
+.badge-style3-1 {
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-2-hex, colores.$color-Carta-Clow2);
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type2;
+}
+
+.badge-style3-2 {
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-3-hex, colores.$color-Carta-Clow3);
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type2;
+}
+
+.badge-style3-3 {
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-4-hex, colores.$color-Carta-Clow4);
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type2;
+}
+
+.badge-style3-4 {
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-5-hex, colores.$color-Carta-Clow5);
+    color: white;
+    padding: 5px 10px;
+    @extend .rounded-medium; 
+    @extend .shadow-type2;
+}
+
+// Estilo 4: Badge redondeado con sombra tipo 2
+.badge-style4 {
+    background-color: colores.$color-Carta-Clow1;
+    color: colores.$color-texto-destacado;
+    padding: 5px 10px;
+    @extend .rounded-large; 
+    @extend .shadow-type4;
+}
+
+.badge-style4-1 {
+    background-color: colores.$color-Carta-Clow2;
+    color: colores.$color-texto-destacado;
+    padding: 5px 10px;
+    @extend .rounded-large; 
+    @extend .shadow-type4;
+}
+
+.badge-style4-2 {
+    background-color: colores.$color-Carta-Clow3;
+    color: colores.$color-texto-destacado;
+    padding: 5px 10px;
+    @extend .rounded-large; 
+    @extend .shadow-type4;
+}
+
+.badge-style4-3 {
+    background-color: colores.$color-Carta-Clow4;
+    color: colores.$color-texto-destacado;
+    padding: 5px 10px;
+    @extend .rounded-large; 
+    @extend .shadow-type4;
+}
+
+.badge-style4-4 {
+    background-color: colores.$color-Carta-Clow5;
+    color: colores.$color-texto-destacado;
+    padding: 5px 10px;
+    @extend .rounded-large; 
+    @extend .shadow-type4;
+}
