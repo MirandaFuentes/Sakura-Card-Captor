@@ -29,20 +29,6 @@ $breakpoint-pc: 992px;
   }
 }
 
-// Contenedor fluido
-.container-Clow {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-// Contenedores adaptables a los breakpoints
-.container-mobile {
-  @include breakpoint(mobile) {
-    max-width: 540px;
-  }
-}
-
 .container-tablet {
   @include breakpoint(tablet) {
     max-width: 720px;

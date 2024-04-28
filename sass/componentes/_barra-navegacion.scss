@@ -65,10 +65,6 @@
   }
   
   @include breakpoint(tablet) {
+    max-width: 720px;
   }
-
-  @include breakpoint(pc) {
-    max-width: 100%;
-  }
- 
 }
