@@ -1,6 +1,18 @@
 @use '/Sakura-Card-Captor/sass/clases_utilitarias/colores';
-
+@use '../clases_utilitarias/paddings' as *;
+@use '../clases_utilitarias/redondear' as *;
 .hide {
-    display: none;
-    background-color: colores.$color_Sakura-ayes;
+        display: none;
+}
+
+
+.bg-color{
+    @each $color_Sakura-ayes in colores.$color_Sakura-ayes {
+        background-color: $color_Sakura-ayes;
+    }
+}
+.bg-other {
+    @each $color-libro-Sakura3 in colores.$color-libro-Sakura3 {
+        background-color:$color-libro-Sakura3;
+    }
 }
