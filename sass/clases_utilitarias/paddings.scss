@@ -1,0 +1,43 @@
+@use "colores" as *;
+@use "fuentes" as *;
+
+.small-padding {
+  padding: 5px;
+  background-color: $Color-Carta-Sakura-1-hex; 
+  font-family: $font-family3; 
+  font-size: $smaller;
+  font-weight: $font-weight2;
+  text-align: $text-align-center; 
+  flex-wrap: wrap;
+}
+
+
+.medium-padding {
+  padding: 10px;
+  background-color: $Color-Carta-Sakura-2-hex; 
+  font-family: $font-family3; 
+  font-size: $smaller;
+  font-weight: $font-weight2;
+  text-align: $text-align-center; 
+}
+
+
+.large-padding {
+  padding: 20px;
+  background-color: $Color-Carta-Sakura-3-hex; 
+  font-family: $font-family3; 
+  font-size: $smaller;
+  font-weight: $font-weight2;
+  text-align: $text-align-center; 
+}
+
+
+.extra-large-padding {
+  padding: 30px;
+  background-color: $Color-Carta-Sakura-4-hex; 
+  font-family: $font-family3; 
+  font-size:$smaller;
+  font-weight: $font-weight2;
+  text-align: $text-align-center; 
+}
+
