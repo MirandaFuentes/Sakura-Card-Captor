@@ -880,6 +880,12 @@ p {
     margin-top: 10px;
   }
 }
+@media (min-width: 768px) {
+  .navbar {
+    max-width: 100%;
+  }
+}
+
 .badge-style1 {
   background-color: #F2AEC7;
   color: white;
