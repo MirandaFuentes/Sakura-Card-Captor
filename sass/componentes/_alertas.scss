@@ -1,5 +1,5 @@
 @use '../clases_utilitarias/colores' as *;
-
+@use '../clases_utilitarias/breakpoints';
 
 @font-face {
     font-family: Noto Sans;
@@ -17,6 +17,11 @@
 
 // Estilos de las alertas
 .alert {
+  @include breakpoints.breakpoints_max(sm) {
+    font-size: 14px; // Ajuste de tamaño de fuente para pantallas pequeñas
+    padding: 8px; // Ajuste de relleno para pantallas pequeñas
+  }
+
   &-simple {
     @include alert($color_Sakura-dress1);
   }

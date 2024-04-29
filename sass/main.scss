@@ -10,6 +10,7 @@
 @use 'clases_utilitarias/sombras';
 @use 'clases_utilitarias/textos';
 @use 'clases_utilitarias/fondos';
+@use 'clases_utilitarias/margin-padding-border';
 
 // Importar archivos desde la carpeta componentes
 
@@ -18,3 +19,6 @@
 @use 'componentes/contenedores';
 @use 'componentes/barra-navegacion';
 @use 'componentes/badges';
+@use 'componentes/grid';
+@use 'componentes/layout';
+
