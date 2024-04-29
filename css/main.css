@@ -922,7 +922,6 @@ p {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: #D9B811;
 }
 
 .container-sm {
@@ -1487,8 +1486,6 @@ p {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: #F21B7F;
-  margin: -1;
   margin: 1px 40px;
   padding: 1px 40px;
 }
