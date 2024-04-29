@@ -4,38 +4,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
-.container-Sakura {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+/*
+// Mixin para los Breakpoints
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) { @content; }
+  } @else if $breakpoint == pc {
+    @media (min-width: $breakpoint-tablet) { @content; }
+  }
 }
-@media (min-width: 576px) and (max-width: 768px) {
-  .container-Sakura {
+
+.container-mobile{
+  @include breakpoint(mobile){
+    max-width: 576px;
+  }
+}
+
+.container-tablet {
+  @include breakpoint(tablet) {
     max-width: 720px;
   }
 }
-@media (min-width: 768px) {
-  .container-Sakura {
+
+.container-pc {
+  @include breakpoint(pc) {
     max-width: 960px;
   }
 }
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+/*
+// Mixin para definir estilos de tipografía
+@mixin font-style($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .container-tablet {
+// Fuente para el titulo
+.title-font {
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
+}
+
+// Fuente para el subtitulo
+.subtitle-font {
+  @include font-style('Montserrat', 20px, 1.5, normal, italic);
+}
+
+// Fuente para el cuerpo
+.body-font {
+  @include font-style('Noto Sans', 16px, 1.3, normal);
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+/*
+// Mixin para los Breakpoints
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) { @content; }
+  } @else if $breakpoint == pc {
+    @media (min-width: $breakpoint-tablet) { @content; }
+  }
+}
+
+.container-mobile{
+  @include breakpoint(mobile){
+    max-width: 576px;
+  }
+}
+
+.container-tablet {
+  @include breakpoint(tablet) {
     max-width: 720px;
   }
 }
 
-@media (min-width: 768px) {
-  .container-pc {
+.container-pc {
+  @include breakpoint(pc) {
     max-width: 960px;
   }
 }
-
+*/
 /*
 // Mixin para definir estilos de tipografía
 @mixin font-style($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
@@ -483,9 +540,9 @@
 }
 */
 .titulo1 {
-  color: #009572;
+  color: #F2CF63;
   font-size: 60px;
-  font-family: "Times New Vespasian";
+  font-family: "Noto Sans";
   font-weight: bolder;
   text-align: left;
   padding: 5px;
@@ -509,11 +566,11 @@
   padding: 5px;
 }
 
-.p1 {
-  color: #734B02;
+.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl, .container-fluid {
+  color: #333;
   font-size: 20px;
   font-family: "Times New Vespasian";
-  font-weight: none;
+  font-weight: bolder;
   text-align: justify;
   text-align: justify;
   padding: 5px;
@@ -562,6 +619,12 @@
 @font-face {
   font-family: Noto Sans;
   src: url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+}
+@media screen and (max-width: 576px) {
+  .alert {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 .alert-simple {
   background-color: white;
@@ -713,73 +776,67 @@
   background-color: #F2CEA2;
 }
 
+/*
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+
+
+@mixin font-style($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
 .title-font {
-  font-family: "Times New Vespasian";
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: normal;
-  font-style: normal;
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
 }
 
 .subtitle-font {
-  font-family: "Montserrat";
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: normal;
-  font-style: italic;
+  @include font-style('Montserrat', 20px, 1.5, normal, italic);
 }
 
 .body-font {
-  font-family: "Noto Sans";
-  font-size: 16px;
-  line-height: 1.3;
-  font-weight: normal;
-  font-style: normal;
+  @include font-style('Noto Sans', 16px, 1.3, normal);
 }
 
 h2 {
-  font-family: "Times New Vespasian";
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: normal;
-  font-style: normal;
+  @include font-style('Times New Vespasian', 24px, 1.2, normal);
 }
 
 p {
-  font-family: "Noto Sans";
-  font-size: 16px;
-  line-height: 1.3;
-  font-weight: normal;
-  font-style: normal;
+  @include font-style('Noto Sans', 16px, 1.3, normal);
 }
+
 
 .container-Sakura {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: #D17C9B;
-  border: 2px solid #F21B7F;
-  box-shadow: 0 0 10px rgba(209, 124, 155, 0.5);
-  position: relative;
-}
-.container-Sakura::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: url("/Sakura-Card-Captor/Imagenes Sakura/flor de sakura.ico") no-repeat center center;
-  background-size: contain;
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .container-Sakura {
+  background-color: $color-Sakura-dress2; 
+  border: 2px solid $color-libro-Sakura1;
+  box-shadow: 0 0 10px rgba($color-Sakura-dress2, 0.5); 
+  position: relative; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/flor de sakura.ico') no-repeat center center;
+    background-size: contain;
+  }
+
+  @include breakpoint(tablet) {
     max-width: 720px;
   }
-}
-@media (min-width: 768px) {
-  .container-Sakura {
+
+  @include breakpoint(pc) {
     max-width: 960px;
   }
 }
@@ -787,106 +844,316 @@ p {
 .container-Clow {
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
-  background-color: #D9B811;
-  border: 2px solid #BF1B1B;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(217, 184, 17, 0.5);
-}
-@media (min-width: 768px) {
-  .container-Clow {
+  padding: 0 10px; 
+  background-color: $color-Libro-clow1; 
+  border: 2px solid $color-Libro-clow5; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba($color-Libro-clow1, 0.5); 
+
+  @include breakpoint(pc) {
     max-width: 960px;
   }
-}
-.container-Clow::before {
-  content: "";
-  position: absolute;
-  top: 110px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: url("/Sakura-Card-Captor/Imagenes Sakura/carta 1.ico") no-repeat center center;
-  background-size: contain;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/carta 1.ico') no-repeat center center;
+    background-size: contain;
+  }
 }
 
 .container-kinomoto {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: #D90404;
-  border: 2px solid #D17C9B;
-  box-shadow: 0 0 10px rgba(217, 4, 4, 0.5);
-}
-@media (min-width: 768px) {
-  .container-kinomoto {
+  background-color: $color-libro-Sakura5; 
+  border: 2px solid $color_Sakura-dress2; 
+  box-shadow: 0 0 10px rgba($color-libro-Sakura5, 0.5); 
+
+  @include breakpoint(pc) {
     max-width: 960px;
   }
-}
-.container-kinomoto::before {
-  content: "";
-  position: absolute;
-  top: 215px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: url("/Sakura-Card-Captor/Imagenes Sakura/Sakura.ico") no-repeat center center;
-  background-size: contain;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/Sakura.ico') no-repeat center center;
+    background-size: contain;
+  }
 }
 
 .container-kero {
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
-  background-color: #F0F2AC;
-  border: 2px solid #F2B705;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(240, 242, 172, 0.5);
-}
-@media (min-width: 768px) {
-  .container-kero {
+  padding: 0 10px; 
+  background-color: $Color-Carta-Sakura-3-hex; 
+  border: 2px solid $color-Carta-Clow2; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba($Color-Carta-Sakura-3-hex, 0.5); 
+
+  @include breakpoint(pc) {
     max-width: 960px;
   }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('/Sakura-Card-Captor/Imagenes\ Sakura/Kero.ico') no-repeat center center;
+    background-size: contain;
+  }
 }
-.container-kero::before {
-  content: "";
-  position: absolute;
-  top: 325px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: url("/Sakura-Card-Captor/Imagenes Sakura/Kero.ico") no-repeat center center;
-  background-size: contain;
+*/
+.container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #D9B811;
 }
 
-.container-Sakura {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .container-Sakura {
-    max-width: 720px;
-  }
-}
-@media (min-width: 768px) {
-  .container-Sakura {
-    max-width: 960px;
-  }
+.container-sm {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .container-tablet {
-    max-width: 720px;
-  }
+.container-md {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #F2AF5C;
 }
 
-@media (min-width: 768px) {
-  .container-pc {
-    max-width: 960px;
+.container-lg {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #F2BA52;
+}
+
+.container-xl {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #F21B7F;
+}
+
+.container-xxl {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 100%;
+    height: auto;
   }
+  .container-sm {
+    width: 100%;
+    height: auto;
+  }
+  .container-md {
+    width: 100%;
+    height: auto;
+  }
+  .container-lg {
+    width: 100%;
+    height: auto;
+  }
+  .container-xl {
+    width: 100%;
+    height: auto;
+  }
+  .container-xxl {
+    width: 100%;
+    height: auto;
+  }
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 540px;
+    height: auto;
+  }
+  .container-sm {
+    width: 540px;
+    height: auto;
+  }
+  .container-md {
+    width: 100%;
+    height: auto;
+  }
+  .container-lg {
+    width: 100%;
+    height: auto;
+  }
+  .container-xl {
+    width: 100%;
+    height: auto;
+  }
+  .container-xxl {
+    width: 100%;
+    height: auto;
+  }
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+    height: auto;
+  }
+  .container-sm {
+    width: 720px;
+    height: auto;
+  }
+  .container-md {
+    width: 720px;
+    height: auto;
+  }
+  .container-lg {
+    width: 100%;
+    height: auto;
+  }
+  .container-xl {
+    width: 100%;
+    height: auto;
+  }
+  .container-xxl {
+    width: 100%;
+    height: auto;
+  }
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+    height: auto;
+  }
+  .container-sm {
+    width: 960px;
+    height: auto;
+  }
+  .container-md {
+    width: 960px;
+    height: auto;
+  }
+  .container-lg {
+    width: 960px;
+    height: auto;
+  }
+  .container-xl {
+    width: 100%;
+    height: auto;
+  }
+  .container-xxl {
+    width: 100%;
+    height: auto;
+  }
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    height: auto;
+  }
+  .container-sm {
+    width: 1140px;
+    height: auto;
+  }
+  .container-md {
+    width: 1140px;
+    height: auto;
+  }
+  .container-lg {
+    width: 1140px;
+    height: auto;
+  }
+  .container-xl {
+    width: 1140px;
+    height: auto;
+  }
+  .container-xxl {
+    width: 100%;
+    height: auto;
+  }
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    height: auto;
+  }
+  .container-sm {
+    width: 1400px;
+    height: auto;
+  }
+  .container-md {
+    width: 1400px;
+    height: auto;
+  }
+  .container-lg {
+    width: 1400px;
+    height: auto;
+  }
+  .container-xl {
+    width: 1400px;
+    height: auto;
+  }
+  .container-xxl {
+    width: 1400px;
+    height: auto;
+  }
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+.rounded-small {
+  border-radius: 4%;
+}
+
+.rounded-medium {
+  border-radius: 8%;
+}
+
+.rounded-large {
+  border-radius: 12%;
 }
 
 /*
@@ -914,16 +1181,61 @@ p {
   @include font-style('Noto Sans', 16px, 1.3, normal);
 }
 */
-.rounded-small {
-  border-radius: 4%;
+.titulo1 {
+  color: #F2CF63;
+  font-size: 60px;
+  font-family: "Noto Sans";
+  font-weight: bolder;
+  text-align: left;
+  padding: 5px;
 }
 
-.rounded-medium {
-  border-radius: 8%;
+.titulo2 {
+  color: #F2AEC7;
+  font-size: 35px;
+  font-family: "Times New Vespasian";
+  font-weight: bolder;
+  text-align: left;
+  padding: 5px;
 }
 
-.rounded-large {
-  border-radius: 12%;
+.titulo3 {
+  color: #BF1B1B;
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: lighter;
+  text-align: left;
+  padding: 5px;
+}
+
+.p1 {
+  color: #333;
+  font-size: 20px;
+  font-family: "Times New Vespasian";
+  font-weight: bolder;
+  text-align: justify;
+  text-align: justify;
+  padding: 5px;
+}
+
+.p2 {
+  color: #734B02;
+  font-size: 10px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: justify;
+  text-align: justify;
+  padding: 5px;
+}
+
+.p3 {
+  color: #734B02;
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: none;
+  text-align: justify;
+  text-align: justify;
+  padding: 5px;
 }
 
 .navbar {
@@ -933,7 +1245,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 .navbar .navbar-logo {
   width: 70px;
@@ -965,19 +1276,24 @@ p {
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #009572;
 }
-@media (max-width: 576px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+@media screen and (max-width: 768px) {
+  .navbar .navbar-logo {
+    margin-left: 20px;
   }
   .navbar .navbar-nav {
     justify-content: center;
-    margin-top: 10px;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin-right: 10px;
   }
 }
-@media (min-width: 576px) and (max-width: 768px) {
-  .navbar {
-    max-width: 720px;
+@media screen and (max-width: 576px) {
+  .navbar .navbar-logo {
+    margin-left: 10px;
+    display: none;
+  }
+  .navbar .navbar-brand {
+    display: none;
   }
 }
 
@@ -1105,6 +1421,238 @@ p {
   background-color: #F2F2F2;
   color: #333;
   padding: 5px 10px;
+}
+
+.hide, .-grid {
+  display: none;
+}
+
+.bg-color {
+  background-color: #009572;
+}
+
+.bg-other {
+  background-color: #F2BA52;
+}
+
+.-col1 {
+  grid-template-columns: 1fr;
+}
+
+.-col2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.-col3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.-col4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.-row1 {
+  grid-template-rows: 1fr;
+}
+
+.-row2 {
+  grid-template-rows: 1fr 1fr;
+}
+
+.-row3 {
+  grid-template-rows: 80px auto 80px;
+}
+
+.-row4 {
+  grid-template-rows: auto auto auto auto;
+}
+
+.columna {
+  grid-template-columns: 1fr;
+}
+
+.fila {
+  grid-template-rows: 1fr;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.contenido {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #F21B7F;
+  margin: -1;
+  margin: 1px 40px;
+  padding: 1px 40px;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: #151c22;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.codigo {
+  border: 5px solid #2c3e50;
+  border-radius: 5px;
+  background-color: white;
+  color: red;
+  width: 100%;
+  height: auto;
+}
+
+.pre {
+  border: 5px solid;
+  border: 5px solid #2c3e50;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  color: white;
+  height: auto;
+}
+.pre .code {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 952px) {
+  .pre {
+    width: 50%;
+  }
+  .code {
+    width: 50%;
+    height: auto;
+    font-size: 10px;
+  }
+}
+@media (max-width: 858px) {
+  .pre {
+    width: 100%;
+    height: auto;
+  }
+  .code {
+    width: 100%;
+    height: auto;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  height: auto;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.table caption {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+.table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+.table th, .table td {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    border: 0px;
+  }
+  .table caption {
+    font-size: 22px;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    margin-bottom: 8px;
+    border-bottom: 4px solid #ddd;
+    display: block;
+  }
+  .table th, .table td {
+    font-size: 12px;
+  }
+  .table td {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+  }
+  .table td:last-child {
+    border-bottom: 0px;
+  }
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 3px #151c22 solid;
+  border-radius: 5px;
+  height: 10pxs;
+}
+
+.Ñogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo_footer {
+  margin: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+.Todo {
+  margin: 10px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

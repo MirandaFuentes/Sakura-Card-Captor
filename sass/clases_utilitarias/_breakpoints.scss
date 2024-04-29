@@ -3,6 +3,8 @@ $breakpoint-mobile: 576px;
 $breakpoint-tablet: 768px;
 $breakpoint-pc: 992px;
 
+
+/*
 // Mixin para los Breakpoints
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == mobile {
@@ -14,18 +16,9 @@ $breakpoint-pc: 992px;
   }
 }
 
-// Contenedor principal
-.container-Sakura {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-
-  @include breakpoint(tablet) {
-    max-width: 720px;
-  }
-
-  @include breakpoint(pc) {
-    max-width: 960px;
+.container-mobile{
+  @include breakpoint(mobile){
+    max-width: 576px;
   }
 }
 
@@ -38,5 +31,26 @@ $breakpoint-pc: 992px;
 .container-pc {
   @include breakpoint(pc) {
     max-width: 960px;
+  }
+}
+*/
+
+$breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin breakpoints_min($parametro){
+  @media screen and (min-width: map-get($breakpoints,$parametro)) {
+      @content;
+  }
+}
+@mixin breakpoints_max($parametro){
+  @media screen and (max-width: map-get($breakpoints,$parametro)) {
+      @content;
   }
 }

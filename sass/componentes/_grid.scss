@@ -1,0 +1,40 @@
+@use'../clases_utilitarias/ocultar';
+@use'../clases_utilitarias/columnas-filas-grid';
+//Clase convierte un contenedor a  un grid
+.-grid{
+    @extend .hide;
+}
+//Clases definidas con columnas para contenedores de tipo grid
+.-col1{
+    @include columnas-filas-grid.col(1fr);
+}
+.-col2{
+    @include columnas-filas-grid.col( 1fr 1fr);
+}
+.-col3{
+    @include columnas-filas-grid.col( 1fr 1fr 1fr);
+}
+.-col4{
+    @include columnas-filas-grid.col( 1fr 1fr 1fr 1fr);
+}
+
+
+//Clases definidas con columnas para contenedores de tipo grid
+.-row1{
+    @include columnas-filas-grid.row( 1fr);
+}
+.-row2{
+    @include columnas-filas-grid.row( 1fr 1fr);
+}
+.-row3{
+    @include columnas-filas-grid.row(80px auto 80px);
+}
+.-row4{
+    @include columnas-filas-grid.row( auto auto auto auto);
+}
+.columna{
+    grid-template-columns: 1fr;
+}
+.fila{
+    grid-template-rows: 1fr;
+}

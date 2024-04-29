@@ -2,6 +2,7 @@
 @use '../clases_utilitarias/sombras';
 @use '../clases_utilitarias/redondear';
 @use '../clases_utilitarias/textos';
+@use '../clases_utilitarias/breakpoints';
 
 // Estilo 1: Badge con fondo de color Sakura y texto blanco
 .badge-style1 {
