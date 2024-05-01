@@ -43,3 +43,19 @@
     text-align: justify;
     padding: 5px;
 }
+@media (max-width: 952px){
+    .titulo1{
+        font-size: 70px;
+    }
+    .titulo2{
+        font-size: 60px;
+    }
+}
+@media (max-width: 858px){
+    .titulo1{
+        font-size: 40px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+}
