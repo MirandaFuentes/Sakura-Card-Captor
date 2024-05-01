@@ -1,17 +1,24 @@
+//layout
+
 @use '../clases_utilitarias/columnas-filas-grid';
 @use '../clases_utilitarias/colores';
 @use '../clases_utilitarias/margin-padding-border';
+@use '../clases_utilitarias/movimiento-elemntos';
+
 //Diseño de 4x4
 .header{
-    @include columnas-filas-grid.area-col(1,2);
-    @include columnas-filas-grid.area-row(1,2);
+    display: flex;
+    flex-direction: column;
 }
+
 .contenido{
-    @include columnas-filas-grid.area-col(1,2);
-    @include columnas-filas-grid.area-row(2,3);
+    display: flex;
+    flex-direction: column;
     margin: 1px 40px;
-    padding:1px 40px
+    padding:1px 40px;
+    margin-top: 13vh;
 }
+
 .footer{
     @include columnas-filas-grid.area-col(1,2);
     @include columnas-filas-grid.area-row(3,4);
@@ -21,6 +28,7 @@
     align-items:center;
 
 }
+
 .codigo{
     border: 5px solid #2c3e50;
     border-radius: 5px;
@@ -29,6 +37,7 @@
     width: 100%;
     height: auto;
 }
+
 .pre{
     border: 5px solid ;
     border: 5px solid #2c3e50;
@@ -42,7 +51,6 @@
     }
 }
 
-
 @media (max-width: 952px){
     .pre{
         width: 50%;
@@ -53,6 +61,7 @@
         font-size: 10px;
     }
 }
+
 @media (max-width: 858px){
     .pre{
         width: 100%;
@@ -161,6 +170,7 @@ hr{
     justify-content: center;
     padding: 10px;
 }
+
 .logo_footer{
     margin: 20px;
     width: 20%;
