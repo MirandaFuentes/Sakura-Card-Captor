@@ -1,7 +1,7 @@
 // Importamos los archivos SCSS necesarios
 @use 'contenedores';
-@use 'botones'; 
-@use 'badges'; 
+@use 'botones';
+@use 'badges';
 @use '../clases_utilitarias/breakpoints';
 @use '../clases_utilitarias/colores';
 @use '../clases_utilitarias/fuentes';
@@ -13,8 +13,23 @@
 
 // Estilos para el formulario de Registro de Información
 .formulario-registro {
-  @extend .container-xxl; 
-  padding: 30px;
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
   // Estilos para los campos de entrada
   .input-field-registro {
@@ -23,41 +38,49 @@
     input {
       width: 100%;
       padding: 10px;
-      border: 2px solid $color-libro-Sakura4; 
+      border: 2px solid colores.$color-libro-Sakura4;
       border-radius: 5px;
       font-size: 16px;
     }
+    
   }
 
   // Estilos para el botón de enviar
   .submit-btn-registro {
-    @extend .btn-Clow; 
+    @extend .btn-Clow;
   }
 
   // Estilos para las etiquetas de error
   .error-label-registro {
-    color: $Color-Carta-Sakura-1-hex; 
+    color: $Color-Carta-Sakura-1-hex;
   }
 
   // Estilos para los badges de información
   .info-badge-registro {
-    @extend .badge-style1; 
+    @extend .badge-style1;
   }
 
-  // Estilos para las etiquetas de formulario
-  .label-formulario-registro {
-    font-family: $font-family3; 
-    color: $color-Libro-clow3; 
-    font-size: 16px;
-    margin-bottom: 8px;
-    display: block;
-    cursor: pointer;
-  }
 }
+
 // Estilos para el formulario de Crear Cuenta
 .formulario-crear-cuenta {
-  @extend .container-xl; 
-  padding: 30px;
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
   // Estilos para los campos de entrada
   .input-field-cuenta {
@@ -66,7 +89,7 @@
     input {
       width: 100%;
       padding: 10px;
-      border: 2px solid $color-Libro-clow2; 
+      border: 2px solid $color-Libro-clow2;
       border-radius: 5px;
       font-size: 16px;
     }
@@ -74,42 +97,59 @@
 
   // Estilos para el botón de enviar
   .submit-btn-cuenta {
-    @extend .btn-Kero; 
+    @extend .btn-Kero;
   }
 
   // Estilos para las etiquetas de error
   .error-label-cuenta {
-    color: $color-Carta-Clow3; 
+    color: $color-Carta-Clow3;
   }
 
   // Estilos para los badges de información
   .info-badge-cuenta {
-    @extend .badge-style2; 
+    @extend .badge-style2;
   }
 
   // Estilos para las etiquetas de formulario
   .label-formulario-cuenta {
-    font-family: $font-family3; 
-    color: $Color-Carta-Sakura-4-hex; 
+    font-family: $font-family3;
+    color: $Color-Carta-Sakura-4-hex;
     font-size: 16px;
     margin-bottom: 8px;
     display: block;
     cursor: pointer;
   }
 }
+
 // Estilos para el formulario de Reserva de Mesa
 .formulario-reserva {
-  @extend .container-lg; 
-  padding: 30px;
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
 
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
   // Estilos para los campos de entrada
-  .input-field-reserva{
+  .input-field-reserva {
     margin-bottom: 20px;
 
-    input, textarea {
+    input,
+    textarea {
       width: 100%;
       padding: 10px;
-      border: 2px solid $color-Libro-clow2; 
+      border: 2px solid $color-Libro-clow2;
       border-radius: 5px;
       font-size: 16px;
     }
@@ -122,18 +162,18 @@
 
   // Estilos para las etiquetas de error
   .error-label-reserva {
-    color: $color-Carta-Clow3; 
+    color: $color-Carta-Clow3;
   }
 
   // Estilos para los badges de información
   .info-badge-reserva {
-    @extend .badge-style2; 
+    @extend .badge-style2;
   }
 
   // Estilos para las etiquetas de formulario
   .label-formulario-reserva {
-    font-family: $font-family3; 
-    color: $color-Libro-clow3; 
+    font-family: $font-family3;
+    color: $color-Libro-clow3;
     font-size: 16px;
     margin-bottom: 8px;
     display: block;
@@ -142,8 +182,24 @@
 }
 
 .formulario-contacto {
-  @extend .container-md; 
-  padding: 30px;
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
 
   // Estilos para los campos de entrada
   .input-contacto {
@@ -153,7 +209,7 @@
     textarea {
       width: 100%;
       padding: 10px;
-      border: 2px solid $color-libro-Sakura4; 
+      border: 2px solid $color-libro-Sakura4;
       border-radius: 5px;
       font-size: 16px;
     }
@@ -161,22 +217,22 @@
 
   // Estilos para el botón de enviar
   .boton-enviar-contacto {
-    @extend .btn-Clow; 
+    @extend .btn-Clow;
   }
 
   // Estilos para las etiquetas de error
   .error-contacto {
-    color: $Color-Carta-Sakura-1-hex; 
+    color: $Color-Carta-Sakura-1-hex;
   }
 
   // Estilos para los badges de información
   .info-badge-contacto {
-    @extend .badge-style1; 
+    @extend .badge-style1;
   }
 
   // Estilos para las etiquetas de formulario
   .label-contacto {
-    font-family: $font-family3; 
+    font-family: $font-family3;
     color: $color-Libro-clow3;
     font-size: 16px;
     margin-bottom: 8px;
