@@ -5,13 +5,11 @@
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 .rounded-small {
   border-radius: 4%;
 }
 
-.rounded-medium, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .badge-style3, .badge-style3-1, .badge-style3-2, .badge-style3-3, .badge-style3-4, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva {
+.rounded-medium, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .badge-style3, .badge-style3-1, .badge-style3-2, .badge-style3-3, .badge-style3-4 {
   border-radius: 8%;
 }
 
@@ -284,7 +282,7 @@
   position: sticky !important;
 }
 
-.shadow-type1, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto {
+.shadow-type1, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4 {
   box-shadow: 2px 2px 4px #F2AEC7;
 }
 
@@ -292,11 +290,11 @@
   box-shadow: 4px 4px 8px #F28A2E;
 }
 
-.shadow-type3, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva, .nav {
+.shadow-type3, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .nav {
   box-shadow: 6px 6px 12px #D17C9B;
 }
 
-.shadow-type4, .badge-style4, .badge-style4-1, .badge-style4-2, .badge-style4-3, .badge-style4-4 {
+.shadow-type4, .navbar-vertical, .badge-style4, .badge-style4-1, .badge-style4-2, .badge-style4-3, .badge-style4-4 {
   box-shadow: 8px 8px 16px #A1774F;
 }
 
@@ -354,7 +352,7 @@
   padding: 5px;
 }
 
-.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl, .container-fluid, .formulario-registro, .formulario-crear-cuenta, .formulario-reserva, .formulario-contacto {
+.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl, .container-fluid {
   color: #333;
   font-size: 20px;
   font-family: "Times New Vespasian";
@@ -374,7 +372,7 @@
   padding: 5px;
 }
 
-.p3 {
+.p3, .navbar-vertical {
   color: #734B02;
   font-size: 20px;
   font-family: "Noto Sans";
@@ -538,7 +536,7 @@
 }
 
 /* Estilos para el botón secundario */
-.btn-Kero, .formulario-crear-cuenta .submit-btn-cuenta {
+.btn-Kero {
   background-color: #F0F2AC;
   color: #734B02;
   border: none;
@@ -548,11 +546,11 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Kero:hover, .formulario-crear-cuenta .submit-btn-cuenta:hover {
+.btn-Kero:hover {
   background-color: #F2AF5C;
 }
 
-.btn-Clow, .formulario-registro .submit-btn-registro, .formulario-reserva .submit-btn-reserva, .formulario-contacto .boton-enviar-contacto {
+.btn-Clow {
   background-color: #F28A2E;
   color: #8C1B11;
   border: none;
@@ -562,7 +560,7 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Clow:hover, .formulario-registro .submit-btn-registro:hover, .formulario-reserva .submit-btn-reserva:hover, .formulario-contacto .boton-enviar-contacto:hover {
+.btn-Clow:hover {
   background-color: #BF9004;
 }
 
@@ -590,30 +588,31 @@
   margin: 0;
   padding: 0;
   border: 0;
+  margin-left: 150px;
 }
 
-.container-md, .formulario-contacto {
+.container-md {
   margin: 0;
   padding: 0;
   border: 0;
   background-color: #F2AF5C;
 }
 
-.container-lg, .formulario-reserva {
+.container-lg {
   margin: 0;
   padding: 0;
   border: 0;
   background-color: #F2BA52;
 }
 
-.container-xl, .formulario-crear-cuenta {
+.container-xl {
   margin: 0;
   padding: 0;
   border: 0;
   background-color: #F21B7F;
 }
 
-.container-xxl, .formulario-registro {
+.container-xxl {
   margin: 0;
   padding: 0;
   border: 0;
@@ -634,19 +633,19 @@
     width: 100%;
     height: auto;
   }
-  .container-md, .formulario-contacto {
+  .container-md {
     width: 100%;
     height: auto;
   }
-  .container-lg, .formulario-reserva {
+  .container-lg {
     width: 100%;
     height: auto;
   }
-  .container-xl, .formulario-crear-cuenta {
+  .container-xl {
     width: 100%;
     height: auto;
   }
-  .container-xxl, .formulario-registro {
+  .container-xxl {
     width: 100%;
     height: auto;
   }
@@ -664,19 +663,19 @@
     width: 540px;
     height: auto;
   }
-  .container-md, .formulario-contacto {
+  .container-md {
     width: 100%;
     height: auto;
   }
-  .container-lg, .formulario-reserva {
+  .container-lg {
     width: 100%;
     height: auto;
   }
-  .container-xl, .formulario-crear-cuenta {
+  .container-xl {
     width: 100%;
     height: auto;
   }
-  .container-xxl, .formulario-registro {
+  .container-xxl {
     width: 100%;
     height: auto;
   }
@@ -694,19 +693,19 @@
     width: 720px;
     height: auto;
   }
-  .container-md, .formulario-contacto {
+  .container-md {
     width: 720px;
     height: auto;
   }
-  .container-lg, .formulario-reserva {
+  .container-lg {
     width: 100%;
     height: auto;
   }
-  .container-xl, .formulario-crear-cuenta {
+  .container-xl {
     width: 100%;
     height: auto;
   }
-  .container-xxl, .formulario-registro {
+  .container-xxl {
     width: 100%;
     height: auto;
   }
@@ -724,19 +723,19 @@
     width: 960px;
     height: auto;
   }
-  .container-md, .formulario-contacto {
+  .container-md {
     width: 960px;
     height: auto;
   }
-  .container-lg, .formulario-reserva {
+  .container-lg {
     width: 960px;
     height: auto;
   }
-  .container-xl, .formulario-crear-cuenta {
+  .container-xl {
     width: 100%;
     height: auto;
   }
-  .container-xxl, .formulario-registro {
+  .container-xxl {
     width: 100%;
     height: auto;
   }
@@ -754,19 +753,19 @@
     width: 1140px;
     height: auto;
   }
-  .container-md, .formulario-contacto {
+  .container-md {
     width: 1140px;
     height: auto;
   }
-  .container-lg, .formulario-reserva {
+  .container-lg {
     width: 1140px;
     height: auto;
   }
-  .container-xl, .formulario-crear-cuenta {
+  .container-xl {
     width: 1140px;
     height: auto;
   }
-  .container-xxl, .formulario-registro {
+  .container-xxl {
     width: 100%;
     height: auto;
   }
@@ -784,19 +783,19 @@
     width: 1400px;
     height: auto;
   }
-  .container-md, .formulario-contacto {
+  .container-md {
     width: 1400px;
     height: auto;
   }
-  .container-lg, .formulario-reserva {
+  .container-lg {
     width: 1400px;
     height: auto;
   }
-  .container-xl, .formulario-crear-cuenta {
+  .container-xl {
     width: 1400px;
     height: auto;
   }
-  .container-xxl, .formulario-registro {
+  .container-xxl {
     width: 1400px;
     height: auto;
   }
@@ -917,7 +916,7 @@
     left: 0;
   }
 }
-.badge-style1, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto {
+.badge-style1 {
   background-color: #F2AEC7;
   color: white;
   padding: 5px 10px;
@@ -947,7 +946,7 @@
   padding: 5px 10px;
 }
 
-.badge-style2, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva {
+.badge-style2 {
   border: 2px solid #F21B7F;
   color: #734B02;
   padding: 5px 10px;
@@ -1043,7 +1042,7 @@
   padding: 5px 10px;
 }
 
-.hide, .-grid {
+.hide {
   display: none;
 }
 
@@ -1053,6 +1052,10 @@
 
 .bg-other {
   background-color: #F2BA52;
+}
+
+.-grid {
+  display: grid;
 }
 
 .-col1 {
@@ -1101,11 +1104,16 @@
 }
 
 .contenido {
-  display: flex;
-  flex-direction: column;
-  margin: 1px 40px;
-  padding: 1px 40px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 100%;
+  margin: 1px 20px;
+  padding: 0px 40px;
   margin-top: 13vh;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -1117,6 +1125,18 @@
   height: 200px;
   display: flex;
   align-items: center;
+}
+
+.container-izquierda {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #A66589;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 999;
 }
 
 .codigo {
@@ -1270,105 +1290,36 @@ hr {
   padding: 20px;
 }
 
-.formulario-registro {
-  padding: 30px;
-}
-.formulario-registro .input-field-registro {
-  margin-bottom: 20px;
-}
-.formulario-registro .input-field-registro input {
-  width: 100%;
+.navbar-vertical {
+  background-color: #A66589;
   padding: 10px;
-  border: 2px solid #F2AF5C;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.formulario-registro .error-label-registro {
-  color: #F2A0CD;
-}
-.formulario-registro .label-formulario-registro {
-  font-family: "Noto Sans";
-  color: #734B02;
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: block;
-  cursor: pointer;
+  position: fixed; /* Fija el navbar en la pantalla */
+  top: 80px; /* Ajusta según el tamaño de tu header */
+  left: 0; /* Lo fija a la izquierda */
+  height: 100%;
 }
 
-.formulario-crear-cuenta {
-  padding: 30px;
-}
-.formulario-crear-cuenta .input-field-cuenta {
-  margin-bottom: 20px;
-}
-.formulario-crear-cuenta .input-field-cuenta input {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #BF9004;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.formulario-crear-cuenta .error-label-cuenta {
-  color: #F2CEA2;
-}
-.formulario-crear-cuenta .label-formulario-cuenta {
-  font-family: "Noto Sans";
-  color: #F2CF63;
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: block;
-  cursor: pointer;
+.navbar-vertical ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-.formulario-reserva {
-  padding: 30px;
-}
-.formulario-reserva .input-field-reserva {
-  margin-bottom: 20px;
-}
-.formulario-reserva .input-field-reserva input, .formulario-reserva .input-field-reserva textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #BF9004;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.formulario-reserva .error-label-reserva {
-  color: #F2CEA2;
-}
-.formulario-reserva .label-formulario-reserva {
-  font-family: "Noto Sans";
-  color: #734B02;
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: block;
-  cursor: pointer;
+.navbar-vertical li {
+  margin-bottom: 5px;
 }
 
-.formulario-contacto {
-  padding: 30px;
+.navbar-vertical a {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #F2B705;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.formulario-contacto .input-contacto {
-  margin-bottom: 20px;
-}
-.formulario-contacto .input-contacto input,
-.formulario-contacto .input-contacto textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #F2AF5C;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.formulario-contacto .error-contacto {
-  color: #F2A0CD;
-}
-.formulario-contacto .label-contacto {
-  font-family: "Noto Sans";
-  color: #734B02;
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: block;
-  cursor: pointer;
+
+.navbar-vertical a:hover {
+  color: #009572;
 }
 
 /*# sourceMappingURL=main.css.map */
