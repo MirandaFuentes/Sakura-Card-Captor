@@ -352,6 +352,24 @@
   padding: 5px;
 }
 
+.titulo1_1 {
+  color: #D90404;
+  font-size: 60px;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  text-align: left;
+  padding: 5px;
+}
+
+.titulo1_2 {
+  color: #F21B7F;
+  font-size: 35px;
+  font-family: "Times New Vespasian";
+  font-weight: bolder;
+  text-align: left;
+  padding: 5px;
+}
+
 .p1, .container, .container-md, .container-lg, .container-xl, .container-xxl, .container-fluid {
   color: #333;
   font-size: 20px;
