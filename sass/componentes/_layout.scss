@@ -4,6 +4,7 @@
 @use '../clases_utilitarias/colores';
 @use '../clases_utilitarias/margin-padding-border';
 @use '../clases_utilitarias/movimiento-elemntos';
+@use '../clases_utilitarias/sombras';
 
 //Diseño de 4x4
 .header{
@@ -12,11 +13,14 @@
 }
 
 .contenido{
-    display: flex;
-    flex-direction: column;
-    margin: 1px 40px;
-    padding:1px 40px;
+    @include columnas-filas-grid.area-col(1,2);
+    @include columnas-filas-grid.area-row(2,3);
+    height: 100%;
+    margin: 1px 20px;
+    padding:0px 40px;
     margin-top: 13vh;
+    display: flex;
+    justify-content: center;
 }
 
 .footer{
@@ -29,6 +33,18 @@
 
 }
 
+.container-izquierda {
+    position: fixed; // Fija el container en la pantalla
+    left: 0; // Ajusta el container a la izquierda
+    top: 0; // Alinea el container en la parte superior de la pantalla
+    height: 100vh; // Ajusta la altura del container para que abarque toda la pantalla
+    width: 200px; // Ancho del container, ajusta según sea necesario
+    background-color: colores.$color-Carta-Clow1; // Utiliza tus variables de colores
+    padding: 20px; // Ajusta el relleno según sea necesario
+    box-sizing: border-box; // Incluye el relleno en el ancho total del container
+    z-index: 999; // Ajusta el z-index si es necesario para que el container esté por encima de otros elementos
+}
+    
 .codigo{
     border: 5px solid #2c3e50;
     border-radius: 5px;

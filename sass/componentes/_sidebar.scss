@@ -1,0 +1,40 @@
+// Importa tus variables de colores y otras utilidades si es necesario
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/textos';
+@use '../clases_utilitarias/sombras';
+
+// Estilos para el navbar vertical
+.navbar-vertical {
+    background-color: colores.$color-Carta-Clow1; // Utiliza tus variables de colores
+    padding: 10px; // Ajusta el relleno según sea necesario
+    position: fixed; /* Fija el navbar en la pantalla */
+    top: 80px; /* Ajusta según el tamaño de tu header */
+    left: 0; /* Lo fija a la izquierda */
+    height: 100%;
+    @extend .shadow-type4;
+    @extend .p3;
+}
+
+.navbar-vertical ul {   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar-vertical li {
+    margin-bottom: 5px; // Espacio entre elementos de la lista
+}
+
+.navbar-vertical a {
+    display: inline-block;
+    padding: 8px 15px; // Relleno para los enlaces
+    color: colores.$color-Carta-Clow2; // Utiliza tus variables de colores
+    text-decoration: none;
+    transition: color 0.3s ease; // Transición suave para el cambio de color
+    
+}
+
+.navbar-vertical a:hover {
+    color: colores.$color-Sakura-ayes; // Cambia el color al pasar el ratón
+}

@@ -4,7 +4,7 @@
 @use'../clases_utilitarias/columnas-filas-grid';
 //Clase convierte un contenedor a  un grid
 .-grid{
-    @extend .hide;
+    display: grid;
 }
 //Clases definidas con columnas para contenedores de tipo grid
 .-col1{
