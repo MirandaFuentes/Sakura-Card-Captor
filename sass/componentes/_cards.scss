@@ -1,0 +1,181 @@
+@use "../clases_utilitarias/fuentes" as *;
+@use "../clases_utilitarias/colores" as *;
+
+// Colores
+$card-border-color: #dee2e6; // Color del borde de la card
+$card-cap-bg: rgba(0, 0, 0, 0.03); // Color de fondo para el encabezado y pie de página
+$primary: #007bff; // Color primario
+$secondary: #6c757d; // Color secundario
+$white: #fff; // Blanco
+
+// Espaciados
+$card-spacer-x: 1.25rem; // Espaciado horizontal interno de la card
+$card-spacer-y: 0.75rem; // Espaciado vertical interno de la card
+$card-title-spacer-y: 0.75rem; // Espaciado vertical del título de la card
+$list-group-item-padding-y: 0.75rem; // Espaciado vertical del elemento de la lista
+$list-group-item-padding-x: 1.25rem; // Espaciado horizontal del elemento de la lista
+
+// Tipografía
+$card-title-font-size: 1.25rem; // Tamaño de fuente del título de la card
+$card-title-font-weight: 500; // Peso de fuente del título de la card
+
+// Enlaces
+$card-link-color: #007bff; // Color del enlace de la card
+$card-link-decoration: none; // Decoración del enlace de la card
+$card-link-hover-color: #0056b3; // Color del enlace de la card al pasar el mouse
+$card-link-hover-decoration: underline; // Decoración del enlace de la card al pasar el mouse
+
+// Bordes
+$card-border-radius: 0.25rem; // Radio del borde de la card
+$card-border-width: 1px; // Ancho del borde de la card
+
+// Variables
+$black: #000;
+$white: #fff;
+$primary: #007bff;
+$secondary: #6c757d;
+$spacer: 1rem;
+$border-radius: 0.25rem;
+$border-width: 1px;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+
+// Variables de la card
+$card-spacer-x: $spacer;
+$card-spacer-y: $spacer * 0.75;
+$card-border-color: rgba($black, 0.125);
+$card-border-radius: $border-radius;
+$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}); // Solución
+$card-cap-bg: rgba($black, 0.03);
+$card-bg: $white;
+$card-height: null;
+$card-box-shadow: $box-shadow-sm;
+
+// Tipografía
+$font-family-base: 'Open Sans', sans-serif;
+
+// Estilos base de la card
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: $card-height;
+    word-wrap: break-word;
+    background-color: $card-bg;
+    background-clip: border-box;
+    border: $card-border-width solid $card-border-color;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+    font-family: $font-family-base;
+
+    > hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    > .list-group {
+        border-top: inherit;
+        border-bottom: inherit;
+
+        &:first-child {
+            border-top-width: 0;
+            border-top-left-radius: $card-inner-border-radius;
+            border-top-right-radius: $card-inner-border-radius;
+        }
+
+        &:last-child {
+            border-bottom-width: 0;
+            border-bottom-right-radius: $card-inner-border-radius;
+            border-bottom-left-radius: $card-inner-border-radius;
+        }
+    }
+}
+
+// Estilos personalizados de las cards
+.card-1 {
+    .card-header {
+        background-color: $card-cap-bg;
+        border-bottom: 1px solid $card-border-color;
+        padding: $card-spacer-y $card-spacer-x;
+    }
+
+    .card-body {
+        padding: $card-spacer-y $card-spacer-x;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        margin-bottom: $card-spacer-y;
+    }
+
+    .card-link {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+            color: darken($primary, 10%);
+            text-decoration: underline;
+        }
+    }
+
+    .card-footer {
+        background-color: $card-cap-bg;
+        border-top: 1px solid $card-border-color;
+        padding: $card-spacer-y $card-spacer-x;
+    }
+}
+
+.card-2 {
+    @extend .card-1;
+
+    .list-group {
+        border-radius: 0;
+
+        .list-group-item {
+            border-left: 0;
+            border-right: 0;
+            padding: $card-spacer-y $card-spacer-x;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.card-3 {
+    @extend .card-1;
+
+    .card-img-top {
+        border-top-left-radius: $card-inner-border-radius;
+        border-top-right-radius: $card-inner-border-radius;
+    }
+
+    .card-img-bottom {
+        border-bottom-left-radius: $card-inner-border-radius;
+        border-bottom-right-radius: $card-inner-border-radius;
+    }
+}
+
+.card-4 {
+    @extend .card-1;
+
+    .card-header {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .card-footer {
+        background-color: $secondary;
+        color: $white;
+    }
+}

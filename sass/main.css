@@ -1371,4 +1371,99 @@ hr {
   cursor: pointer;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  font-family: "Open Sans", sans-serif;
+}
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card-1 .card-header, .card-4 .card-header, .card-3 .card-header, .card-2 .card-header {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.75rem 1rem;
+}
+.card-1 .card-body, .card-4 .card-body, .card-3 .card-body, .card-2 .card-body {
+  padding: 0.75rem 1rem;
+}
+.card-1 .card-title, .card-4 .card-title, .card-3 .card-title, .card-2 .card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+.card-1 .card-text, .card-4 .card-text, .card-3 .card-text, .card-2 .card-text {
+  margin-bottom: 0.75rem;
+}
+.card-1 .card-link, .card-4 .card-link, .card-3 .card-link, .card-2 .card-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.card-1 .card-link:hover, .card-4 .card-link:hover, .card-3 .card-link:hover, .card-2 .card-link:hover {
+  color: #0062cc;
+  text-decoration: underline;
+}
+.card-1 .card-footer, .card-4 .card-footer, .card-3 .card-footer, .card-2 .card-footer {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.75rem 1rem;
+}
+
+.card-2 .list-group {
+  border-radius: 0;
+}
+.card-2 .list-group .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  padding: 0.75rem 1rem;
+}
+.card-2 .list-group .list-group-item:first-child {
+  border-top: 0;
+}
+.card-2 .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.card-3 .card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-3 .card-img-bottom {
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.card-4 .card-header {
+  background-color: #007bff;
+  color: #fff;
+}
+.card-4 .card-footer {
+  background-color: #6c757d;
+  color: #fff;
+}
+
 /*# sourceMappingURL=main.css.map */

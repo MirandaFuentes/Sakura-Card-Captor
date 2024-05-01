@@ -11,6 +11,7 @@
 @use 'clases_utilitarias/margin-padding-border';
 @use 'clases_utilitarias/movimiento-elemntos';
 
+
 // Importar archivos desde la carpeta componentes
 
 @use 'componentes/alertas';
@@ -20,4 +21,5 @@
 @use 'componentes/badges';
 @use 'componentes/grid';
 @use 'componentes/layout';
-
+@use 'componentes/formularios';
+@use 'componentes/cards';
