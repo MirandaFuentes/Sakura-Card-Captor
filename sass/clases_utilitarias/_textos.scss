@@ -39,6 +39,15 @@
     @include modificartexto($Color-Carta-Sakura-4-hex, $medium, $font-family3, $font-weight2);
     padding: 5px;
 }
+.titulo1_1 {
+    @include modificartexto($color-libro-Sakura5, $big, $font-family2, $font-weight3);
+    padding: 5px;
+}
+.titulo1_2 {
+    @include modificartexto($color-libro-Sakura1, $medium, $font-family1, $font-weight1);
+    padding: 5px;
+}
+
 .p1{
     @include modificartexto($color-texto-destacado, $small, $font-family1,$font-weight1,$text-align:$text-align-justify);
     text-align: justify;
