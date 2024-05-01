@@ -1,12 +1,14 @@
-@use "../clases_utilitarias/fuentes" as *;
-@use "../clases_utilitarias/colores" as *;
+@import "../clases_utilitarias/fuentes";
+@import "../clases_utilitarias/colores";
+@import "../clases_utilitarias/sombras";
+
 
 // Colores
-$card-border-color: #dee2e6; // Color del borde de la card
-$card-cap-bg: rgba(0, 0, 0, 0.03); // Color de fondo para el encabezado y pie de página
-$primary: #007bff; // Color primario
-$secondary: #6c757d; // Color secundario
-$white: #fff; // Blanco
+$card-border-color: $color-libro-Sakura2; // Color del borde de la card
+$card-cap-bg: $color_Sakura-dress1; // Color de fondo para el encabezado y pie de página
+$primary: $color-libro-Sakura1; // Color primario
+$secondary: $color-Carta-Clow1; // Color secundario
+$white: $color-Carta-Clow5; // Blanco
 
 // Espaciados
 $card-spacer-x: 1.25rem; // Espaciado horizontal interno de la card
@@ -16,13 +18,13 @@ $list-group-item-padding-y: 0.75rem; // Espaciado vertical del elemento de la li
 $list-group-item-padding-x: 1.25rem; // Espaciado horizontal del elemento de la lista
 
 // Tipografía
-$card-title-font-size: 1.25rem; // Tamaño de fuente del título de la card
+$card-title-font-size:$medium; // Tamaño de fuente del título de la card
 $card-title-font-weight: 500; // Peso de fuente del título de la card
 
 // Enlaces
-$card-link-color: #007bff; // Color del enlace de la card
+$card-link-color: $color_Sakura-ayes; // Color del enlace de la card
 $card-link-decoration: none; // Decoración del enlace de la card
-$card-link-hover-color: #0056b3; // Color del enlace de la card al pasar el mouse
+$card-link-hover-color: $color-libro-Sakura1; // Color del enlace de la card al pasar el mouse
 $card-link-hover-decoration: underline; // Decoración del enlace de la card al pasar el mouse
 
 // Bordes
@@ -30,28 +32,27 @@ $card-border-radius: 0.25rem; // Radio del borde de la card
 $card-border-width: 1px; // Ancho del borde de la card
 
 // Variables
-$black: #000;
-$white: #fff;
-$primary: #007bff;
-$secondary: #6c757d;
+$black: $color-menu;
+$white: $color-Carta-Clow5;
+$primary:  $color-libro-Sakura1;
+$secondary: $color-Carta-Clow1;
 $spacer: 1rem;
 $border-radius: 0.25rem;
 $border-width: 1px;
-$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
 
 // Variables de la card
 $card-spacer-x: $spacer;
 $card-spacer-y: $spacer * 0.75;
-$card-border-color: rgba($black, 0.125);
+$card-border-color: $color-libro-Sakura2;
 $card-border-radius: $border-radius;
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}); // Solución
-$card-cap-bg: rgba($black, 0.03);
-$card-bg: $white;
+$card-cap-bg:$color-libro-Sakura1;
+$card-bg: $color-Carta-Clow5;
 $card-height: null;
-$card-box-shadow: $box-shadow-sm;
+
 
 // Tipografía
-$font-family-base: 'Open Sans', sans-serif;
+$font-family-base: $font-family3;
 
 // Estilos base de la card
 .card {
@@ -65,8 +66,8 @@ $font-family-base: 'Open Sans', sans-serif;
     background-clip: border-box;
     border: $card-border-width solid $card-border-color;
     border-radius: $card-border-radius;
-    box-shadow: $card-box-shadow;
     font-family: $font-family-base;
+    text-align: $text-align-center;
 
     > hr {
         margin-right: 0;
@@ -97,6 +98,8 @@ $font-family-base: 'Open Sans', sans-serif;
         background-color: $card-cap-bg;
         border-bottom: 1px solid $card-border-color;
         padding: $card-spacer-y $card-spacer-x;
+        font-size: $card-title-font-size;
+        font-weight:$font-weight2;
     }
 
     .card-body {
@@ -104,7 +107,7 @@ $font-family-base: 'Open Sans', sans-serif;
     }
 
     .card-title {
-        font-size: 1.25rem;
+        font-size: $card-title-font-size;
         font-weight: 500;
         margin-bottom: 0.75rem;
     }
@@ -134,7 +137,7 @@ $font-family-base: 'Open Sans', sans-serif;
     @extend .card-1;
 
     .list-group {
-        border-radius: 0;
+        border-radius: 1px;
 
         .list-group-item {
             border-left: 0;
