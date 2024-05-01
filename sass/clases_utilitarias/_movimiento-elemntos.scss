@@ -8,12 +8,14 @@
     right:$right;
     bottom: $boton;  
 }
+
 //Funcion para alinear elementos
 @mixin alineacion($align-items,$align-self,$align-content){
     align-items:$align-items;
     align-self: $align-self;
     align-content:$align-content;
 }
+
 //Funcion para alinear elementos
 @mixin justificar($justify-content,$justify-items, $justify-self){
     justify-content: $justify-content;
