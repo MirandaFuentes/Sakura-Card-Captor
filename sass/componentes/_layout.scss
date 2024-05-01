@@ -4,6 +4,7 @@
 @use '../clases_utilitarias/colores';
 @use '../clases_utilitarias/margin-padding-border';
 @use '../clases_utilitarias/movimiento-elemntos';
+@use '../clases_utilitarias/sombras';
 
 //Diseño de 4x4
 .header{
@@ -12,11 +13,14 @@
 }
 
 .contenido{
-    display: flex;
-    flex-direction: column;
-    margin: 1px 40px;
-    padding:1px 40px;
+    @include columnas-filas-grid.area-col(1,2);
+    @include columnas-filas-grid.area-row(2,3);
+    height: 100%;
+    margin: 1px 20px;
+    padding:0px 40px;
     margin-top: 13vh;
+    display: flex;
+    justify-content: center;
 }
 
 .footer{
@@ -29,6 +33,18 @@
 
 }
 
+.container-izquierda {
+    position: fixed;
+    left: 0;
+    top: 0; 
+    height: 100vh; 
+    width: 200px; 
+    background-color: colores.$color-Carta-Clow1;
+    padding: 20px;
+    box-sizing: border-box; 
+    z-index: 999; 
+}
+    
 .codigo{
     border: 5px solid #2c3e50;
     border-radius: 5px;
