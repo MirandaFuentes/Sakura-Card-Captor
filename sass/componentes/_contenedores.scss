@@ -60,7 +60,7 @@
 }
 
 //Breakpoints llamdas por la funcion
-@include breakpoints.breakpoints_min(sm){
+@include breakpoints.breakpoints_min(fluid){
   .container{@include size.size(100%,auto);}
   .container-sm{@include size.size(100%,auto);}
   .container-md{@include size.size(100%,auto);}
