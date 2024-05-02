@@ -49,6 +49,9 @@
 
 
         <div class="container-sm -col1">
+            <div id="Contenidos_paginas">
+
+            </div>
             <section id="componentes">
                 <br>
                 <h1 class="titulo1">Componentes</h1>
@@ -76,5 +79,32 @@
         </div>
     </div>
 </body>
+<script>
+    // Obtener todos los enlaces del navbar
+    const enlaces = document.querySelectorAll('a');
+
+    // Función para cargar el contenido dinámico
+    function cargarContenido(url) {
+        // Hacer una solicitud fetch a la URL especificada
+        fetch(url)
+            .then(respuesta => respuesta.text())
+            .then(html => {
+                // Actualizar el contenido del div con el HTML obtenido
+                document.getElementById('Contenidos_paginas').innerHTML = html;
+            })
+            .catch(error => console.error(error));
+    }
+
+    // Agregar event listeners a los enlaces
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', evento => {
+            evento.preventDefault(); // Prevenir la navegación predeterminada
+            const url = enlace.getAttribute('href'); // Obtener la URL del enlace
+            cargarContenido(url); // Cargar el contenido dinámico
+            let componenteOcultar = document.getElementById('componentes');
+            componenteOcultar.style.display = 'none';
+        });
+    });
+</script>
 
 </html>
