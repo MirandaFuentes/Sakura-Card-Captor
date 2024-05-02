@@ -12,6 +12,11 @@
 </head>
 
 <body>
+<style>
+  body {
+    cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+  }
+</style>
   <!--
 Barra de navegacion.
 -->
@@ -91,6 +96,17 @@ Barra de navegacion.
         <img src="Imagenes%20Sakura/Sakura%20y%20kero.png" alt="" style="width: 100%; height: 99vh;">
       </center>
     </div>
+    <script>document.addEventListener('mousemove', function (e) {
+      const trail = document.createElement('div');
+      trail.classList.add('trail');
+      trail.style.left = `${e.clientX - 8}px`;
+      trail.style.top = `${e.clientY - 8}px`;
+      document.body.appendChild(trail);
+
+      setTimeout(function () {
+        trail.remove();
+      }, 1000);
+    });</script>
 
     <!--
 
