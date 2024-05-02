@@ -14,6 +14,26 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.65;
+  box-shadow: none;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+a.disabled {
+  pointer-events: none;
+}
 .btn-lg {
   padding: 10px 16px !important;
   font-size: 30px !important;
@@ -33,6 +53,12 @@
   color:$color_Sakura-Wand;
   background-color: $color_Sakura-dress2;
   border-color: $color_Sakura-ayes;
+}
+
+.btn-Sakura-Outline {
+@extend .btn-Sakura;
+  background-color: transparent;
+
 }
 
 .btn-Sakura:hover {
@@ -65,6 +91,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.btn-Kero-Outline {
+  @extend .btn-Kero;
+  background-color: transparent;
+}
 
 .btn-Kero:hover {
   background-color: $color-libro-Sakura4;
@@ -82,6 +112,11 @@
   transition: background-color 0.3s ease;
 }
 
+.btn-Clow-Outline {
+  @extend .btn-Clow;
+  background-color: transparent;
+}
+
 .btn-Clow:hover {
   background-color: $color-Libro-clow2;
 }
@@ -96,6 +131,10 @@
   transition: background-color 0.3s ease;
 }
 
+.btn-Libros-Outline {
+  @extend .btn-Libros;
+  background-color: transparent;
+}
 .btn-Libros:hover {
   background-color: $color-Carta-Clow3;
 }

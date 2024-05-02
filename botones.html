@@ -12,43 +12,10 @@
 </head>
 
 <body>
-    <div class="header">
-        <section id="Inicio">
-            <nav class="nav">
-                <input type="checkbox" id="check" />
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <a href="Index.html" class="enlace">
-                    <img src="Imagenes Sakura/Kero.ico" alt="" class="logo" />
-                </a>
-                <ul class="lista-desordenada">
-                    <li class="item"><a href="Index.html" class="a">Inicio</a></li>
-                    <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
-                    <li class="item"><a href="#Diseño" class="a">Diseño</a></li>
-                    <li class="item"><a href="#Componentes" class="a">Componentes</a></li>
-                </ul>
-            </nav>
-        </section>
-    </div>
-    </div>
 
     <div class="contenido ">
 
-
-        <div class="navbar-vertical ">
-            <ul>
-                <li><a href="botones.html">Botones</a></li>
-                <li><a href="formularios.html">Formularios</a></li>
-                <li><a href="#">Tarjetas</a></li>
-                <li><a href="#">Alertas</a></li>
-                <li><a href="#">Navbar</a></li>
-                <li><a href="#">Badges</a></li>
-            </ul>
-        </div>
-
-
-        <div class="container-sm">
+        <div class="container-fluid">
             <section id="botones">
                 <br>
                 <h1 class="titulo1">Botones</h1>
@@ -60,10 +27,15 @@
                 </p>
 
                 <br>
-                <button class="btn-Sakura">Soy un boton</button>
-                <button class="btn-Clow">Soy un boton</button>
-                <button class="btn-Libros">Soy un boton</button>
-                <button class="btn-Kero ">Soy un boton</button>
+                <button class="btn btn-Sakura-Outline">Soy un boton</button>
+                <button class="btn btn-Clow btn-lg shadow-type2">Soy un boton</button>
+                <button class="btn btn-Libros btn-sm">Soy un boton</button>
+                <button class="btn btn-Kero shadow-type3">Soy un boton</button>
+                <!-- Botón deshabilitado -->
+                <button class="btn btn-Clow disabled" aria-disabled="true">Botón deshabilitado</button>
+
+                <!-- Botón habilitado -->
+                <button class="btn btn-Clow">Botón habilitado</button>
                 <br>
                 <br>
                 <div class="margen-general" style="background-color: transparent;">
