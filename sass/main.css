@@ -1649,45 +1649,4 @@ hr {
   color: #009572;
 }
 
-.trail {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: rgba(255, 128, 212, 0.5);
-  pointer-events: none;
-  opacity: 0;
-  animation: trail-animation 1s ease-out infinite;
-}
-
-@keyframes trail-animation {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(3);
-  }
-}
-
-.navbar-vertical {
-  height: 100%; /* Ajusta la altura según tus necesidades */
-  overflow-y: auto; /* Agrega barras de desplazamiento vertical cuando sea necesario */
-}
-
-.navbar-vertical ul {
-  list-style-type: none; /* Elimina los puntos de la lista */
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-vertical li {
-  padding: 8px 16px; /* Agrega algo de espaciado alrededor de los elementos de la lista */
-}
-
-.navbar-vertical a {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: #333; /* Cambia el color del texto según tus preferencias */
-}
 /*# sourceMappingURL=main.css.map */

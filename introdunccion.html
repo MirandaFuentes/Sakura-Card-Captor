@@ -11,6 +11,12 @@
     <title>Introduccion</title>
 </head>
 
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
+
 <body>
     <div class="header">
         <section id="Inicio">
@@ -97,6 +103,17 @@
             </section>
         </div>
     </div>
+    <script>document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });</script>
 </body>
 
 </html>
