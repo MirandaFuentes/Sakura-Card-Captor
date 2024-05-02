@@ -7,6 +7,8 @@
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 .rounded-small {
   border-radius: 4%;
 }
@@ -354,7 +356,26 @@
   padding: 5px;
 }
 
-  color: #333;
+.titulo1_1 {
+  color: #D90404;
+  font-size: 60px;
+  font-family: "Times New Vespasian";
+  font-weight: lighter;
+  text-align: left;
+  padding: 5px;
+}
+
+.titulo1_2 {
+  color: #F21B7F;
+  font-size: 35px;
+  font-family: "Times New Vespasian";
+  font-weight: bolder;
+  text-align: left;
+  padding: 5px;
+}
+
+.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl {
+  color: #F21B7F;
   font-size: 20px;
   font-family: "Times New Vespasian";
   font-weight: bolder;
@@ -495,6 +516,27 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.65;
+  box-shadow: none;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+a.disabled {
+  pointer-events: none;
+}
+
 .btn-lg {
   padding: 10px 16px !important;
   font-size: 30px !important;
@@ -510,34 +552,38 @@
 }
 
 /* Estilos para la clase .btn-primary */
-.btn-Sakura {
+.btn-Sakura, .btn-Sakura-Outline {
   color: #FFC366;
   background-color: #D17C9B;
   border-color: #009572;
 }
 
-.btn-Sakura:hover {
+.btn-Sakura-Outline {
+  background-color: transparent;
+}
+
+.btn-Sakura:hover, .btn-Sakura-Outline:hover {
   color: #F2AEC7;
   background-color: #F21B7F;
   border-color: #009572;
 }
 
-.btn-Sakura:focus {
+.btn-Sakura:focus, .btn-Sakura-Outline:focus {
   box-shadow: #F2AEC7;
 }
 
-.btn-Sakura:active {
+.btn-Sakura:active, .btn-Sakura-Outline:active {
   color: #FFC366;
   background-color: #D17C9B;
   border-color: #009572;
 }
 
-.btn-Sakura:active:focus {
+.btn-Sakura:active:focus, .btn-Sakura-Outline:active:focus {
   box-shadow: #A1774F;
 }
 
 /* Estilos para el botón secundario */
-.btn-Kero, .formulario-crear-cuenta .submit-btn-cuenta {
+.btn-Kero, .formulario-crear-cuenta .submit-btn-cuenta, .btn-Kero-Outline {
   background-color: #F0F2AC;
   color: #734B02;
   border: none;
@@ -547,11 +593,15 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Kero:hover, .formulario-crear-cuenta .submit-btn-cuenta:hover {
+.btn-Kero-Outline {
+  background-color: transparent;
+}
+
+.btn-Kero:hover, .formulario-crear-cuenta .submit-btn-cuenta:hover, .btn-Kero-Outline:hover {
   background-color: #F2AF5C;
 }
 
-.btn-Clow, .formulario-registro .submit-btn-registro, .formulario-reserva .submit-btn-reserva, .formulario-contacto .boton-enviar-contacto {
+.btn-Clow, .formulario-registro .submit-btn-registro, .formulario-reserva .submit-btn-reserva, .formulario-contacto .boton-enviar-contacto, .btn-Clow-Outline {
   background-color: #F28A2E;
   color: #8C1B11;
   border: none;
@@ -561,12 +611,16 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Clow:hover, .formulario-registro .submit-btn-registro:hover, .formulario-reserva .submit-btn-reserva:hover, .formulario-contacto .boton-enviar-contacto:hover {
+.btn-Clow-Outline {
+  background-color: transparent;
+}
+
+.btn-Clow:hover, .formulario-registro .submit-btn-registro:hover, .formulario-reserva .submit-btn-reserva:hover, .formulario-contacto .boton-enviar-contacto:hover, .btn-Clow-Outline:hover {
   background-color: #BF9004;
 }
 
-.btn-Libros {
-  background-color: #A66589;
+.btn-Libros, .btn-Libros-Outline {
+  background-color: #D17C9B;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -575,7 +629,11 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Libros:hover {
+.btn-Libros-Outline {
+  background-color: transparent;
+}
+
+.btn-Libros:hover, .btn-Libros-Outline:hover {
   background-color: #F2CEA2;
 }
 
@@ -1473,6 +1531,119 @@ hr {
   margin-bottom: 8px;
   display: block;
   cursor: pointer;
+}
+
+.shadow-type1 {
+  box-shadow: 2px 2px 4px #F2AEC7;
+}
+
+.shadow-type2 {
+  box-shadow: 4px 4px 8px #F28A2E;
+}
+
+.shadow-type3 {
+  box-shadow: 6px 6px 12px #D17C9B;
+}
+
+.shadow-type4 {
+  box-shadow: 8px 8px 16px #A1774F;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #F2F2F2;
+  background-clip: border-box;
+  border: 1px solid #F280BF;
+  border-radius: 0.25rem;
+  font-family: "Noto Sans";
+  text-align: center;
+}
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card-1 .card-header, .card-4 .card-header, .card-3 .card-header, .card-2 .card-header {
+  background-color: #F21B7F;
+  border-bottom: 1px solid #F280BF;
+  padding: 0.75rem 1rem;
+  font-size: 35px;
+  font-weight: bold;
+}
+.card-1 .card-body, .card-4 .card-body, .card-3 .card-body, .card-2 .card-body {
+  padding: 0.75rem 1rem;
+}
+.card-1 .card-title, .card-4 .card-title, .card-3 .card-title, .card-2 .card-title {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+.card-1 .card-text, .card-4 .card-text, .card-3 .card-text, .card-2 .card-text {
+  margin-bottom: 0.75rem;
+}
+.card-1 .card-link, .card-4 .card-link, .card-3 .card-link, .card-2 .card-link {
+  color: #F21B7F;
+  text-decoration: none;
+}
+.card-1 .card-link:hover, .card-4 .card-link:hover, .card-3 .card-link:hover, .card-2 .card-link:hover {
+  color: #ce0c66;
+  text-decoration: underline;
+}
+.card-1 .card-footer, .card-4 .card-footer, .card-3 .card-footer, .card-2 .card-footer {
+  background-color: #F21B7F;
+  border-top: 1px solid #F280BF;
+  padding: 0.75rem 1rem;
+}
+
+.card-2 .list-group {
+  border-radius: 1px;
+}
+.card-2 .list-group .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  padding: 0.75rem 1rem;
+}
+.card-2 .list-group .list-group-item:first-child {
+  border-top: 0;
+}
+.card-2 .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.card-3 .card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-3 .card-img-bottom {
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.card-4 .card-header {
+  background-color: #F21B7F;
+  color: #F2F2F2;
+}
+.card-4 .card-footer {
+  background-color: #A66589;
+  color: #F2F2F2;
 }
 
 /*# sourceMappingURL=main.css.map */

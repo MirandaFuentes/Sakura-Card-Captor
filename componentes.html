@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="Estilo_Adicional.css">
     <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Componentes</title>
@@ -20,13 +21,16 @@
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 <a href="Index.html" class="enlace">
-                    <img src="Imagenes Sakura/Kero.ico" alt="" class="logo" />
+                    <img src="Imagenes Sakura/Logo%20Sakura.png" alt="" class="logo" />
                 </a>
                 <ul class="lista-desordenada">
                     <li class="item"><a href="Index.html" class="a">Inicio</a></li>
                     <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
                     <li class="item"><a href="#Diseño" class="a">Diseño</a></li>
-                    <li class="item"><a href="#Componentes" class="a">Componentes</a></li>
+                    <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+                    <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git"><div class="btn btn-icon"><i class="fa-brands fa-square-github fa-3x" style="color:#009572;"></i></div></a></li>
+                    <li class="item"><a href="https://youtube.com/playlist?list=PLGpxnliw4VnxbPxV57zvgINmM_0t8V8eo&si=XopHm43TY9qrrcBZ"><div class="btn btn-icon"><i class="fa-solid fa-film fa-3x" style="color:#009572;"></i></div></a></li>
+
                 </ul>
             </nav>
         </section>
@@ -40,7 +44,7 @@
             <ul>
                 <li><a href="botones.html">Botones</a></li>
                 <li><a href="formularios.html">Formularios</a></li>
-                <li><a href="#">Tarjetas</a></li>
+                <li><a href="Tarjetas.html">Tarjetas</a></li>
                 <li><a href="#">Alertas</a></li>
                 <li><a href="#">Navbar</a></li>
                 <li><a href="#">Badges</a></li>
@@ -49,6 +53,9 @@
 
 
         <div class="container-sm -col1">
+            <div id="Contenidos_paginas">
+
+            </div>
             <section id="componentes">
                 <br>
                 <h1 class="titulo1">Componentes</h1>
@@ -76,5 +83,38 @@
         </div>
     </div>
 </body>
+<script>
+    /*// Obtener todos los enlaces del navbar
+    const enlaces = document.querySelectorAll('a');
+
+    // Función para cargar el contenido dinámico
+    function cargarContenido(url) {
+        // Hacer una solicitud fetch a la URL especificada
+        fetch(url)
+            .then(respuesta => respuesta.text())
+            .then(html => {
+                // Actualizar el contenido del div con el HTML obtenido
+                document.getElementById('Contenidos_paginas').innerHTML = html;
+            })
+            .catch(error => console.error(error));
+    }
+
+    // Agregar event listeners a los enlaces
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', evento => {
+            evento.preventDefault(); // Prevenir la navegación predeterminada
+            const url = enlace.getAttribute('href'); // Obtener la URL del enlace
+            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#"
+            || url === "formularios.html") {
+                // Si la URL es una de las páginas principales, cargar el contenido estático
+              window.location.href = url;
+                return;
+            }
+            cargarContenido(url); // Cargar el contenido dinámico
+            let componenteOcultar = document.getElementById('componentes');
+            componenteOcultar.style.display = 'none';
+        });
+    });*/
+</script>
 
 </html>

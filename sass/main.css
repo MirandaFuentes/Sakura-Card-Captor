@@ -7,11 +7,13 @@
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 .rounded-small {
   border-radius: 4%;
 }
 
-.rounded-medium, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .badge-style3, .badge-style3-1, .badge-style3-2, .badge-style3-3, .badge-style3-4 {
+.rounded-medium, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .badge-style3, .badge-style3-1, .badge-style3-2, .badge-style3-3, .badge-style3-4, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva {
   border-radius: 8%;
 }
 
@@ -284,7 +286,7 @@
   position: sticky !important;
 }
 
-.shadow-type1, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4 {
+.shadow-type1, .badge-style1, .badge-style1-1, .badge-style1-2, .badge-style1-3, .badge-style1-4, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto {
   box-shadow: 2px 2px 4px #F2AEC7;
 }
 
@@ -292,7 +294,7 @@
   box-shadow: 4px 4px 8px #F28A2E;
 }
 
-.shadow-type3, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .nav {
+.shadow-type3, .badge-style2, .badge-style2-1, .badge-style2-2, .badge-style2-3, .badge-style2-4, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva, .nav {
   box-shadow: 6px 6px 12px #D17C9B;
 }
 
@@ -311,7 +313,7 @@
 
 .titulo2 {
   color: #F2AEC7;
-  font-size: 35px;
+  font-size: 60px;
   font-family: "Times New Vespasian";
   font-weight: bolder;
   text-align: left;
@@ -357,7 +359,7 @@
 .titulo1_1 {
   color: #D90404;
   font-size: 60px;
-  font-family: "Montserrat";
+  font-family: "Times New Vespasian";
   font-weight: lighter;
   text-align: left;
   padding: 5px;
@@ -372,8 +374,8 @@
   padding: 5px;
 }
 
-.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl, .container-fluid {
-  color: #333;
+.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl {
+  color: #F21B7F;
   font-size: 20px;
   font-family: "Times New Vespasian";
   font-weight: bolder;
@@ -392,7 +394,7 @@
   padding: 5px;
 }
 
-.p3, .navbar-vertical {
+.p3, .navbar-vertical, .container-fluid {
   color: #734B02;
   font-size: 20px;
   font-family: "Noto Sans";
@@ -514,6 +516,27 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.65;
+  box-shadow: none;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+a.disabled {
+  pointer-events: none;
+}
+
 .btn-lg {
   padding: 10px 16px !important;
   font-size: 30px !important;
@@ -529,34 +552,38 @@
 }
 
 /* Estilos para la clase .btn-primary */
-.btn-Sakura {
+.btn-Sakura, .btn-Sakura-Outline {
   color: #FFC366;
   background-color: #D17C9B;
   border-color: #009572;
 }
 
-.btn-Sakura:hover {
+.btn-Sakura-Outline {
+  background-color: transparent;
+}
+
+.btn-Sakura:hover, .btn-Sakura-Outline:hover {
   color: #F2AEC7;
   background-color: #F21B7F;
   border-color: #009572;
 }
 
-.btn-Sakura:focus {
+.btn-Sakura:focus, .btn-Sakura-Outline:focus {
   box-shadow: #F2AEC7;
 }
 
-.btn-Sakura:active {
+.btn-Sakura:active, .btn-Sakura-Outline:active {
   color: #FFC366;
   background-color: #D17C9B;
   border-color: #009572;
 }
 
-.btn-Sakura:active:focus {
+.btn-Sakura:active:focus, .btn-Sakura-Outline:active:focus {
   box-shadow: #A1774F;
 }
 
 /* Estilos para el botón secundario */
-.btn-Kero {
+.btn-Kero, .formulario-crear-cuenta .submit-btn-cuenta, .btn-Kero-Outline {
   background-color: #F0F2AC;
   color: #734B02;
   border: none;
@@ -566,11 +593,15 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Kero:hover {
+.btn-Kero-Outline {
+  background-color: transparent;
+}
+
+.btn-Kero:hover, .formulario-crear-cuenta .submit-btn-cuenta:hover, .btn-Kero-Outline:hover {
   background-color: #F2AF5C;
 }
 
-.btn-Clow {
+.btn-Clow, .formulario-registro .submit-btn-registro, .formulario-reserva .submit-btn-reserva, .formulario-contacto .boton-enviar-contacto, .btn-Clow-Outline {
   background-color: #F28A2E;
   color: #8C1B11;
   border: none;
@@ -580,11 +611,15 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Clow:hover {
+.btn-Clow-Outline {
+  background-color: transparent;
+}
+
+.btn-Clow:hover, .formulario-registro .submit-btn-registro:hover, .formulario-reserva .submit-btn-reserva:hover, .formulario-contacto .boton-enviar-contacto:hover, .btn-Clow-Outline:hover {
   background-color: #BF9004;
 }
 
-.btn-Libros {
+.btn-Libros, .btn-Libros-Outline {
   background-color: #D17C9B;
   color: #fff;
   border: none;
@@ -594,8 +629,17 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Libros:hover {
+.btn-Libros-Outline {
+  background-color: transparent;
+}
+
+.btn-Libros:hover, .btn-Libros-Outline:hover {
   background-color: #F2CEA2;
+}
+
+.aling {
+  display: flex;
+  justify-content: end;
 }
 
 .container {
@@ -613,7 +657,7 @@
 
 .container-md {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   border: 0;
   background-color: #F2AF5C;
 }
@@ -936,7 +980,7 @@
     left: 0;
   }
 }
-.badge-style1 {
+.badge-style1, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto {
   background-color: #F2AEC7;
   color: white;
   padding: 5px 10px;
@@ -966,7 +1010,7 @@
   padding: 5px 10px;
 }
 
-.badge-style2 {
+.badge-style2, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva {
   border: 2px solid #F21B7F;
   color: #734B02;
   padding: 5px 10px;
@@ -1147,33 +1191,19 @@
   align-items: center;
 }
 
-.container-izquierda {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 200px;
-  background-color: #A66589;
-  padding: 20px;
-  box-sizing: border-box;
-  z-index: 999;
-}
-
 .codigo {
-  border: 5px solid #2c3e50;
   border-radius: 5px;
-  background-color: white;
-  color: red;
+  background-color: #BF1B1B;
+  color: #BF1B1B;
   width: 100%;
   height: auto;
 }
 
 .pre {
-  border: 5px solid;
-  border: 5px solid #2c3e50;
+  border: 5px;
   border-radius: 10px;
-  background-color: #2c3e50;
-  color: white;
+  background-color: #F2AEC7;
+  color: rgba(0, 0, 0, 0.7);
   height: auto;
 }
 .pre .code {
@@ -1340,6 +1370,167 @@ hr {
 
 .navbar-vertical a:hover {
   color: #009572;
+}
+
+.formulario-registro {
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: #F2AEC7;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .formulario-registro {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+.formulario-registro .input-field-registro {
+  margin-bottom: 20px;
+}
+.formulario-registro .input-field-registro input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #F2AF5C;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.formulario-registro .error-label-registro {
+  color: #F2A0CD;
+}
+.formulario-crear-cuenta {
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: #F2AEC7;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .formulario-crear-cuenta {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+.formulario-crear-cuenta .input-field-cuenta {
+  margin-bottom: 20px;
+}
+.formulario-crear-cuenta .input-field-cuenta input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #BF9004;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.formulario-crear-cuenta .error-label-cuenta {
+  color: #F2CEA2;
+}
+.formulario-crear-cuenta .label-formulario-cuenta {
+  font-family: "Noto Sans";
+  color: #F2CF63;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.formulario-reserva {
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: #F2AEC7;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .formulario-reserva {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+.formulario-reserva .input-field-reserva {
+  margin-bottom: 20px;
+}
+.formulario-reserva .input-field-reserva input,
+.formulario-reserva .input-field-reserva textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #BF9004;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.formulario-reserva .error-label-reserva {
+  color: #F2CEA2;
+}
+.formulario-reserva .label-formulario-reserva {
+  font-family: "Noto Sans";
+  color: #734B02;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.formulario-contacto {
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: #F2AEC7;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .formulario-contacto {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+.formulario-contacto .input-contacto {
+  margin-bottom: 20px;
+}
+.formulario-contacto .input-contacto input,
+.formulario-contacto .input-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #F2AF5C;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.formulario-contacto .error-contacto {
+  color: #F2A0CD;
+}
+.formulario-contacto .label-contacto {
+  font-family: "Noto Sans";
+  color: #734B02;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  cursor: pointer;
 }
 
 .shadow-type1 {
