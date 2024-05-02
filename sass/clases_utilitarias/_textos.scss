@@ -40,7 +40,7 @@
     padding: 5px;
 }
 .titulo1_1 {
-    @include modificartexto($color-libro-Sakura5, $big, $font-family2, $font-weight3);
+    @include modificartexto($color-libro-Sakura5, $big, $font-family1, $font-weight3);
     padding: 5px;
 }
 .titulo1_2 {
@@ -49,7 +49,7 @@
 }
 
 .p1{
-    @include modificartexto($color-texto-destacado, $small, $font-family1,$font-weight1,$text-align:$text-align-justify);
+    @include modificartexto($color-libro-Sakura1, $small, $font-family1, $font-weight1, $text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
 }
