@@ -495,7 +495,6 @@
   font-weight: bolder;
   text-align: justify;
   text-align: justify;
-  text-align: justify;
   padding: 5px;
 }
 
@@ -1708,16 +1707,16 @@ hr {
 }
 
 body {
-  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/Sakura-Card-Captor/main/Imagenes%20Sakura/Varita-mouse.png?token=GHSAT0AAAAAACRZPTDSLXT5R32BX7HHZCN4ZRUO2RQ"), auto;
+  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/imagenes/main/Varita-mouse.png"), auto;
 }
 body * {
   cursor: inherit;
 }
 body *:active {
-  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/Sakura-Card-Captor/main/Imagenes%20Sakura/Varita-mouse.png?token=GHSAT0AAAAAACRZPTDSLXT5R32BX7HHZCN4ZRUO2RQ"), auto;
+  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/imagenes/main/Varita-mouse.png"), auto;
 }
 body button {
-  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/Sakura-Card-Captor/main/Imagenes%20Sakura/Varita-mouse.png?token=GHSAT0AAAAAACRZPTDSLXT5R32BX7HHZCN4ZRUO2RQ"), auto;
+  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/imagenes/main/Varita-mouse.png"), auto;
 }
 
 .navbar-vertical {
