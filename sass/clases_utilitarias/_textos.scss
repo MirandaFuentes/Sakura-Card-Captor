@@ -64,6 +64,11 @@
     text-align: justify;
     padding: 5px;
 }
+.p4{
+    @include modificartexto(white, $small, $font-family1, $font-weight1, $text-align:$text-align-justify);
+    text-align: justify;
+    padding: 5px;
+}
 @media (max-width: 952px){
     .titulo1{
         font-size: 70px;
