@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Componentes</title>
+</head>
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
+
+<body>
+<div class="cursor-trail"></div>
+    <div class="header">
+        <section id="Inicio">
+            <nav class="nav">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="Index.html" class="enlace">
+                    <img src="Imagenes Sakura/Logo%20Sakura.png" alt="" class="logo" />
+                </a>
+                <ul class="lista-desordenada">
+                    <li class="item"><a href="Index.html" class="a">Inicio</a></li>
+                    <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
+                    <li class="item"><a href="#Diseño" class="a">Diseño</a></li>
+                    <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+                    <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git"><div class="btn btn-icon"><i class="fa-brands fa-square-github fa-3x" style="color:#009572;"></i></div></a></li>
+                    <li class="item"><a href="https://youtube.com/playlist?list=PLGpxnliw4VnxbPxV57zvgINmM_0t8V8eo&si=XopHm43TY9qrrcBZ"><div class="btn btn-icon"><i class="fa-solid fa-film fa-3x" style="color:#009572;"></i></div></a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    </div>
+
+    <div class="contenido ">
+
+
+        <div class="navbar-vertical ">
+            <ul>
+                <li><a href="botones.html">Botones</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="Tarjetas.html">Tarjetas</a></li>
+                <li><a href="#">Alertas</a></li>
+                <li><a href="navbar.html">Navbar</a></li>
+                <li><a href="badges.html">Badges</a></li>
+            </ul>
+        </div>
+
+
+        <div class="container-sm -col1">
+            <div id="Contenidos_paginas">
+
+            </div>
+            <section id="componentes">
+                <br>
+                <h1 class="titulo1">Componentes</h1>
+                <br>
+                <p class="p3">
+                    Los componentes de la librería Sakura Card Captor son elementos de interfaz de usuario
+                    inspirados en el encanto y la magia del anime Sakura Card Captor. Cada componente está diseñado
+                    para reflejar la estética delicada y soñadora de la serie, mientras que proporciona funcionalidades
+                    modernas y receptivas para el desarrollo web.
+                </p>
+                <br>
+                <p class="p3">
+                    Desde los botones hasta tarjetas con ilustraciones encantadoras, estos componentes
+                    transportan a los usuarios a un mundo de fantasía mientras navegan por las aplicaciones web. Con una
+                    paleta de colores suaves y pastel, combinada con elementos de diseño sutilmente ornamentados, los
+                    componentes de Sakura Card Captor agregan un toque de magia y elegancia a cualquier proyecto web.
+                </p>
+                <br>
+                <p class="p3">
+                    Ya sea creando un formulario de registro mágico o una barra de navegación encantadora, los
+                    desarrolladores pueden aprovechar estos componentes para crear experiencias de usuario memorables y
+                    cautivadoras que capturan la esencia de la serie "Sakura Card Captor".
+                </p>
+            </section>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });
+    /*// Obtener todos los enlaces del navbar
+    const enlaces = document.querySelectorAll('a');
+
+    // Función para cargar el contenido dinámico
+    function cargarContenido(url) {
+        // Hacer una solicitud fetch a la URL especificada
+        fetch(url)
+            .then(respuesta => respuesta.text())
+            .then(html => {
+                // Actualizar el contenido del div con el HTML obtenido
+                document.getElementById('Contenidos_paginas').innerHTML = html;
+            })
+            .catch(error => console.error(error));
+    }
+
+    // Agregar event listeners a los enlaces
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', evento => {
+            evento.preventDefault(); // Prevenir la navegación predeterminada
+            const url = enlace.getAttribute('href'); // Obtener la URL del enlace
+            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#"
+            || url === "formularios.html") {
+                // Si la URL es una de las páginas principales, cargar el contenido estático
+              window.location.href = url;
+                return;
+            }
+            cargarContenido(url); // Cargar el contenido dinámico
+            let componenteOcultar = document.getElementById('componentes');
+            componenteOcultar.style.display = 'none';
+        });
+    });*/
+</script>
+
+</html>

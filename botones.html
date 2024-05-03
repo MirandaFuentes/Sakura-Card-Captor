@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambio el idioma a español, ya que el contenido está en español -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image/x-icon"> <!-- Cambié "image" por "image/x-icon" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Botones</title>
+</head>
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
+<body>
+<div class="header">
+    <section id="Inicio">
+        <nav class="nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="Index.html" class="enlace">
+                <img src="Imagenes Sakura/Logo%20Sakura.png" alt="Logo Sakura" class="logo" /> <!-- Añadí texto alternativo al logo -->
+            </a>
+            <ul class="lista-desordenada">
+                <li class="item"><a href="Index.html" class="a">Inicio</a></li>
+                <li class="item"><a href="introduccion.html" class="a">Introducción</a></li> <!-- Corrijo el nombre del archivo -->
+                <li class="item"><a href="#Diseño" class="a">Diseño</a></li>
+                <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+            </ul>
+        </nav>
+    </section>
+</div>
+
+<div class="contenido">
+    <div class="navbar-vertical">
+        <ul>
+            <li><a href="botones.html">Botones</a></li>
+            <li><a href="formularios.html">Formularios</a></li>
+            <li><a href="tarjetas.html">Tarjetas</a></li> <!-- Mantengo consistencia con las letras minúsculas -->
+            <li><a href="#">Alertas</a></li>
+            <li><a href="navbar.html">Navbar</a></li>
+            <li><a href="badges.html">Badges</a></li>
+        </ul>
+    </div>
+
+    <div class="container-sm">
+        <section id="botones">
+            <h1 class="titulo1">Botones</h1> <!-- Eliminar el exceso de <br> -->
+            <p class="p3">
+                Los botones de la librería Sakura Card Captor traen consigo un diseño encantador y lleno de magia,
+                con una amplia gama de colores suaves y pastel. Estos botones están diseñados para añadir un toque
+                de elegancia y encanto a cualquier página web.
+            </p>
+
+            <div class="botones">
+                <button class=" btn btn-lg btn-Sakura">Soy un botón</button>
+                <button class=" btn btn-lg btn-Clow">Soy un botón</button>
+                <button class=" btn btn-lg btn-Kero">Soy un botón</button>
+                <button class=" btn btn-lg btn-Libros">Soy un botón</button><br><br>
+                <button class=" btn btn-sm btn-Sakura">Soy un botón</button>
+                <button class=" btn btn-sm btn-Clow">Soy un botón</button>
+                <button class=" btn btn-sm btn-Kero">Soy un botón</button>
+                <button class=" btn btn-sm btn-Libros">Soy un botón</button><br><br>
+                <button class=" btn btn-Sakura-Outline btn-Sakura">Soy un botón</button>
+                <button class=" btn btn-Clow-Outline btn-Clow">Soy un botón</button>
+                <button class=" btn btn-Kero-Outline btn-Kero">Soy un botón</button>
+                <button class=" btn btn-Libros-Outline btn-Libros">Soy un botón</button>
+
+            </div>
+        </section>
+    </div>
+</div>
+<script>document.addEventListener('mousemove', function (e) {
+    const trail = document.createElement('div');
+    trail.classList.add('trail');
+    trail.style.left = `${e.clientX - 8}px`;
+    trail.style.top = `${e.clientY - 8}px`;
+    document.body.appendChild(trail);
+
+    setTimeout(function () {
+        trail.remove();
+    }, 1000);
+});</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/textos';
+@use '../clases_utilitarias/sombras';
+
+// Estilos para el navbar vertical
+.navbar-vertical {
+    background-color: colores.$color-Carta-Clow1; 
+    padding: 10px; 
+    position: fixed; 
+    top: 80px; 
+    left: 0; 
+    height: 100%;
+    @extend .shadow-type4;
+    @extend .p3;
+}
+
+.navbar-vertical ul {   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar-vertical li {
+    margin-bottom: 5px; 
+}
+
+.navbar-vertical a {
+    display: inline-block;
+    padding: 15px 15px; 
+    color: colores.$color-Carta-Clow2; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+    
+}
+
+.navbar-vertical a:hover {
+    color: colores.$color-Sakura-ayes; 
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Introduccion</title>
+</head>
+
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <section id="Inicio">
+          <nav class="nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="Index.html" class="enlace">
+              <img src="Imagenes Sakura/Logo%20Sakura.png" alt="" class="logo"/>
+            </a>
+            <ul class="lista-desordenada">
+              <li class="item"><a href="Index.html" class="a" >Inicio</a></li>
+              <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
+              <li class="item"><a href="#Diseño" class="a">Diseño</a></li>
+              <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </div>
+    
+    <div class="contenido ">
+
+        <div class="container-fluid">
+            <section id="Introduccion">
+                <br>
+                <h1 class="titulo1">Introducción</h1>
+                <br>
+                <p class="p1"> Bienvenido a Sakura Card Captor Library, donde la magia del diseño web se encuentra
+                    con el encanto del anime. Con Sakura Card Captor Library, sumérgete en un mundo de estilos
+                    cuidadosamente elaborados inspirados en la estética mágica y colorida del universo de Sakura
+                    Card Captor.
+                    <br>
+                    <p class="p1">Desarrollada con Sass, esta librería ofrece mucho más que simples estilos CSS. Sass
+                        nos permite desbloquear un poder especial: anidamiento, variables, mixins y más, todo ello para
+                        hacer que nuestro código CSS sea más limpio, más eficiente y más fácil de mantener. Con Sakura
+                        Card Captor Library, el diseño web se vuelve tan fluido y elegante como un hechizo bien lanzado.
+                    </p>
+                    <br>
+                    <p class="p1">Diseñada por un equipo de apasionados desarrolladores, Sakura Card Captor Library es
+                        un framework de diseño web de código abierto que fusiona la estética del anime con las mejores
+                        prácticas de diseño web. Con una amplia gama de estilos y componentes predefinidos, esta
+                        librería hace que la creación de interfaces de usuario atractivas y responsivas sea tan sencilla
+                        como invocar una carta Clow.</p>
+                    <br>
+                    <p class="p1">
+                        Sakura Card Captor Library te ofrece todas las herramientas que necesitas para dar vida a tus
+                        ideas. Personalizable y fácilmente integrable con otros frameworks y bibliotecas, Sakura Card
+                        Captor Library es la elección perfecta para los desarrolladores que desean añadir un toque de
+                        magia a sus proyectos web.
+                    </p>
+                    <br>
+                    <p class="p1">¡Únete a nosotros y deja que Sakura Card Captor Library te guíe en un viaje hacia un
+                        diseño web más mágico y encantador que nunca!
+                    </p>
+                    <br>
+                    <h1 class="titulo1">Acerca de SASS</h1>
+                    <br>
+                    <p class="p1">Sass (Syntactically Awesome Style Sheets) es un preprocesador de CSS que permite
+                        escribir
+                        hojas de estilo de manera más eficiente y organizada. Permite el uso de variables, anidamiento
+                        de
+                        selectores, mixins, funciones, entre otras características que no están disponibles en CSS puro.
+                    </p>
+                    <br>
+                    <p class="p1">Con Sass, se puede crear un archivo .scss (o .sass) que luego se compilará en un
+                        archivo .css
+                        válido. De esta manera, se pueden mantener las ventajas de la legibilidad del código y la
+                        modularidad,
+                        sin sacrificar la compatibilidad con los navegadores.</p>
+                    <br>
+                    <h1 class="titulo2">Acerca de Bootstrap </h1>
+                    <br>
+                    <p class="p1">Es uno de los frameworks de diseño web más populares y ampliamente utilizados en la
+                        industria,
+                        lo que significa que hay una gran cantidad de recursos y documentación disponible para aprender
+                        y
+                        utilizar este framework. Además, existe una amplia comunidad de desarrolladores y diseñadores
+                        que
+                        contribuyen a su desarrollo y mejora constante.</p>
+                    <br>
+                    
+            </section>
+        </div>
+    </div>
+    <script>document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });</script>
+</body>
+
+</html>
