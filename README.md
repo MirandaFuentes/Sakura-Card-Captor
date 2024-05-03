@@ -1,8 +1,8 @@
 PROYECTO I - HDP
-![Logo](Logo Sakura.png)
+![Logo](Logo%20Sakura.png)
 # Sakura-Card-Captor
 
-# Descripción de la Libreruia Sakura Card Captor.
+# Descripción de la Libreria Sakura Card Captor.
 
 Es una serie escrita e ilustrada por el grupo de Mangaka "CLAMP" y posteriormente la adaptacion al anime fue dirigida por Morio Asaka.
 
@@ -15,23 +15,23 @@ Nuestro proyecto estara basado en la tematica de esta serie, la estetica y el di
 Desde que nuestros usuarios ingresen a la libreria seran transportados a un mundo lleno de color, fantasia y aventura. Esta tematica te atraera desde su diseño encantador hasta su funcionalidad, se invita a los usuarios a sumergirse en el mundo magico y emocionante de "Sakura Card Captor".
 
 # Creadores.
-Melida Fuentes Miranda
-Carlos Orlando 
-Alexander Antolino
-Diana Estefani
+Melida Fuentes Miranda <br>
+Carlos Orlando <br>
+Alexander Antolino<br>
+Diana Estefani<br>
 
 # Tabla de contenidos.
- -Botones.
- -Formularios.
- -Tarjetas.
- -Alertas.
- -Barras de navegación.
- -Badges.
- -Contenedores.
- -Estilos de textos.
- -Tipos de sombras.
- -Estilos de padding, margénes y bordes.
- -Estilos de movimiento de elemntos.
- -Estilo para rendondeo de elementos.
- -Ocultar elementos.
- -Paletas de colores y estilo de fondos.
+ -Botones. <br>
+ -Formularios. <br>
+ -Tarjetas. <br>
+ -Alertas. <br>
+ -Barras de navegación. <br>
+ -Badges. <br>
+ -Contenedores. <br>
+ -Estilos de textos. <br>
+ -Tipos de sombras. <br>
+ -Estilos de padding, margénes y bordes. <br>
+ -Estilos de movimiento de elemntos. <br>
+ -Estilo para rendondeo de elementos. <br>
+ -Ocultar elementos.<br>
+ -Paletas de colores y estilo de fondos. <br>
