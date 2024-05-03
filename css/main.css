@@ -462,7 +462,7 @@
 }
 
 .titulo6 {
-  color: #F2CF63;
+  color: #F0F2AC;
   font-size: 35px;
   font-family: "Noto Sans";
   font-weight: bold;
@@ -605,7 +605,7 @@
   font-style: italic;
 }
 
-.badge-style1, .formulario-registro .info-badge-registro, .formulario-contacto .info-badge-contacto {
+.badge-style1 {
   padding: 2px 5px;
 }
 
@@ -625,7 +625,7 @@
   padding: 2px 5px;
 }
 
-.badge-style2, .formulario-crear-cuenta .info-badge-cuenta, .formulario-reserva .info-badge-reserva {
+.badge-style2 {
   padding: 2px 5px;
 }
 
@@ -890,7 +890,7 @@ a.disabled {
 }
 
 /* Estilos para el botón secundario */
-.btn-Kero, .formulario-crear-cuenta .submit-btn-cuenta, .btn-Kero-Outline {
+.btn-Kero, .btn-Kero-Outline {
   background-color: #F0F2AC;
   color: #734B02;
   border-color: #F0F2AC;
@@ -904,11 +904,11 @@ a.disabled {
   background-color: transparent;
 }
 
-.btn-Kero:hover, .formulario-crear-cuenta .submit-btn-cuenta:hover, .btn-Kero-Outline:hover {
+.btn-Kero:hover, .btn-Kero-Outline:hover {
   background-color: #F2AF5C;
 }
 
-.btn-Clow, .formulario-registro .submit-btn-registro, .formulario-reserva .submit-btn-reserva, .formulario-contacto .boton-enviar-contacto, .btn-Clow-Outline {
+.btn-Clow, .btn-Clow-Outline {
   background-color: #F28A2E;
   color: #8C1B11;
   border-color: #F28A2E;
@@ -922,7 +922,7 @@ a.disabled {
   background-color: transparent;
 }
 
-.btn-Clow:hover, .formulario-registro .submit-btn-registro:hover, .formulario-reserva .submit-btn-reserva:hover, .formulario-contacto .boton-enviar-contacto:hover, .btn-Clow-Outline:hover {
+.btn-Clow:hover, .btn-Clow-Outline:hover {
   background-color: #BF9004;
 }
 
@@ -961,7 +961,7 @@ a.disabled {
 }
 
 .card {
-  position: relative;
+  position: static;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -1318,9 +1318,7 @@ a.disabled {
   border-radius: 5px;
   font-size: 16px;
 }
-.formulario-registro .error-label-registro {
-  color: #F2A0CD;
-}
+
 .formulario-crear-cuenta {
   margin-left: 10px;
   height: auto;
@@ -1351,12 +1349,9 @@ a.disabled {
   border-radius: 5px;
   font-size: 16px;
 }
-.formulario-crear-cuenta .error-label-cuenta {
-  color: #F2CEA2;
-}
 .formulario-crear-cuenta .label-formulario-cuenta {
   font-family: "Noto Sans";
-  color: #F2CF63;
+  color: #F0F2AC;
   font-size: 16px;
   margin-bottom: 8px;
   display: block;
@@ -1393,9 +1388,6 @@ a.disabled {
   border: 2px solid #BF9004;
   border-radius: 5px;
   font-size: 16px;
-}
-.formulario-reserva .error-label-reserva {
-  color: #F2CEA2;
 }
 .formulario-reserva .label-formulario-reserva {
   font-family: "Noto Sans";
@@ -1436,9 +1428,6 @@ a.disabled {
   border: 2px solid #F2AF5C;
   border-radius: 5px;
   font-size: 16px;
-}
-.formulario-contacto .error-contacto {
-  color: #F2A0CD;
 }
 .formulario-contacto .label-contacto {
   font-family: "Noto Sans";
@@ -1704,6 +1693,34 @@ hr {
 
 .navbar-vertical a:hover {
   color: #009572;
+}
+
+body {
+  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/imagenes/main/Varita-mouse.png"), auto;
+}
+body * {
+  cursor: inherit;
+}
+body *:active {
+  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/imagenes/main/Varita-mouse.png"), auto;
+}
+body button {
+  cursor: url("https://raw.githubusercontent.com/MirandaFuentes/imagenes/main/Varita-mouse.png"), auto;
+}
+
+.navbar-vertical {
+  height: 100%;
+  overflow-y: auto;
+}
+.navbar-vertical::-webkit-scrollbar {
+  width: 8px;
+}
+.navbar-vertical::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.navbar-vertical::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=main.css.map */

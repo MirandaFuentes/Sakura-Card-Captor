@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Componentes</title>
 </head>
-<style>
-    body {
-        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
-    }
-</style>
 
 <body>
 <div class="cursor-trail"></div>
@@ -100,7 +95,7 @@
             trail.remove();
         }, 1000);
     });
-    /*// Obtener todos los enlaces del navbar
+    // Obtener todos los enlaces del navbar
     const enlaces = document.querySelectorAll('a');
 
     // Función para cargar el contenido dinámico
@@ -111,6 +106,11 @@
             .then(html => {
                 // Actualizar el contenido del div con el HTML obtenido
                 document.getElementById('Contenidos_paginas').innerHTML = html;
+
+                let dataObtener = document.getElementById("botones");
+
+                document.getElementById('Contenidos_paginas').innerHTML = dataObtener.innerHTML;
+
             })
             .catch(error => console.error(error));
     }
@@ -120,17 +120,17 @@
         enlace.addEventListener('click', evento => {
             evento.preventDefault(); // Prevenir la navegación predeterminada
             const url = enlace.getAttribute('href'); // Obtener la URL del enlace
-            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#"
-            || url === "formularios.html") {
+            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#") {
                 // Si la URL es una de las páginas principales, cargar el contenido estático
               window.location.href = url;
                 return;
             }
             cargarContenido(url); // Cargar el contenido dinámico
+
             let componenteOcultar = document.getElementById('componentes');
             componenteOcultar.style.display = 'none';
         });
-    });*/
+    });
 </script>
 
 </html>
