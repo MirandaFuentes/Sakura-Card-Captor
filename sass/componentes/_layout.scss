@@ -3,6 +3,7 @@
 @use '../clases_utilitarias/margin-padding-border';
 @use '../clases_utilitarias/movimiento-elemntos';
 @use '../clases_utilitarias/sombras';
+@use '../clases_utilitarias/textos';
 
 //Diseño de 4x4
 .header{
@@ -24,11 +25,10 @@
 .footer{
     @include columnas-filas-grid.area-col(1,2);
     @include columnas-filas-grid.area-row(3,4);
-    background: #151c22;
+    background: colores.$color_Sakura-dress1;
     height: 200px;
     display: flex;
     align-items:center;
-
 }
     
 .codigo{
@@ -40,7 +40,6 @@
 }
 
 .pre{
-    border: 5px;
     border-radius: 10px;
     background-color: colores.$color_Sakura-dress1;
     color: colores.$color-menu;
@@ -48,6 +47,8 @@
     .code{
         width: 100%;
         height: auto;
+        font-size: 15px;
+        font-weight: bold;
     }
 }
 
@@ -87,6 +88,7 @@
     margin: 0;
     padding: 0;
     table-layout: fixed;
+    @extend .p2;
 }
 
 .table caption {
@@ -164,11 +166,13 @@ hr{
     height: 10pxs;
 }
 
-.Ñogo{
+.devFooter{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 10px;
+    margin-left: 30%;
 }
 
 .logo_footer{
