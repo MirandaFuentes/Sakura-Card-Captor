@@ -26,3 +26,6 @@
 @use 'componentes/grid';
 @use 'componentes/layout';
 @use 'componentes/sidebar';
+
+// Importar archivos desde la carpeta funcionalidades
+@use 'funcionalidades/funcionalidades';

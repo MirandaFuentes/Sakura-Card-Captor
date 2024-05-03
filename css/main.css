@@ -961,7 +961,7 @@ a.disabled {
 }
 
 .card {
-  position: relative;
+  position: static;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -1704,6 +1704,34 @@ hr {
 
 .navbar-vertical a:hover {
   color: #009572;
+}
+
+body {
+  cursor: url("../../Imagenes Sakura/Varita-mouse.png"), auto;
+}
+body * {
+  cursor: inherit;
+}
+body *:active {
+  cursor: url("../../Imagenes Sakura/Varita-mouse.png"), auto;
+}
+body button {
+  cursor: url("../../Imagenes Sakura/Varita-mouse.png"), auto;
+}
+
+.navbar-vertical {
+  height: 100%;
+  overflow-y: auto;
+}
+.navbar-vertical::-webkit-scrollbar {
+  width: 8px;
+}
+.navbar-vertical::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.navbar-vertical::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=main.css.map */
