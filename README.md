@@ -1,5 +1,5 @@
-PROYECTO I - HDP
-![Logo](Logo%20Sakura.png)
+PROYECTO I - HDP <br>
+![Logo](Logo%20Sakura.png) <br>
 # Sakura-Card-Captor
 
 # Descripción de la Libreria Sakura Card Captor.
