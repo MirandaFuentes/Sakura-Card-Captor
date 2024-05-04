@@ -11,6 +11,30 @@
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+.element {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .element {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .element {
+    width: 33.33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .element {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .element {
+    width: 20%;
+  }
+}
+
 .Fondo-Sakura {
   background-color: #F2AEC7;
 }
@@ -693,6 +717,30 @@
 .badge-style4-4 {
   color: #333;
   padding: 2px 5px;
+}
+
+.element {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .element {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .element {
+    width: 33.33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .element {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .element {
+    width: 20%;
+  }
 }
 
 .rounded-small {
