@@ -6,12 +6,10 @@
 .navbar-vertical {
     background-color: colores.$color-Carta-Clow1; 
     padding: 10px; 
-    position: fixed; 
-    top: 80px; 
-    left: 0; 
-    height: 100%;
     @extend .shadow-type4;
     @extend .p3;
+    margin-right: 20px;
+    width: 100%;
 }
 
 .navbar-vertical ul {   
@@ -19,6 +17,7 @@
     padding: 0;
     margin: 0;
     height: 100%;
+    position: fixed;
 }
 
 .navbar-vertical li {
