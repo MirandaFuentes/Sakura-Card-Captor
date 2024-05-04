@@ -22,23 +22,3 @@ $breakpoints: (
       @content;
   }
 }
-
-.element {
-  width: 100%;
-
-  @include breakpoints_min(sm) {
-    width: 50%; 
-  }
-
-  @include breakpoints_min(md) {
-    width: 33.33%; 
-  }
-
-  @include breakpoints_min(lg) {
-    width: 25%;
-  }
-
-  @include breakpoints_max(xl) {
-    width: 20%; 
-  }
-}
