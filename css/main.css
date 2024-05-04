@@ -488,7 +488,7 @@
   padding: 5px;
 }
 
-.p1, .container, .container-md, .container-lg, .container-xl, .container-xxl {
+.p1, .container-md, .container-lg, .container-xl, .container-xxl {
   color: #F21B7F;
   font-size: 20px;
   font-family: "Times New Vespasian";
@@ -1057,17 +1057,6 @@ a.disabled {
   color: #F2F2F2;
 }
 
-.aling {
-  display: flex;
-  justify-content: end;
-}
-
-.container {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 .container-sm {
   margin: 0;
   padding: 0;
@@ -1482,6 +1471,31 @@ a.disabled {
   grid-template-rows: 1fr;
 }
 
+@media screen and (min-width: 576px) {
+  .-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -1496,8 +1510,6 @@ a.disabled {
   margin: 1px 20px;
   padding: 0px 40px;
   margin-top: 13vh;
-  display: flex;
-  justify-content: center;
 }
 
 .footer {
@@ -1553,10 +1565,23 @@ a.disabled {
   }
 }
 .container {
+  padding: 0 40px;
+  margin-top: 13vh;
   width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  height: auto;
+  margin-left: -40px;
+  height: 87vh;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    height: auto;
+  }
+}
+
+.container-nav-vertical {
+  height: 100%;
+  padding: 0 40px;
+  margin-left: -40px;
+  width: 240px;
 }
 
 .table {
@@ -1580,7 +1605,8 @@ a.disabled {
   border: 1px solid #ddd;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   font-size: 16px;
   padding: 8px;
   text-align: center;
@@ -1614,7 +1640,8 @@ a.disabled {
     border-bottom: 4px solid #ddd;
     display: block;
   }
-  .table th, .table td {
+  .table th,
+  .table td {
     font-size: 12px;
   }
   .table td {
@@ -1640,7 +1667,7 @@ img {
 hr {
   border: 3px #151c22 solid;
   border-radius: 5px;
-  height: 10pxs;
+  height: 10px;
 }
 
 .devFooter {
@@ -1666,10 +1693,8 @@ hr {
 .navbar-vertical {
   background-color: #A66589;
   padding: 10px;
-  position: fixed;
-  top: 80px;
-  left: 0;
-  height: 100%;
+  margin-right: 20px;
+  width: 100%;
 }
 
 .navbar-vertical ul {
@@ -1677,6 +1702,7 @@ hr {
   padding: 0;
   margin: 0;
   height: 100%;
+  position: fixed;
 }
 
 .navbar-vertical li {
