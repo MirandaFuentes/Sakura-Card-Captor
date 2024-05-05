@@ -8,13 +8,9 @@
     <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Shadow</title>
+    <title>Colores</title>
 </head>
-<style>
-    body {
-        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
-    }
-</style>
+
 <body>
     <div class="header">
         <section id="Inicio">
@@ -42,9 +38,9 @@
                 </ul>
             </nav>
         </section>
-    </div> 
+    </div>
 
-    <div class="container -grid fila -col2" style="grid-template-columns: 25% 90%;">
+    <div class="container -grid fila -col2" style="grid-template-columns: 30% 75%;">
         <div class="container-nav-vertical">
             <nav class="navbar-vertical">
                 <input type="checkbox" id="check1" />
@@ -118,90 +114,83 @@
 
         <div class="container-fluid">
             <br>
-            <h1 class="titulo1">Shadow</h1>
+            <h1 class="titulo1">Colores</h1>
             <br>
-            <p class="p3">
-                Las sombras de la librería 'Sakura Card Captor' son más que simples efectos visuales; son un juego sutil de 
-                luces y matices que añaden profundidad y elegancia a tu diseño. Inspiradas en la magia y la gracia de Sakura, 
-                estas sombras están diseñadas para realzar cada elemento con un toque encantador.
+            <p class="p3">La clase colores es una clase de estilo diseñada para el sitio web de Sakura,
+                 que cuenta con una variedad de colores vibrantes y atractivos inspirados en la estética
+                 de la serie Sakura Card Captor. Esta clase se utiliza para aplicar estos colores específicos 
+                 a diferentes elementos y componentes del sitio web,
+                 lo que contribuye a crear una experiencia visual encantadora y cohesiva para los visitantes.
             </p>
             <br>
-            <div class="container-fluid">
-                <div class="shadow-type1">
-                    <p class="titulo2">Sombras Tipo 1</p>
-                </div>
+            <div class="container-fluid ">
+                <pre class="pre">
+                    <code class="code">
+                        _colores.scss
 
-                <br>
+                        //Colores Sakura
+                        $color_Sakura-dress1: #F2AEC7;
+                        $color_Sakura-ayes: #009572;
+                        $color_Sakura-dress2:#D17C9B;
+                        $color_Sakura-hair: #A1774F;
+                        $color_Sakura-Wand: #FFC366;
+                        
+                        //Libro Sakura
+                        $color-libro-Sakura1: #F21B7F;
+                        $color-libro-Sakura2: #F280BF;
+                        $color-libro-Sakura3: #F2BA52;
+                        $color-libro-Sakura4: #F2AF5C;
+                        $color-libro-Sakura5: #D90404;
+                        
+                        // libro Clow
+                        $color-Libro-clow1: #D9B811;
+                        $color-Libro-clow2: #BF9004;
+                        $color-Libro-clow3: #734B02;
+                        $color-Libro-clow4: #8C1B11;
+                        $color-Libro-clow5: #BF1B1B;
+                        
+                        //Carta Sakura
+                        $Color-Carta-Sakura-1-hex: #F2A0CD;
+                        $Color-Carta-Sakura-2-hex: #F2C9E0;
+                        $Color-Carta-Sakura-3-hex: #F0F2AC;
+                        $Color-Carta-Sakura-4-hex: #F2CF63;
+                        $Color-Carta-Sakura-5-hex: #F2B28D;
+                        
+                        // Carta clow
+                        $color-Carta-Clow1: #A66589;
+                        $color-Carta-Clow2: #F2B705;
+                        $color-Carta-Clow3: #F2CEA2;
+                        $color-Carta-Clow4: #F28A2E;
+                        $color-Carta-Clow5: #F2F2F2;
+                        
+                        $color-texto-destacado: #333;
+                        $color-menu: rgba(0, 0, 0, 0.7);
+                        
+                        // Colores de fondo
+                        .bg-sakura-dress1 {
+                            background-color: $color_Sakura-dress1; // #F2AEC7
+                        }
+                        
+                        .bg-libro-sakura1 {
+                            background-color: $color-libro-Sakura1; // #F21B7F
+                        }
+                        
+                        .bg-carta-sakura-1 {
+                            background-color: $Color-Carta-Sakura-1-hex; // #F2A0CD
+                        }
+                        
+                        .bg-carta-clow1 {
+                            background-color: $color-Carta-Clow1; // #A66589
+                        }
+                        
+                        .bg-carta-clow5 {
+                            background-color: $color-Carta-Clow5; // #F2F2F2
+                        }
+                        
+                        
+                  </pre>
             </div>
-            <div class="container-fluid">
-                <pre class="pre"><code class="code">
-                &lt;div class="shadow-type1"&gt;
-                &lt;p class="titulo2"&gt;Sombras Tipo 1&lt;/p&gt;
-                &lt;/div&gt;
-                </code></pre>
-              </div>
-              <br>
-
-
-            <div class="container-fluid">
-                <div class="shadow-type2">
-                    <p class="titulo2">Sombras Tipo 2</p>
-                </div>
-
-                <br>
-            </div>
-            <div class="container-fluid">
-                <pre class="pre"><code class="code">
-                &lt;div class="shadow-type2"&gt;
-                &lt;p class="titulo2"&gt;Sombras Tipo 2&lt;/p&gt;
-                &lt;/div&gt;
-                </code></pre>
-              </div>
-              <br>
-
-              <div class="container-fluid">
-                <div class="shadow-type3">
-                    <p class="titulo2">Sombras Tipo 3</p>
-                </div>
-
-                <br>
-            </div>
-            <div class="container-fluid">
-                <pre class="pre"><code class="code">
-                &lt;div class="shadow-type3"&gt;
-                &lt;p class="titulo2"&gt;Sombras Tipo 3&lt;/p&gt;
-                &lt;/div&gt;
-                </code></pre>
-              </div>
-              <br>
-              <div class="container-fluid">
-                <div class="shadow-type4">
-                    <p class="titulo2">Sombras Tipo 4</p>
-                </div>
-
-                <br>
-            </div>
-            <div class="container-fluid">
-                <pre class="pre"><code class="code">
-                    &lt;div class="shadow-type4"&gt;
-                    &lt;p class="titulo2"&gt;Sombras Tipo 4&lt;/p&gt;
-                  &lt;/div&gt;
-                </code></pre>
-              </div>
-              <br>
-
-        </div>
-        <script>document.addEventListener('mousemove', function (e) {
-            const trail = document.createElement('div');
-            trail.classList.add('trail');
-            trail.style.left = `${e.clientX - 8}px`;
-            trail.style.top = `${e.clientY - 8}px`;
-            document.body.appendChild(trail);
-
-            setTimeout(function () {
-                trail.remove();
-            }, 1000);
-        });</script>
+            
 
 </body>
 
