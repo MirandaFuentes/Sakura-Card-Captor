@@ -39,113 +39,159 @@
         </section>
     </div>
 
-<div class="contenido">
-    <div class="navbar-vertical">
-        <ul>
-            <li><a href="botones.html">Botones</a></li>
-            <li><a href="formularios.html">Formularios</a></li>
-            <li><a href="Tarjetas.html">Tarjetas</a></li>
-            <!-- Si no hay una página de "Alertas", puedes eliminar esta línea -->
-            <li><a href="alertas.html">Alertas</a></li>
-            <li><a href="navbar.html">Navbar</a></li>
-            <li><a href="badges.html">Badges</a></li>
-        </ul>
-    </div>
+    <div class="container -grid fila -col2" style="grid-template-columns: 20% 80%;">
+        <div class="container-nav-vertical">
+            <div class="navbar-vertical">
+                <ul><br>
+                    <li><p>Componentes</p></li>
+                    <li><a href="botones.html">Botones</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="Tarjetas.html">Tarjetas</a></li>
+                    <!-- Mantengo consistencia con las letras minúsculas -->
+                    <li><a href="alertas.html">Alertas</a></li>
+                    <li><a href="navbar.html">Navbar</a></li>
+                    <li><a href="badges.html">Badges</a></li>
+                    <li><a href="imagenes.html">Imagenes</a></li>
 
-    <div class="container-sm">
-        <section id="botones">
+                </ul>
+            </div>
+        </div>
+
+    <div class="container-fluid">
+        <div id="botones">
             <br>
-            <h1 class="titulo2">Tarjetas</h1>
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <h1 class="titulo2">Tarjetas</h1>
+                </div>
+            </div>
             <br>
-            <p class="p3">
-                El diseño de tarjetas de Sakura combina estilo y funcionalidad, proporcionando un entorno visual que no solo es agradable a la vista, sino también altamente eficiente.
-                Ya sea para presentar información, mostrar productos o compartir contenido, estas tarjetas ofrecen la combinación perfecta de estética
-                y usabilidad, manteniendo siempre la esencia mágica y carismática de Sakura Card Captor.
-            </p>
+            <div class="row">
+                <div class="col-12">
+                    <p class="p3">
+                        El diseño de tarjetas de Sakura combina estilo y funcionalidad, proporcionando un entorno visual que no solo es agradable a la vista, sino también altamente eficiente.
+                        Ya sea para presentar información, mostrar productos o compartir contenido, estas tarjetas ofrecen la combinación perfecta de estética
+                        y usabilidad, manteniendo siempre la esencia mágica y carismática de Sakura Card Captor.
+                    </p>
+                </div>
+            </div>
             <br>
             <br>
-            <p class="titulo2">
-                Estilo de Tarjetas
-            </p>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <p class="titulo2">
+                        Estilo de Tarjetas
+                    </p>
+                </div>
+            </div>
             <br>
-            <div class="contenido">
-                <div class="container-fluid">
+            <div class="">
+                <div class="">
                     <section>
                          <div class="tarjetas">
 
-                            <div class="card card-1 shadow-type4" style="width: 25%; margin-bottom: 2rem">
-                                <div class="card-header">Encabezado</div>
+                            <div class="row">
+
+                                <div class="col-12 col-sm-12 col-md-7">
+                                    <div class="card card-1 shadow-type4" style="margin-bottom: 2rem">
+                                        <div class="card-header">Encabezado</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Título de la card</h5>
+                                            <p class="card-text">Texto de la card.</p>
+                                            <a href="#" class="card-link">Enlace de la card</a>
+                                        </div>
+                                        <div class="card-footer">Pie de página</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <br><br>
+                             <div class="row">
+                                 <div class="col-12">
+                                     <pre class="pre">
+                                         <code class="code">
+&lt;div class=&quot;card card-1 shadow-type4&quot; style=&quot;width: 25%; margin-bottom: 2rem&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;Encabezado&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Título de la card&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Texto de la card.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Enlace de la card&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card-footer&quot;&gt;Pie de página&lt;/div&gt;
+                                         </code>
+                                     </pre>
+                                 </div>
+                             </div>
+
+                             <br><br>
+
+
+                    </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-7">
+                                <div class="card card-3" style="margin-bottom: 2rem">
+                                    <img src="Imagenes%20Sakura/cardcaptor-sakura-5fa2038c3ef49.png" class="card-img-top" alt="Imagen de la card">
                                     <div class="card-body">
                                         <h5 class="card-title">Título de la card</h5>
                                         <p class="card-text">Texto de la card.</p>
                                         <a href="#" class="card-link">Enlace de la card</a>
                                     </div>
-                                <div class="card-footer">Pie de página</div>
-                            </div>
-                             <br><br>
-                             <pre class="pre"><code class="code">&lt;div class=&quot;card card-1 shadow-type4&quot; style=&quot;width: 25%; margin-bottom: 2rem&quot;&gt;
-                                    &lt;div class=&quot;card-header&quot;&gt;Encabezado&lt;/div&gt;
-                                        &lt;div class=&quot;card-body&quot;&gt;
-                                            &lt;h5 class=&quot;card-title&quot;&gt;Título de la card&lt;/h5&gt;
-                                            &lt;p class=&quot;card-text&quot;&gt;Texto de la card.&lt;/p&gt;
-                                            &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Enlace de la card&lt;/a&gt;
-                                        &lt;/div&gt;
-                                    &lt;div class=&quot;card-footer&quot;&gt;Pie de página&lt;/div&gt;
-                                &lt;/div&gt;</code></pre>
-
-
-                    </div>
-
-                        <div class="card card-3" style="width: 25%; margin-bottom: 2rem">
-                            <img src="Imagenes%20Sakura/cardcaptor-sakura-5fa2038c3ef49.png" class="card-img-top" alt="Imagen de la card">
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la card</h5>
-                                <p class="card-text">Texto de la card.</p>
-                                <a href="#" class="card-link">Enlace de la card</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-4" style="width: 25%; margin-bottom: 2rem">
-                            <div class="card-header">Encabezado de color</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la card</h5>
-                                <p class="card-text">Texto de la card.</p>
-                                <a href="#" class="card-link">Enlace de la card</a>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-7">
+                                <div class="card card-4" style="margin-bottom: 2rem">
+                                    <div class="card-header">Encabezado de color</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título de la card</h5>
+                                        <p class="card-text">Texto de la card.</p>
+                                        <a href="#" class="card-link">Enlace de la card</a>
+                                    </div>
+                                    <div class="card-footer">Pie de página de color</div>
+                                </div>
                             </div>
-                            <div class="card-footer">Pie de página de color</div>
                         </div>
 
-                        <div class="card card-2" style="width: 25%; margin-bottom: 2rem">
-                            <div class="card-header">
-                                Encabezado de la card
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la card</h5>
-                                <p class="card-text">Texto descriptivo de la card.</p>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Elemento 1 de la lista</li>
-                                    <li class="list-group-item">Elemento 2 de la lista</li>
-                                    <li class="list-group-item">Elemento 3 de la lista</li>
-                                </ul>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-7">
+                                <div class="card card-2" style="margin-bottom: 2rem">
+                                    <div class="card-header">
+                                        Encabezado de la card
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título de la card</h5>
+                                        <p class="card-text">Texto descriptivo de la card.</p>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Elemento 1 de la lista</li>
+                                            <li class="list-group-item">Elemento 2 de la lista</li>
+                                            <li class="list-group-item">Elemento 3 de la lista</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </div>
-<script>document.addEventListener('mousemove', function (e) {
-    const trail = document.createElement('div');
-    trail.classList.add('trail');
-    trail.style.left = `${e.clientX - 8}px`;
-    trail.style.top = `${e.clientY - 8}px`;
-    document.body.appendChild(trail);
+    <script>
+        document.addEventListener('mousemove', function (e) {
+            const trail = document.createElement('div');
+            trail.classList.add('trail');
+            trail.style.left = `${e.layerX - 8}px`;
+            trail.style.top = `${e.layerY - 8}px`;
+            document.body.appendChild(trail);
 
-    setTimeout(function () {
-        trail.remove();
-    }, 1000);
-});</script>
+            setTimeout(function () {
+                trail.remove();
+            }, 300);
+        });
+
+    </script>
 </body>
 
 </html>

@@ -106,7 +106,7 @@
 
         setTimeout(function () {
             trail.remove();
-        }, 1000);
+        }, 300);
     });
     // Obtener todos los enlaces del navbar
     const enlaces = document.querySelectorAll('a');
@@ -122,6 +122,11 @@
 
                 let dataObtener = document.getElementById("botones");
 
+                if (!dataObtener) {
+                    window.location.href = url;
+                    return;
+                }
+
                 document.getElementById('Contenidos_paginas').innerHTML = dataObtener.innerHTML;
 
             })
@@ -133,7 +138,7 @@
         enlace.addEventListener('click', evento => {
             evento.preventDefault(); // Prevenir la navegación predeterminada
             const url = enlace.getAttribute('href'); // Obtener la URL del enlace
-            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#") {
+            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#" || url.startsWith("http")) {
                 // Si la URL es una de las páginas principales, cargar el contenido estático
                 window.location.href = url;
                 return;

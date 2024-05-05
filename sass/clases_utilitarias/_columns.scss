@@ -46,13 +46,12 @@ $breakpoint-xl: 1200px;
     margin-left: auto;
 }
 
-// Columnas y breakpoints
-.col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+// Columnas sin breakpoint
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 calc(100% / 12 * #{$i});
+        max-width: calc(100% / 12 * #{$i});
+    }
 }
 
 @media (min-width: $breakpoint-sm) {
