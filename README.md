@@ -1,5 +1,6 @@
 PROYECTO I - HDP <br>
-![Logo](Logo.png) <br>
+<img src="../Sakura-Card-Captor/Imagenes Sakura/Logo Sakura.png" alt="Logo"/> <br>
+
 # Sakura-Card-Captor
 
 # Descripción de la Libreria Sakura Card Captor.
@@ -16,9 +17,9 @@ Desde que nuestros usuarios ingresen a la libreria seran transportados a un mund
 
 # Creadores.
 Melida Fuentes Miranda <br>
-Carlos Orlando <br>
-Alexander Antolino<br>
-Diana Estefani<br>
+Carlos Orlando Hernandez del Cid<br>
+Alexander Antolino Retana Medina<br>
+Diana Estefani Espinal Carcamo<br>
 
 # Tabla de contenidos.
  -Botones. <br>
@@ -35,3 +36,11 @@ Diana Estefani<br>
  -Estilo para rendondeo de elementos. <br>
  -Ocultar elementos.<br>
  -Paletas de colores y estilo de fondos. <br>
+
+ # Inicio Rapido.
+ -Clonar el repositorio: https://github.com/MirandaFuentes/Sakura-Card-Captor.git
+ # Qué incluye.
+ # Documentación.
+ # Versión.
+ # Ejecutar documentación localmente.
+ # 
