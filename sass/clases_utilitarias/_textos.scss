@@ -55,7 +55,7 @@
 }
 
 .p2{
-    @include modificartexto($color-Libro-clow3, $smaller, $font-family2, $font-weight2, $text-align:$text-align-justify);
+    @include modificartexto($color-Libro-clow3, 12px, $font-family2, $font-weight2, $text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
 }

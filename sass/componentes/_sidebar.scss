@@ -1,38 +1,152 @@
 @use '../clases_utilitarias/colores';
-@use '../clases_utilitarias/textos';
 @use '../clases_utilitarias/sombras';
+@use '../clases_utilitarias/size';
+@use '../clases_utilitarias/margin-padding-border';
+@use '../clases_utilitarias/breakpoints';
+@use '../clases_utilitarias/movimiento-elemntos';
+@use '../clases_utilitarias/redondear';
+@use '../clases_utilitarias/textos';
 
 // Estilos para el navbar vertical
-.navbar-vertical {
-    background-color: colores.$color-Carta-Clow1; 
-    padding: 10px; 
-    @extend .shadow-type4;
-    @extend .p3;
-    margin-right: 20px;
-    width: 100%;
+
+* {
+    @include margin-padding-border.padding(0);
+    @include margin-padding-border.margin(0);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-.navbar-vertical ul {   
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+.navbar-vertical {
+    background-color: colores.$color-Carta-Clow1;
+    padding: 10px;
+    top: 80px;
+    left: 0;
+    height: auto;
+    width: 170px;
+    @extend .shadow-type4;
     position: fixed;
 }
 
-.navbar-vertical li {
-    margin-bottom: 5px; 
+.enlace1 {
+    @include movimiento-elemntos.position(absolute, none, none, none, none);
+    @include margin-padding-border.padding(20px 50px);
 }
 
-.navbar-vertical a {
-    display: inline-block;
-    padding: 15px 15px; 
-    color: colores.$color-Carta-Clow2; 
-    text-decoration: none;
-    transition: color 0.3s ease; 
+.navbar-vertical {
+    .lista-desordenada1 {
+        @include movimiento-elemntos.movimiento(right);
+        margin-right: 30px;
+        height: 84vh;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 13px; 
+        }
     
+        &::-webkit-scrollbar-track {
+            background: colores.$color-libro-Sakura1; 
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background: colores.$color-libro-Sakura2; 
+        }
+    
+        &::-webkit-scrollbar-thumb:hover {
+            background: colores.$color_Sakura-dress2; 
+        }
+
+    }
 }
 
-.navbar-vertical a:hover {
-    color: colores.$color-Sakura-ayes; 
+.navbar-vertical {
+    .lista-desordenada1 {
+        .item1 {
+            display: block;
+            @include margin-padding-border.margin(0 5px);
+            line-height: 80px;
+            color: colores.$color_Sakura-dress1;
+            margin-left: 20px;
+            @extend .p4;
+            p{
+                color: colores.$color_Sakura-dress1;
+            }
+        }
+    }
+}
+
+.navbar-vertical .lista-desordenada1 .item1 .a {
+    color: colores.$color_Sakura-dress1;
+    @include margin-padding-border.padding(7px 13px);
+    @extend .rounded-medium;
+    text-transform: uppercase;
+}
+
+.item1 .active1,
+.item1 .a:hover {
+    background-color: colores.$color_Sakura-dress1;
+    transition: 0.5s;
+}
+
+.checkbtn1 {
+    color: colores.$color_Sakura-dress1;
+    @extend .titulo2;
+    @include movimiento-elemntos.movimiento(right);
+    display: none;
+    line-height: 80px;
+    margin-right: -20px;
+    cursor: pointer;
+}
+
+#check1 {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .enlace1 {
+        padding-left: 20px;
+    }
+
+    .nav .lista-desordenada .item .a {}
+
+}
+
+@media (max-width: 858px) {
+    .checkbtn1 {
+        display: block;
+    }
+
+    .navbar-vertical {
+        background-color: transparent;
+        box-shadow: none;
+        color: colores.$color_Sakura-dress1;
+    }
+
+    .lista-desordenada1 {
+        @include size.size(auto, 100vh);
+        color: colores.$color_Sakura-dress1;
+        background-color: colores.$color-menu;
+        @include movimiento-elemntos.position(fixed, 80px, -100%, none, none);
+        text-align: start;
+        transition: all .5s;
+        padding: 20px;
+    }
+
+    .navbar-vertical .lista-desordenada1 .item1 {
+        display: block;
+        @include margin-padding-border.margin(50px 0);
+        line-height: 30px;
+    }
+
+    .navbar-vertical .lista-desordenada1 .item1 .a {}
+
+    .a:hover {
+        background: none;
+        color: colores.$color-Libro-clow3;
+        transition: all .5s;
+    }
+
+    #check1:checked~.lista-desordenada1 {
+        left: 0;
+    }
 }
