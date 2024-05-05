@@ -22,3 +22,18 @@ $breakpoints: (
       @content;
   }
 }
+
+.container {
+  width: 80%; 
+  margin: 0 auto;
+
+  // Media query para pantalla de tablet
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 90%;
+  }
+
+  // Media query para pantalla de móvil
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%; 
+  }
+}
