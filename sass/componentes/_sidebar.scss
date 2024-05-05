@@ -37,24 +37,7 @@
     .lista-desordenada1 {
         @include movimiento-elemntos.movimiento(right);
         margin-right: 30px;
-        height: 100%;
-        overflow-y: scroll;
-
-        &::-webkit-scrollbar {
-            width: 13px; 
-        }
-    
-        &::-webkit-scrollbar-track {
-            background: colores.$color-libro-Sakura1; 
-        }
-    
-        &::-webkit-scrollbar-thumb {
-            background: colores.$color-libro-Sakura2; 
-        }
-    
-        &::-webkit-scrollbar-thumb:hover {
-            background: colores.$color_Sakura-dress2; 
-        }
+        height: 150vh;
 
     }
 }
