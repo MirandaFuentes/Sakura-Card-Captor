@@ -40,7 +40,7 @@ Diana Estefani Espinal Carcamo<br>
 
  # Inicio Rapido.
    Comience incluyendo CSS al archivo html
-   1. Crea un nuevo index.html archivo en la raíz de su proyecto. Incluir el <meta name="viewport"> etiqueta también para comportamiento receptivo adecuado en dispositivos móviles.
+   1. Crea un nuevo index.html archivo en la raíz de su proyecto. Incluir el [meta name="viewport"] etiqueta también para comportamiento receptivo adecuado en dispositivos móviles.
       ```html
        <!DOCTYPE html>
           <html>
