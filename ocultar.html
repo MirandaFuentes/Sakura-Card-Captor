@@ -8,9 +8,13 @@
     <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Containers</title>
+    <title>Ocultar</title>
 </head>
-
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
 <body>
     <div class="header">
         <section id="Inicio">
@@ -103,117 +107,67 @@
 
         <div class="container-fluid">
             <br>
-            <h1 class="titulo1">Filas y Columnas</h1>
+            <h1 class="titulo1">Ocultar</h1>
             <br>
-            <p class="p3">Sakura Card Captor tiene un sistema de filas y columnas mediante containers de tipo grid. Por
-                lo cual nuesta libreria tiene un archivo llamado _columnas-filas-grid.scss donde almacena funciones que
-                ayudan a definir las columnas y filas. Nuestra clase _columnas-filas-grid.scss proporciona sus
-                funciones la clase _grid.scss .
+            <p class="p3">
+                Ocultar elementos con la librería 'Sakura Card Captor' es como hacer desaparecer objetos con un toque de magia. 
+                Inspirado en la elegancia y el misterio de Sakura, este efecto de ocultar elementos añade un toque de intriga y 
+                sofisticación a tu interfaz.
             </p>
             <br>
             <div class="container-fluid">
-                <pre class="pre">
-                  <code class="code">
-                    _columnas-filas-grid.scss
-    
-                    @mixin col($col){
-                      grid-template-columns: $col;
-                    }
-                    @mixin row($row){
-                        grid-template-rows: $row;
-                    }
-                  </code>
-                </pre>
-
+                <div class="hide bg-color">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <div class="bg-color">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <br>
+                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
+                  <br>
+            </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="hide bg-color"&gt;
+                Este div mantiene un fondo pero está oculto.
+                &lt;/div&gt;
+            </code></pre>
             </div>
             <br>
-            <br>
-            <p class="p3">Considerando la conexión entre los archivos _columnas-filas-grid.scss y _grid.scss en Sakura
-                Card Captor, encontramos que _grid.scss alberga las clases esenciales para definir columnas y filas.
-                Estas clases, sin embargo, son el resultado de las funciones específicas contenidas en
-                _columnas-filas-grid.scss. Sakura Card Captor ha fijado ciertos límites en cuanto al número máximo y
-                mínimo de columnas y filas permitidas en un diseño: hasta 4 columnas y al menos 1, lo mismo aplicado a
-                las filas. Aunque, estas clases pueden ser ajustadas según las necesidades en sus respectivos archivos.
-                Esto brinda la flexibilidad de modificar las dimensiones tanto de columnas como de filas, ya que la
-                biblioteca establece un tamaño predeterminado de 1fr para cada una.</p>
-            <br>
-        </div>
-        <div class="container-fluid">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Clases Columnas</th>
-                        <th>Clases Filas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>.-col1</td>
-                        <td>.-row1</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>.-col2</td>
-                        <td>.-row2</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>.-col3</td>
-                        <td>.-row3</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>.-col4</td>
-                        <td>.-row4</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <br>
-        <p class="p3">Sakura Card Captor también ha establecido funciones para que un elemento de tipo grid ocupe un
-            área dentro de la cuadrícula. Asi mismo, incluye una función para el espaciado entre filas y columnas. Estas
-            funciones pueden ser modificadas dentro del archivo _columnas-filas-grid.css.
-        </p>
-        <br>
-        <div class="container-fluid">
-            <pre class="pre">
-            <code class="code">
-              Archivo: _columnas-filas-grid.scss
+            <div class="container-fluid">
+                <div class="hide bg-other">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <div class="bg-other">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <br>
+                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
+                  <br>
 
-              @mixin espaciado($col,$row){
-                column-gap: $col;
-                row-gap: $row;
-              }
-              @mixin area-col($inicio,$final){
-                  grid-column-start: $inicio;
-                  grid-column-end: $final;
-              }
-              @mixin area-row($inicio,$final){
-                  grid-row-start: $inicio;
-                  grid-row-end: $final;
-              }
-            </code>
-          </pre>
-        </div>
-        <br>
-        <p class="p3">Para definir un contenedor como grid, en Sakura Card Captor se ha creado una clase llamada -grid,
-            la cual se encuentra en el archivo _grid.scss.</p>
-        <br>
-        <div class="container-fluid">
-            <pre class="pre">
-              <code class="code">
-                Archivo _grid.SCSS
+            </div>
 
-                .-grid {
-                    display: grid;
-                  }
-              </code>
-            </pre>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="hide bg-other"&gt;
+                  Este div mantiene un fondo pero está oculto.
+                &lt;/div&gt;
+                </code></pre>
+              </div>
+
         </div>
-        <br>
+    </div>
+    <script>document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });</script>
 </body>
 
 </html>
