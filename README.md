@@ -1,5 +1,5 @@
 PROYECTO I - HDP <br>
-<img src="./Imagenes Sakura/Logo Sakura.png"  alt="Logo" style = " width:50px ; heigth:50px;"/> 
+<img src="./Imagenes Sakura/Logo Sakura.png"  alt="Logo" style = " width:150px ; heigth:150px;"/> 
 <br>
 
 # Sakura-Card-Captor
@@ -39,7 +39,38 @@ Diana Estefani Espinal Carcamo<br>
  -Paletas de colores y estilo de fondos. <br>
 
  # Inicio Rapido.
- -Clonar el repositorio: https://github.com/MirandaFuentes/Sakura-Card-Captor.git
+   Comience incluyendo CSS al archivo html
+   1. Crea un nuevo index.html archivo en la raíz de su proyecto. Incluir el <meta name="viewport"> etiqueta también para comportamiento receptivo adecuado en dispositivos móviles.
+      ```html
+       <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>Sakura Card Captor CSS Demo</title>
+            </head>
+            <body>
+              <h1>Hola Mundo! con Sakura Card Captor CSS</h1>
+            </body>
+          </html>
+      ```
+   2. Incluya CSS de Sakura Card Captor Library. Colocar el <link> etiqueta en el <head> para nuestro CSS
+      ```html
+      <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>Sakura Card Captor CSS Demo</title>
+              <link rel="stylesheet" href="sakura-card-captor.css">
+            </head>
+            <body>
+              <h1>Hola Mundo! con Sakura Card Captor CSS</h1>
+            </body>
+          </html>
+      ```
+   3. Hola mundo! Abra la página en su navegador de su elección para ver su página con Sakura Card Captor CSS. Ahora puedes comenzar a construir con Sakura Card Captor Library tu propio diseño, agregando docenas de componentes, y utilizando nuestros ejemplos oficiales.
+      
  # Qué incluye.
  # Documentación.
  # Versión.
