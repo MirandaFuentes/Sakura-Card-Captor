@@ -8,9 +8,13 @@
     <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Breakpoints</title>
+    <title>Ocultar</title>
 </head>
-
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
 <body>
     <div class="header">
         <section id="Inicio">
@@ -41,7 +45,7 @@
         </section>
     </div>
 
-    <div class="container -grid fila -col2" style="grid-template-columns: 30% 75%;">
+    <div class="container -grid fila -col2" style="grid-template-columns: 25% 90%;">
         <div class="container-nav-vertical">
             <nav class="navbar-vertical">
                 <input type="checkbox" id="check1" />
@@ -106,65 +110,67 @@
 
         <div class="container-fluid">
             <br>
-            <h1 class="titulo1">Breackpoints</h1>
-            <br>
-            <p class="p3">Los breakpoints, también conocidos como puntos de quiebre, son valores específicos de la
-                anchura de la pantalla que se utilizan en diseño web responsive para adaptar el diseño de una página web
-                a diferentes tamaños de pantalla.
-            </p>
+            <h1 class="titulo1">Ocultar</h1>
             <br>
             <p class="p3">
-                En un diseño responsivo, los breakpoints se utilizan para cambiar el diseño de la página, como el tamaño
-                y posición de los elementos, la distribución de las columnas, y la visibilidad u ocultamiento de ciertos
-                elementos, según el tamaño de la pantalla del dispositivo en el que se está visualizando la página.
+                Ocultar elementos con la librería 'Sakura Card Captor' es como hacer desaparecer objetos con un toque de magia. 
+                Inspirado en la elegancia y el misterio de Sakura, este efecto de ocultar elementos añade un toque de intriga y 
+                sofisticación a tu interfaz.
             </p>
             <br>
-            <div class="container-fluid ">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Breakpoint</th>
-                            <th>Class</th>
-                            <th>Dimensiones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Breakpoint">X-Small</td>
-                            <td data-label="Class">None</td>
-                            <td data-label="Dimensiones"><i rel="code">&lt;</i>576px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Small</td>
-                            <td data-label="Class">sm</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=576px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breakpoint">Medium</td>
-                            <td data-label="class">md</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=768px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Large</td>
-                            <td data-label="Class">lg</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=992px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Extra large</td>
-                            <td data-label="Class">xl</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=1200</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Extra extra large</td>
-                            <td data-label="Class">xxl</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=1400px</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
+            <div class="container-fluid">
+                <div class="hide bg-color">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <div class="bg-color">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <br>
+                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
+                  <br>
             </div>
-        </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="hide bg-color"&gt;
+                Este div mantiene un fondo pero está oculto.
+                &lt;/div&gt;
+            </code></pre>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="hide bg-other">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <div class="bg-other">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <br>
+                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
+                  <br>
 
+            </div>
+
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="hide bg-other"&gt;
+                  Este div mantiene un fondo pero está oculto.
+                &lt;/div&gt;
+                </code></pre>
+              </div>
+
+        </div>
+    </div>
+    <script>document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });</script>
 </body>
 
 </html>

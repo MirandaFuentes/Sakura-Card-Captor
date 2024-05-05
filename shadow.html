@@ -8,9 +8,13 @@
     <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Breakpoints</title>
+    <title>Shadow</title>
 </head>
-
+<style>
+    body {
+        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
 <body>
     <div class="header">
         <section id="Inicio">
@@ -41,7 +45,7 @@
         </section>
     </div>
 
-    <div class="container -grid fila -col2" style="grid-template-columns: 30% 75%;">
+    <div class="container -grid fila -col2" style="grid-template-columns: 25% 90%;">
         <div class="container-nav-vertical">
             <nav class="navbar-vertical">
                 <input type="checkbox" id="check1" />
@@ -106,64 +110,90 @@
 
         <div class="container-fluid">
             <br>
-            <h1 class="titulo1">Breackpoints</h1>
-            <br>
-            <p class="p3">Los breakpoints, también conocidos como puntos de quiebre, son valores específicos de la
-                anchura de la pantalla que se utilizan en diseño web responsive para adaptar el diseño de una página web
-                a diferentes tamaños de pantalla.
-            </p>
+            <h1 class="titulo1">Shadow</h1>
             <br>
             <p class="p3">
-                En un diseño responsivo, los breakpoints se utilizan para cambiar el diseño de la página, como el tamaño
-                y posición de los elementos, la distribución de las columnas, y la visibilidad u ocultamiento de ciertos
-                elementos, según el tamaño de la pantalla del dispositivo en el que se está visualizando la página.
+                Las sombras de la librería 'Sakura Card Captor' son más que simples efectos visuales; son un juego sutil de 
+                luces y matices que añaden profundidad y elegancia a tu diseño. Inspiradas en la magia y la gracia de Sakura, 
+                estas sombras están diseñadas para realzar cada elemento con un toque encantador.
             </p>
             <br>
-            <div class="container-fluid ">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Breakpoint</th>
-                            <th>Class</th>
-                            <th>Dimensiones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Breakpoint">X-Small</td>
-                            <td data-label="Class">None</td>
-                            <td data-label="Dimensiones"><i rel="code">&lt;</i>576px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Small</td>
-                            <td data-label="Class">sm</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=576px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breakpoint">Medium</td>
-                            <td data-label="class">md</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=768px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Large</td>
-                            <td data-label="Class">lg</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=992px</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Extra large</td>
-                            <td data-label="Class">xl</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=1200</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Breackpoint">Extra extra large</td>
-                            <td data-label="Class">xxl</td>
-                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=1400px</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="container-fluid">
+                <div class="shadow-type1">
+                    <p class="titulo2">Sombras Tipo 1</p>
+                </div>
+
                 <br>
             </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="shadow-type1"&gt;
+                &lt;p class="titulo2"&gt;Sombras Tipo 1&lt;/p&gt;
+                &lt;/div&gt;
+                </code></pre>
+              </div>
+              <br>
+
+
+            <div class="container-fluid">
+                <div class="shadow-type2">
+                    <p class="titulo2">Sombras Tipo 2</p>
+                </div>
+
+                <br>
+            </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="shadow-type2"&gt;
+                &lt;p class="titulo2"&gt;Sombras Tipo 2&lt;/p&gt;
+                &lt;/div&gt;
+                </code></pre>
+              </div>
+              <br>
+
+              <div class="container-fluid">
+                <div class="shadow-type3">
+                    <p class="titulo2">Sombras Tipo 3</p>
+                </div>
+
+                <br>
+            </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="shadow-type3"&gt;
+                &lt;p class="titulo2"&gt;Sombras Tipo 3&lt;/p&gt;
+                &lt;/div&gt;
+                </code></pre>
+              </div>
+              <br>
+              <div class="container-fluid">
+                <div class="shadow-type4">
+                    <p class="titulo2">Sombras Tipo 4</p>
+                </div>
+
+                <br>
+            </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                    &lt;div class="shadow-type4"&gt;
+                    &lt;p class="titulo2"&gt;Sombras Tipo 4&lt;/p&gt;
+                  &lt;/div&gt;
+                </code></pre>
+              </div>
+              <br>
+
         </div>
+        <script>document.addEventListener('mousemove', function (e) {
+            const trail = document.createElement('div');
+            trail.classList.add('trail');
+            trail.style.left = `${e.clientX - 8}px`;
+            trail.style.top = `${e.clientY - 8}px`;
+            document.body.appendChild(trail);
+
+            setTimeout(function () {
+                trail.remove();
+            }, 1000);
+        });</script>
 
 </body>
 
