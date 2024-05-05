@@ -1,5 +1,5 @@
 PROYECTO I - HDP <br>
-<img src="../Sakura-Card-Captor/Imagenes Sakura/Logo Sakura.png"  alt="Logo" style = " width:50px ; heigth:50px;"/> 
+<img src="./Imagenes Sakura/Logo Sakura.png"  alt="Logo" style = " width:50px ; heigth:50px;"/> 
 <br>
 
 # Sakura-Card-Captor
