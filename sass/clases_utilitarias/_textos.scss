@@ -58,11 +58,13 @@
     @include modificartexto($color-Libro-clow3, 12px, $font-family2, $font-weight2, $text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
+    margin-bottom: 10px;
 }
 .p3{
     @include modificartexto($color-Libro-clow3, $small, $font-family3, none, $text-align:$text-align-justify);
     text-align: justify;
     padding: 5px;
+    line-height: 1.5em;
 }
 .p4{
     @include modificartexto(white, $small, $font-family1, $font-weight1, $text-align:$text-align-justify);
