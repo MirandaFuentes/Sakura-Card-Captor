@@ -1,4 +1,3 @@
-@use '../clases_utilitarias/ocultar';
 @use '../clases_utilitarias/columnas-filas-grid';
 @import '../clases_utilitarias/breakpoints';
 
@@ -79,9 +78,3 @@
     grid-template-columns: repeat(6, 1fr);
   }
 }
-
-//@media screen and (max-width: 768px) {
- // .container-nav-vertical {
- //     display: none;
- // }
-//}

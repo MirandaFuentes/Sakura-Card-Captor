@@ -22,7 +22,7 @@
     padding: 10px;
     top: 80px;
     left: 0;
-    height: auto;
+    height: 100%;
     width: 170px;
     @extend .shadow-type4;
     position: fixed;
@@ -37,7 +37,7 @@
     .lista-desordenada1 {
         @include movimiento-elemntos.movimiento(right);
         margin-right: 30px;
-        height: 84vh;
+        height: 100%;
         overflow-y: scroll;
 
         &::-webkit-scrollbar {
@@ -64,7 +64,7 @@
         .item1 {
             display: block;
             @include margin-padding-border.margin(0 5px);
-            line-height: 80px;
+            line-height: 50px;
             color: colores.$color_Sakura-dress1;
             margin-left: 20px;
             @extend .p4;
@@ -120,12 +120,14 @@
         background-color: transparent;
         box-shadow: none;
         color: colores.$color_Sakura-dress1;
+        height: 100%;
     }
 
     .lista-desordenada1 {
-        @include size.size(auto, 100vh);
+        @include size.size(auto, 0%);
         color: colores.$color_Sakura-dress1;
         background-color: colores.$color-menu;
+        height: 100%;
         @include movimiento-elemntos.position(fixed, 80px, -100%, none, none);
         text-align: start;
         transition: all .5s;
@@ -134,7 +136,7 @@
 
     .navbar-vertical .lista-desordenada1 .item1 {
         display: block;
-        @include margin-padding-border.margin(50px 0);
+        @include margin-padding-border.margin(20px);
         line-height: 30px;
     }
 

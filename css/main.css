@@ -641,6 +641,7 @@
   text-align: justify;
   text-align: justify;
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 .p3, .container-fluid {
@@ -651,6 +652,7 @@
   text-align: justify;
   text-align: justify;
   padding: 5px;
+  line-height: 1.5em;
 }
 
 .p4, .navbar-vertical .lista-desordenada1 .item1 {
@@ -722,12 +724,64 @@
   margin-left: auto;
 }
 
-.col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+.col-1 {
+  flex: 0 0 calc(8.3333333333% * 1);
+  max-width: calc(8.3333333333% * 1);
+}
+
+.col-2 {
+  flex: 0 0 calc(8.3333333333% * 2);
+  max-width: calc(8.3333333333% * 2);
+}
+
+.col-3 {
+  flex: 0 0 calc(8.3333333333% * 3);
+  max-width: calc(8.3333333333% * 3);
+}
+
+.col-4 {
+  flex: 0 0 calc(8.3333333333% * 4);
+  max-width: calc(8.3333333333% * 4);
+}
+
+.col-5 {
+  flex: 0 0 calc(8.3333333333% * 5);
+  max-width: calc(8.3333333333% * 5);
+}
+
+.col-6 {
+  flex: 0 0 calc(8.3333333333% * 6);
+  max-width: calc(8.3333333333% * 6);
+}
+
+.col-7 {
+  flex: 0 0 calc(8.3333333333% * 7);
+  max-width: calc(8.3333333333% * 7);
+}
+
+.col-8 {
+  flex: 0 0 calc(8.3333333333% * 8);
+  max-width: calc(8.3333333333% * 8);
+}
+
+.col-9 {
+  flex: 0 0 calc(8.3333333333% * 9);
+  max-width: calc(8.3333333333% * 9);
+}
+
+.col-10 {
+  flex: 0 0 calc(8.3333333333% * 10);
+  max-width: calc(8.3333333333% * 10);
+}
+
+.col-11 {
+  flex: 0 0 calc(8.3333333333% * 11);
+  max-width: calc(8.3333333333% * 11);
+}
+
+.col-12 {
+  flex: 0 0 calc(8.3333333333% * 12);
+  max-width: calc(8.3333333333% * 12);
 }
 
 @media (min-width: 576px) {
@@ -2306,7 +2360,7 @@ hr {
   padding: 10px;
   top: 80px;
   left: 0;
-  height: auto;
+  height: 100%;
   width: 170px;
   position: fixed;
 }
@@ -2323,7 +2377,7 @@ hr {
 .navbar-vertical .lista-desordenada1 {
   float: right;
   margin-right: 30px;
-  height: 84vh;
+  height: 100%;
   overflow-y: scroll;
 }
 .navbar-vertical .lista-desordenada1::-webkit-scrollbar {
@@ -2342,7 +2396,7 @@ hr {
 .navbar-vertical .lista-desordenada1 .item1 {
   display: block;
   margin: 0 5px;
-  line-height: 80px;
+  line-height: 50px;
   color: #F2AEC7;
   margin-left: 20px;
 }
@@ -2388,12 +2442,14 @@ hr {
     background-color: transparent;
     box-shadow: none;
     color: #F2AEC7;
+    height: 100%;
   }
   .lista-desordenada1 {
     width: auto;
-    height: 100vh;
+    height: 0%;
     color: #F2AEC7;
     background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
     position: fixed;
     top: 80px;
     left: -100%;
@@ -2405,7 +2461,7 @@ hr {
   }
   .navbar-vertical .lista-desordenada1 .item1 {
     display: block;
-    margin: 50px 0;
+    margin: 20px;
     line-height: 30px;
   }
   .a:hover {
