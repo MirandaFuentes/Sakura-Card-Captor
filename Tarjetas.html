@@ -46,14 +46,14 @@
             <li><a href="formularios.html">Formularios</a></li>
             <li><a href="Tarjetas.html">Tarjetas</a></li>
             <!-- Si no hay una página de "Alertas", puedes eliminar esta línea -->
-            <li><a href="#">Alertas</a></li>
+            <li><a href="alertas.html">Alertas</a></li>
             <li><a href="navbar.html">Navbar</a></li>
             <li><a href="badges.html">Badges</a></li>
         </ul>
     </div>
 
-    <main class="container-sm">
-        <section id="botones">
+    <div class="container-sm">
+        <section id="tarjetas">
             <br>
             <h1 class="titulo2">Tarjetas</h1>
             <br>
@@ -71,15 +71,33 @@
             <div class="contenido">
                 <div class="container-fluid">
                     <section>
-                        <div class="card card-1 shadow-type4" style="width: 25%; margin-bottom: 2rem">
-                            <div class="card-header">Encabezado</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Título de la card</h5>
-                                <p class="card-text">Texto de la card.</p>
-                                <a href="#" class="card-link">Enlace de la card</a>
+                         <div class="tarjetas">
+
+                            <div class="card card-1 shadow-type4" style="width: 25%; margin-bottom: 2rem">
+                                <div class="card-header">Encabezado</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título de la card</h5>
+                                        <p class="card-text">Texto de la card.</p>
+                                        <a href="#" class="card-link">Enlace de la card</a>
+                                    </div>
+                                <div class="card-footer">Pie de página</div>
                             </div>
-                            <div class="card-footer">Pie de página</div>
-                        </div>
+                             <br><br>
+
+                             <pre class="pre">
+                                <code class="code">
+                                <div class="card card-1 shadow-type4" style="width: 25%; margin-bottom: 2rem">
+                                <div class="card-header">Encabezado</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título de la card</h5>
+                                        <p class="card-text">Texto de la card.</p>
+                                        <a href="#" class="card-link">Enlace de la card</a>
+                                    </div>
+                                <div class="card-footer">Pie de página</div>
+                            </div>
+                                </code>
+                            </pre>
+                    </div>
 
                         <div class="card card-3" style="width: 25%; margin-bottom: 2rem">
                             <img src="Imagenes%20Sakura/cardcaptor-sakura-5fa2038c3ef49.png" class="card-img-top" alt="Imagen de la card">
@@ -118,7 +136,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 </div>
 <script>document.addEventListener('mousemove', function (e) {
     const trail = document.createElement('div');

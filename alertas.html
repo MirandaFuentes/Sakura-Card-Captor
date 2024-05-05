@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambio el idioma a español, ya que el contenido está en español -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image/x-icon"> <!-- Cambié "image" por "image/x-icon" -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Alertas</title>
+    </head>
+    <style>
+        body {
+            cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <section id="Inicio">
+                <nav class="nav">
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <a href="Index.html" class="enlace">
+                        <img src="Imagenes Sakura/Logo%20Sakura.png" alt="Logo Sakura" class="logo"/>
+                    </a>
+                    <ul class="lista-desordenada">
+                        <li class="item"><a href="Index.html" class="a">Inicio</a></li>
+                        <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
+                        <li class="item"><a href="#Diseño" class="a">Diseño</a></li>
+                        <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+                        <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git"><div class="btn btn-icon"><i class="fa-brands fa-square-github fa-3x" style="color:#009572;"></i></div></a></li>
+                        <li class="item"><a href="https://youtube.com/playlist?list=PLGpxnliw4VnxbPxV57zvgINmM_0t8V8eo&si=XopHm43TY9qrrcBZ"><div class="btn btn-icon"><i class="fa-solid fa-film fa-3x" style="color:#009572;"></i></div></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="contenido">
+            <div class="navbar-vertical">
+                <ul>
+                    <li><a href="botones.html">Botones</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="tarjetas.html">Tarjetas</a></li>
+                    <!-- Mantengo consistencia con las letras minúsculas -->
+                    <li><a href="alertas.html">Alertas</a></li>
+                    <li><a href="navbar.html">Navbar</a></li>
+                    <li><a href="badges.html">Badges</a></li>
+                </ul>
+            </div>
+
+            <div class="container-sm">
+                <section id="Alertas">
+                    <h1 class="titulo2">Alertas</h1> <!-- Eliminar el exceso de <br> -->
+                    <p class="p3">
+                        Las alertas de la librería 'Sakura Card Captor' son mensajes encantadores que entrelazan funcionalidad con un toque 
+                        mágico. Inspiradas en la elegancia de Sakura, estas alertas utilizan colores suaves para comunicar de manera clara 
+                        y delicada. Cada alerta, ligera como un pétalo de cerezo, asegura que cada mensaje sea percibido con la gracia y 
+                        belleza característica de Sakura.
+                    </p>
+
+                    
+                        <div class="alert alert-simple">
+                            <p>¡Esta es una alerta simple!</p>
+                        </div>
+                        <div class="alert alert-creative">
+                            <p>¡Esta es una alerta creativa!</p>
+                        </div>
+                        <div class="alert alert-icon">
+                            <p>¡Esta es una alerta con icono!</p>
+                        </div>
+                        <div class="alert alert-formal">
+                            <p>¡Esta es una alerta formal!</p>
+                        </div>
+                        <div class="container-fluid">
+                            <pre class="pre"><code class="code"><i rel="pre">
+                              &lt;div class="alert alert-simple"&gt;
+                                &lt;p&gt;¡Esta es una alerta simple!&lt;/p&gt;
+                              &lt;/div&gt;
+                              &lt;div class="alert alert-creative"&gt;
+                                &lt;p&gt;¡Esta es una alerta creativa!&lt;/p&gt;
+                              &lt;/div&gt;
+                              &lt;div class="alert alert-icon"&gt;
+                                &lt;p&gt;¡Esta es una alerta con icono!&lt;/p&gt;
+                              &lt;/div&gt;
+                              &lt;div class="alert alert-formal"&gt;
+                                &lt;p&gt;¡Esta es una alerta formal!&lt;/p&gt;
+                              &lt;/div&gt;
+                              <i rel="pre"></i></code></pre>
+                          </div>
+
+                    
+                </section>
+            </div>
+        </div>
+        <script>document.addEventListener('mousemove', function (e) {
+            const trail = document.createElement('div');
+            trail.classList.add('trail');
+            trail.style.left = `${e.clientX - 8}px`;
+            trail.style.top = `${e.clientY - 8}px`;
+            document.body.appendChild(trail);
+
+            setTimeout(function () {
+                trail.remove();
+            }, 1000);
+        });</script>
+    </body>
+
+</html>
