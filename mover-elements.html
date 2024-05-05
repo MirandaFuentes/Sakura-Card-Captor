@@ -8,13 +8,9 @@
     <link rel="icon" href="Imagenes Sakura/Kero.ico" type="image">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Ocultar</title>
+    <title>Mover Elementos</title>
 </head>
-<style>
-    body {
-        cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
-    }
-</style>
+
 <body>
     <div class="header">
         <section id="Inicio">
@@ -44,7 +40,7 @@
         </section>
     </div>
 
-    <div class="container -grid fila -col2" style="grid-template-columns: 25% 90%;">
+    <div class="container -grid fila -col2" style="grid-template-columns: 30% 80%;">
         <div class="container-nav-vertical">
             <nav class="navbar-vertical">
                 <input type="checkbox" id="check1" />
@@ -112,67 +108,52 @@
 
         <div class="container-fluid">
             <br>
-            <h1 class="titulo1">Ocultar</h1>
+            <h1 class="titulo1">Mover Elementos</h1>
             <br>
-            <p class="p3">
-                Ocultar elementos con la librería 'Sakura Card Captor' es como hacer desaparecer objetos con un toque de magia. 
-                Inspirado en la elegancia y el misterio de Sakura, este efecto de ocultar elementos añade un toque de intriga y 
-                sofisticación a tu interfaz.
+            <p class="p3">Sakura Card Captor ha implementado la clase _movimiento-elements es una clase de estilo definida en un archivo SASS que se utiliza 
+                para aplicar propiedades de posicionamiento, alineación y justificación a elementos. 
+                Esta clase utiliza varios mixins para establecer propiedades como posición (con opciones para relative, absolute, 
+                fixed, etc.), alineación vertical y horizontal, justificación. La clase proporciona una manera 
+                fácil de aplicar estas propiedades de estilo de manera coherente en diferentes elementos,
+                 lo que ayuda a mantener un diseño consistente y bien estructurado.
             </p>
             <br>
-            <div class="container-fluid">
-                <div class="hide bg-color">
-                    Este div mantiene un fondo pero esta oculto.
-                  </div>
-                  <div class="bg-color">
-                    Este div mantiene un fondo pero esta oculto.
-                  </div>
-                  <br>
-                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
-                  <br>
-            </div>
-            <div class="container-fluid">
-                <pre class="pre"><code class="code">
-                &lt;div class="hide bg-color"&gt;
-                Este div mantiene un fondo pero está oculto.
-                &lt;/div&gt;
-            </code></pre>
-            </div>
-            <br>
-            <div class="container-fluid">
-                <div class="hide bg-other">
-                    Este div mantiene un fondo pero esta oculto.
-                  </div>
-                  <div class="bg-other">
-                    Este div mantiene un fondo pero esta oculto.
-                  </div>
-                  <br>
-                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
-                  <br>
+            <div class="container-fluid ">
+                <pre class="pre">
+                    <code class="code">
+                        _mover-elements.scss
 
+                        @mixin position($propiedad, $top,$left,$right,$boton){
+                            position: $propiedad;
+                            top: $top;
+                            left: $left;
+                            right:$right;
+                            bottom: $boton;  
+                        }
+                
+                        @mixin alineacion($align-items,$align-self,$align-content){
+                            align-items:$align-items;
+                            align-self: $align-self;
+                            align-content:$align-content;
+                        }
+                        
+                        @mixin justificar($justify-content,$justify-items, $justify-self){
+                            justify-content: $justify-content;
+                            justify-items: $justify-items;
+                            justify-self: $justify-self;
+                        }
+                        
+                        @mixin movimiento($move){
+                            float:$move;
+                        }
+
+                    </code>
+                  </pre>
+  
+                <br>
             </div>
-
-            <div class="container-fluid">
-                <pre class="pre"><code class="code">
-                &lt;div class="hide bg-other"&gt;
-                  Este div mantiene un fondo pero está oculto.
-                &lt;/div&gt;
-                </code></pre>
-              </div>
-
         </div>
-    </div>
-    <script>document.addEventListener('mousemove', function (e) {
-        const trail = document.createElement('div');
-        trail.classList.add('trail');
-        trail.style.left = `${e.clientX - 8}px`;
-        trail.style.top = `${e.clientY - 8}px`;
-        document.body.appendChild(trail);
 
-        setTimeout(function () {
-            trail.remove();
-        }, 1000);
-    });</script>
 </body>
 
 </html>
