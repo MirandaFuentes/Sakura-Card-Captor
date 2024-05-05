@@ -2238,7 +2238,7 @@ a.disabled {
   height: 100%;
   padding: 0 40px;
   margin-left: -40px;
-  width: 240px;
+  width: 290px;
 }
 
 .table {
@@ -2361,7 +2361,7 @@ hr {
   top: 80px;
   left: 0;
   height: 100%;
-  width: 170px;
+  width: 190px;
   position: fixed;
 }
 
@@ -2377,15 +2377,17 @@ hr {
 .navbar-vertical .lista-desordenada1 {
   float: right;
   margin-right: 30px;
-  height: 150vh;
+  margin-bottom: 30px;
+  height: 250vh;
 }
 
 .navbar-vertical .lista-desordenada1 .item1 {
   display: block;
   margin: 0 5px;
-  line-height: 50px;
+  line-height: 40px;
+  margin-bottom: 20px;
   color: #F2AEC7;
-  margin-left: 20px;
+  align-items: flex-start;
 }
 .navbar-vertical .lista-desordenada1 .item1 p {
   color: #F2AEC7;
