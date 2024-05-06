@@ -24,7 +24,7 @@
                     <img src="Imagenes Sakura/Logo%20Sakura.png" alt="Logo Sakura" class="logo" />
                 </a>
                 <ul class="lista-desordenada">
-                    <li class="item"><a href="Index.html" class="a">Inicio</a></li>
+                    <li class="item"><a href="index.html" class="a">Inicio</a></li>
                     <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
                     <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
                     <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git">
@@ -163,7 +163,7 @@
         enlace.addEventListener('click', evento => {
             evento.preventDefault(); // Prevenir la navegación predeterminada
             const url = enlace.getAttribute('href'); // Obtener la URL del enlace
-            if (url === "Index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#" || url.startsWith("http")) {
+            if (url === "index.html" || url === "introdunccion.html" || url === "componentes.html" || url === "#Diseño" || url === "#" || url.startsWith("http")) {
                 // Si la URL es una de las páginas principales, cargar el contenido estático
                 window.location.href = url;
                 return;
