@@ -38,7 +38,7 @@
         @include movimiento-elemntos.movimiento(right);
         margin-right: 30px;
         margin-bottom: 30px;
-        height: 340vh;
+        height: 270vh;
     }
 }
 
@@ -106,14 +106,15 @@
     }
 
     .lista-desordenada1 {
-        @include size.size(auto, 0%);
+        @include size.size(20%, 0%);
+        @include movimiento-elemntos.position(fixed, 80px, -100%, none, none);
         color: colores.$color_Sakura-dress1;
         background-color: colores.$color-menu;
         height: 100%;
-        @include movimiento-elemntos.position(fixed, 80px, -100%, none, none);
         text-align: start;
         transition: all .5s;
         padding: 20px;
+        overflow-y: scroll;
     }
 
     .navbar-vertical .lista-desordenada1 .item1 {
