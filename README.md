@@ -62,7 +62,7 @@ Diana Estefani Espinal Carcamo<br>
               <meta charset="utf-8">
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <title>Sakura Card Captor CSS Demo</title>
-              <link rel="stylesheet" href="sakura-card-captor.css">
+              <link rel="stylesheet" href="https://cdn.statically.io/gh/MirandaFuentes/Sakura-Card-Captor/main/css/main.css">
             </head>
             <body>
               <h1>Hola Mundo! con Sakura Card Captor CSS</h1>
